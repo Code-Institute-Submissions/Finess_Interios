@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #000;
+  font-family: "roboto", sans-serif;
+  font-weight: 200;
+  color: #3a3a3a;
+}
+h1,
+h2 {
+  color: #cecece;
+  font-family: "roboto", sans-serif;
+  text-transform: uppercase;
+}
+header {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#logo {
+  text-decoration: none;
+}
+#logo h1 {
+  color: #000;
+  font-family: "lato", sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+}
+#logo,
+#menu {
+  line-height: 75px;
+}
+#menu {
+  width: 60%;
+}
+#menu li {
+  margin-left: 10%;
+  padding: 0;
+  float: left;
+  list-style-type: none;
+}
+#menu a {
+  font-size: 180%;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: black;
+
+  font-weight: bold;
+}
+#menu a:hover {
+  border-bottom: 1.5px solid black;
+}
+
+/* Footer Section */
+#footer {
+  width: 100%;
+  margin-top: 1%;
+}
+#socials {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+#socials a {
+  color: #000;
+  font-size: 220%;
+}
+#facebook i:hover {
+  color: #2c57ac;
+}
+#instagram i:hover {
+  color: #db304c;
+}
+#twitter i:hover {
+  color: #00acee;
+}
+#pin i:hover {
+  color: #ee1b08;
+}
+/* Gallery area */
+#gallery-area {
+  clear: both;
+  width: 100%;
+  margin: 1%;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0;
+}
+#gallery-area img {
+  width: 100%;
+  image-rendering: optimizeSpeed;
+  overflow: hidden;
+}
+#copyright {
+  display: inline-flex;
+  width: 100%;
+  padding-top: 3%;
+  justify-content: center;
+}
+#copyright h3 {
+  font-size: 100%;
+  text-align: center;
+}
+/* Meadia Queries */
+@media screen and (max-width: 1200px) {
+  #logo {
+    font-size: 110%;
+  }
+  #menu a {
+    font-size: 140%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #logo {
+    font-size: 90%;
+  }
+  #menu a {
+    font-size: 140%;
+  }
+}
+@media screen and (max-width: 360px) {
+  #menu a {
+    font-size: 100%;
+  }
+  #menu a {
+    font-size: 80%;
+  }
+}
