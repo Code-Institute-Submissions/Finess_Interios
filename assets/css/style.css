@@ -59,9 +59,10 @@ h2 {
   background-image: url(../images/mainimg.webp);
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 600px;
-  border-bottom: 2px solid black;
+  overflow: hidden;
   animation-name: zoom;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -77,40 +78,65 @@ h2 {
 }
 #main-img div {
   position: absolute;
-  left: 15%;
   top: 10%;
+  left: 10%;
   width: 200px;
-  height: 150px;
-  background-color: rgba(0, 0, 0, 0.4);
+  height: fit-content;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 #comment-main {
-  display: inline-flex;
-  justify-content: center;
-  justify-items: center;
-  flex-direction: column;
-  color: #999999;
   text-align: center;
   padding: 10px;
 }
 /* mid section */
 #mid-page {
+  position: relative;
   margin-top: 3px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
   width: 100%;
   height: 400px;
 }
 #mid-img {
-  background-image: url(/assets/images/conference.webp);
+  background-image: url(../images/hallway.jpg);
   background-position: center center;
+  background-size: cover;
+  overflow: hidden;
   width: 100%;
   height: 400px;
+}
+
+#comment1,
+#comment2,
+#comment3 {
+  width: 200px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 135%;
+  text-align: center;
+}
+#comment1 {
+  position: absolute;
+  left: 20%;
+  top: auto;
+}
+#comment2 {
+  position: absolute;
+  left: 40%;
+  top: auto;
+}
+#comment3 {
+  position: absolute;
+  left: 60%;
+  top: auto;
 }
 
 /* Footer Section */
 #footer {
   width: 100%;
-  margin-top: 1%;
+  padding-top: 25px;
 }
 #socials {
   display: inline-flex;
@@ -179,52 +205,34 @@ h2 {
     column-count: 3;
     column-gap: 0;
   }
-  #main-img div {
-    position: relative;
-    top: 58%;
-    left: 42%;
-    width: 200px;
-    height: 150px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+}
+@media screen and (max-width: 520px) {
+  #logo {
+    font-size: 100%;
   }
-  @media screen and (max-width: 520px) {
-    #logo {
-      font-size: 100%;
-    }
-    #menu a {
-      font-size: 130%;
-    }
-    #main-img div {
-      position: relative;
-      top: 58%;
-      left: 38%;
-      width: 200px;
-      height: 150px;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #fff;
-    }
-    #gallery-area {
-      clear: both;
-      width: 100%;
-      line-height: 0;
-      column-count: 3;
-      column-gap: 0;
-    }
+  #menu a {
+    font-size: 130%;
   }
-  @media screen and (max-width: 350px) {
-    #logo {
-      font-size: 100%;
-    }
-    #menu a {
-      font-size: 130%;
-    }
-    #gallery-area {
-      clear: both;
-      width: 100%;
-      line-height: 0;
-      column-count: 3;
-      column-gap: 0;
-    }
+  #gallery-area {
+    clear: both;
+    width: 100%;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  #logo {
+    font-size: 100%;
+  }
+  #menu a {
+    font-size: 130%;
+  }
+  #gallery-area {
+    clear: both;
+    width: 100%;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0;
   }
 }
