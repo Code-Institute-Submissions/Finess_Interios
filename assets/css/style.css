@@ -13,7 +13,6 @@ body {
 }
 h1,
 h2 {
-  color: #cecece;
   font-family: "roboto", sans-serif;
   text-transform: uppercase;
 }
@@ -48,7 +47,6 @@ h2 {
 }
 #menu a {
   font-size: 215%;
-  letter-spacing: 1px;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -56,7 +54,43 @@ h2 {
 #menu a:hover {
   border-bottom: 1.5px solid black;
 }
+/* main image area */
+#main-img {
+  background-image: url(../images/mainimg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0.9);
+  }
 
+  to {
+    transform: scale(1);
+  }
+}
+#main-img div {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  width: 200px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#comment-main {
+  display: inline-flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
 /* Footer Section */
 #footer {
   width: 100%;
@@ -95,7 +129,6 @@ h2 {
 }
 #gallery-area img {
   width: 100%;
-  image-rendering: optimizeSpeed;
   overflow: hidden;
 }
 #copyright {
@@ -109,6 +142,12 @@ h2 {
   text-align: center;
 }
 /* Meadia Queries */
+@media screen and (max-width: 1200px) {
+  #logo,
+  #menu {
+    font-size: smaller;
+  }
+}
 @media screen and (max-width: 900px) {
   #logo {
     font-size: 100%;
@@ -124,34 +163,52 @@ h2 {
     column-count: 3;
     column-gap: 0;
   }
-}
-@media screen and (max-width: 520px) {
-  #logo {
-    font-size: 100%;
+  #main-img div {
+    position: relative;
+    top: 58%;
+    left: 42%;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
   }
-  #menu a {
-    font-size: 130%;
+  @media screen and (max-width: 520px) {
+    #logo {
+      font-size: 100%;
+    }
+    #menu a {
+      font-size: 130%;
+    }
+    #main-img div {
+      position: relative;
+      top: 58%;
+      left: 38%;
+      width: 200px;
+      height: 150px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+    }
+    #gallery-area {
+      clear: both;
+      width: 100%;
+      line-height: 0;
+      column-count: 3;
+      column-gap: 0;
+    }
   }
-  #gallery-area {
-    clear: both;
-    width: 100%;
-    line-height: 0;
-    column-count: 3;
-    column-gap: 0;
-  }
-}
-@media screen and (max-width: 350px) {
-  #logo {
-    font-size: 100%;
-  }
-  #menu a {
-    font-size: 130%;
-  }
-  #gallery-area {
-    clear: both;
-    width: 100%;
-    line-height: 0;
-    column-count: 3;
-    column-gap: 0;
+  @media screen and (max-width: 350px) {
+    #logo {
+      font-size: 100%;
+    }
+    #menu a {
+      font-size: 130%;
+    }
+    #gallery-area {
+      clear: both;
+      width: 100%;
+      line-height: 0;
+      column-count: 3;
+      column-gap: 0;
+    }
   }
 }
