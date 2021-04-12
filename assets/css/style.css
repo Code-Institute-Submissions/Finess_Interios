@@ -5,10 +5,6 @@
   border: none;
 }
 body {
-  background-image: url(../images/mainimg.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-family: "roboto", sans-serif;
 }
 h1,
@@ -17,12 +13,12 @@ h2 {
   text-transform: uppercase;
 }
 .nav-background {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 #logo {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 100vw;
   text-decoration: none;
   text-align: center;
   animation-name: move-in;
@@ -42,7 +38,7 @@ h2 {
   color: #ccc;
   font-family: "lato", sans-serif;
   font-weight: bold;
-  font-size: 250%;
+  font-size: 2vw;
 }
 #logo,
 #menu {
@@ -59,25 +55,30 @@ h2 {
   list-style-type: none;
 }
 #menu a {
-  font-size: 215%;
+  font-size: 1.5vw;
   text-decoration: none;
   color: #ccc;
   font-weight: bold;
   text-align: center;
 }
 #menu a:hover {
-  border-bottom: 2px solid #000;
+  color: #000;
 }
 /* Home page */
 .home-section {
   width: 100%;
   height: 800px;
+  background-image: url(../images/home.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
 }
 /* main image area */
 /* Footer Section */
 #footer {
   background: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 100vw;
   padding-top: 40px;
 }
 #socials {
@@ -122,9 +123,9 @@ h2 {
   justify-content: center;
 }
 #copyright h3 {
-  font-size: 100%;
+  font-size: 1.1vw;
   text-align: center;
-  color: #fff;
+  color: #ccc;
 }
 /* Gallery area */
 #gallery-area {
@@ -138,16 +139,56 @@ h2 {
   width: 100%;
   overflow: hidden;
 }
+/* About page */
+.about-page div {
+  width: 100vw;
+  height: 600px;
+}
+#about-img {
+  width: 100vw;
+  height: 600px;
+  background-image: url(../images/about.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about-text {
+  position: absolute;
+  top: 25%;
+  left: 10vw;
+  width: 22vw;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 30px;
+}
+#about-text h3 {
+  font-size: 2vw;
+  text-align: center;
+  color: #ccc;
+}
+#about-text p {
+  font-size: 1vw;
+  line-height: 30px;
+  text-align: center;
+  color: #ccc;
+  padding-top: 10px;
+}
+
 /* Contact Page  */
 #body-contact {
   width: 100%;
   height: 600px;
+  background-image: url(../images/contactpage.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #contact-info {
   position: absolute;
-  top: 52%;
-  left: 15%;
-  width: 15%;
+  top: 52vh;
+  left: 15vw;
+  width: 15vw;
   padding: 30px;
   transform: translateY(-50%);
   border-radius: 5px;
@@ -157,13 +198,13 @@ h2 {
 #contact-info h2 {
   padding: 8px;
   text-align: center;
-  font-size: 4vh;
+  font-size: 2.1vw;
   color: #ccc;
 }
 #contact-info p {
   padding-top: 4px;
   text-align: center;
-  font-size: 3vh;
+  font-size: 1.1vw;
   color: #ccc;
 }
 .contact-form {
@@ -211,7 +252,7 @@ h2 {
 ::-webkit-input-placeholder {
   text-align: center;
   color: #ccc;
-  font-size: larger;
+  font-size: 1vw;
 }
 ::moz-input-placeholder {
   color: #fff;
@@ -226,7 +267,7 @@ h2 {
   padding: 15px;
   border-radius: 4px;
   color: #ccc;
-  font-size: 115%;
+  font-size: 1vw;
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
