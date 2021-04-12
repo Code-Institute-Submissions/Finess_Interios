@@ -5,15 +5,11 @@
   border: none;
 }
 body {
-  background-image: url(../images/construction-2682641_1920.jpg);
+  background-image: url(../images/mainimg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #000;
   font-family: "roboto", sans-serif;
-  font-weight: 200;
-  color: #3a3a3a;
 }
 h1,
 h2 {
@@ -29,9 +25,21 @@ h2 {
   width: 100%;
   text-decoration: none;
   text-align: center;
+  animation-name: move-in;
+  animation-direction: forwards;
+  animation-duration: 3s;
+}
+@keyframes move-in {
+  from {
+    margin-left: -800px;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 #logo h1 {
-  color: #fff;
+  color: #ccc;
   font-family: "lato", sans-serif;
   font-weight: bold;
   font-size: 250%;
@@ -53,11 +61,12 @@ h2 {
 #menu a {
   font-size: 215%;
   text-decoration: none;
-  color: #fff;
+  color: #ccc;
   font-weight: bold;
+  text-align: center;
 }
 #menu a:hover {
-  border-bottom: 1.5px solid black;
+  border-bottom: 2px solid #000;
 }
 /* Home page */
 .home-section {
@@ -79,25 +88,37 @@ h2 {
   flex-direction: row;
 }
 #socials a {
-  color: #fff;
   font-size: 220%;
 }
-#facebook i:hover {
+#facebook i {
   color: #2c57ac;
 }
-#instagram i:hover {
+#facebook i:hover {
+  color: #ccc;
+}
+#instagram i {
   color: #db304c;
 }
-#twitter i:hover {
+#instagram i:hover {
+  color: #ccc;
+}
+#twitter i {
   color: #00acee;
 }
+#twitter i:hover {
+  color: #ccc;
+}
+#pin i {
+  color: #ff1500;
+}
 #pin i:hover {
-  color: #ee1b08;
+  color: #ccc;
 }
 #copyright {
   display: inline-flex;
   width: 100%;
-  padding-top: 3%;
+  padding-top: 30px;
+  padding-bottom: 10px;
   justify-content: center;
 }
 #copyright h3 {
@@ -127,21 +148,28 @@ h2 {
   top: 52%;
   left: 15%;
   width: 15%;
-  transform: translateY(-50%);
-  height: fit-content;
-  text-align: center;
-  font-size: 170%;
   padding: 30px;
+  transform: translateY(-50%);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  font-weight: bolder;
+  background: rgba(0, 0, 0, 0.8);
+}
+#contact-info h2 {
+  padding: 8px;
+  text-align: center;
+  font-size: 4vh;
+  color: #ccc;
+}
+#contact-info p {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 3vh;
+  color: #ccc;
 }
 .contact-form {
   max-width: 550px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   padding: 30px;
   border-radius: 5px;
@@ -150,7 +178,7 @@ h2 {
 .wrapper {
   position: absolute;
   top: 52%;
-  left: 10%;
+  left: 15%;
   transform: translateY(-50%);
   width: 100%;
   padding: 0 20px;
@@ -172,9 +200,9 @@ h2 {
 .msg textarea {
   margin: 10px 0;
   background: transparent;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ccc;
   padding: 10px;
-  color: #fff;
+  color: #ccc;
   width: 100%;
 }
 .msg textarea {
@@ -182,7 +210,7 @@ h2 {
 }
 ::-webkit-input-placeholder {
   text-align: center;
-  color: #fff;
+  color: #ccc;
   font-size: larger;
 }
 ::moz-input-placeholder {
@@ -193,11 +221,11 @@ h2 {
 }
 .btn button {
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(74, 75, 74, 0.4);
   text-align: center;
   padding: 15px;
   border-radius: 4px;
-  color: #fff;
+  color: #ccc;
   font-size: 115%;
   font-weight: bold;
   cursor: pointer;
