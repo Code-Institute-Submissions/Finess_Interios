@@ -33,7 +33,62 @@
         </ul>
       </section>
     </header>
-    <section id="cont-page"></section>
+    <section id="body-contact">
+      <form method="POST" action="https://formdump.codeinstitute.net/">
+        <div class="wrapper">
+          <h2>Please leave your details and we will call you back</h2>
+          <div class="contact-form">
+            <div class="input-fields">
+              <label for="full_name"></label>
+              <input
+                type="text"
+                class="input"
+                id="full_name"
+                placeholder="Full Name"
+                required
+              />
+              <label for="email_address"></label>
+              <input
+                type="text"
+                class="input"
+                id="email_address"
+                placeholder="Email Address"
+                required
+              />
+              <label for="phone_number"></label>
+              <input
+                type="tel"
+                class="input"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                id="phone_number"
+                placeholder="Phone Number"
+                required
+              />
+              <small>Format: 000-000-0000</small>
+              <label for="inquire_type"></label>
+              <input
+                type="text"
+                class="input"
+                id="inquire_type"
+                placeholder="Type of Inquire"
+                required
+              />
+            </div>
+            <div class="msg">
+              <textarea placeholder="Message"></textarea>
+              <div class="btn"><button>Submit</button></div>
+            </div>
+          </div>
+        </div>
+        <div <div id="contact-info">
+          <h2>FINNESSE INTERIORS</h2>
+          <p>
+            Artillerigatan 26, 114 51 Stockholm <br />
+            Phone: +46 (0)8 97 55 66 Email: office@finesseab.com
+          </p>
+        </div>
+      </form>
+    </section>
     <section id="footer">
       <div id="socials">
         <div id="facebook">

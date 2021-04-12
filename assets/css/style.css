@@ -54,6 +54,7 @@ h2 {
 #menu a:hover {
   border-bottom: 1.5px solid black;
 }
+/* Home page */
 /* main image area */
 #main-img {
   background-image: url(../images/mainimg.webp);
@@ -183,6 +184,98 @@ h2 {
   font-size: 100%;
   text-align: center;
 }
+/* Contact Page  */
+#body-contact {
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/contactpage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact-info {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 15%;
+  transform: translateY(-50%);
+  height: fit-content;
+  text-align: center;
+  font-size: 150%;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  color: #000;
+}
+.wrapper {
+  position: absolute;
+  top: 52%;
+  left: 20%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+.wrapper h2 {
+  position: absolute;
+  top: -15%;
+  left: 31%;
+}
+.contact-form {
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.contact-form small {
+  color: #fff;
+  text-align: center;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields,
+.msg {
+  width: 48%;
+}
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+}
+.msg textarea {
+  height: 201px;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+  color: #fff;
+  font-size: larger;
+}
+::moz-input-placeholder {
+  color: #fff;
+}
+::ms-input-placeholder {
+  color: #fff;
+}
+.btn button {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 15px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 115%;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
 /* Meadia Queries */
 @media screen and (max-width: 1200px) {
   #logo,
@@ -206,7 +299,7 @@ h2 {
     column-gap: 0;
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
   #logo {
     font-size: 100%;
   }
@@ -220,8 +313,18 @@ h2 {
     column-count: 3;
     column-gap: 0;
   }
+  .contact-form {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 80px;
+  }
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
   #logo {
     font-size: 100%;
   }
