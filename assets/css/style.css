@@ -18,7 +18,7 @@ h2 {
 #logo {
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 100%;
   text-decoration: none;
   text-align: center;
   animation-name: move-in;
@@ -38,7 +38,7 @@ h2 {
   color: #ccc;
   font-family: "lato", sans-serif;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 4vw;
 }
 #logo,
 #menu {
@@ -55,7 +55,7 @@ h2 {
   list-style-type: none;
 }
 #menu a {
-  font-size: 1.5vw;
+  font-size: 150%;
   text-decoration: none;
   color: #ccc;
   font-weight: bold;
@@ -169,7 +169,7 @@ h2 {
 }
 #about-text p {
   font-size: 1vw;
-  line-height: 30px;
+  line-height: 3.1vh;
   text-align: center;
   color: #ccc;
   padding-top: 10px;
@@ -273,19 +273,13 @@ h2 {
   text-transform: uppercase;
 }
 /* Meadia Queries */
-@media screen and (max-width: 1200px) {
-  #logo,
-  #menu {
-    font-size: smaller;
-  }
-}
 @media screen and (max-width: 900px) {
-  #logo {
-    font-size: 100%;
-    text-align: center;
+  #logo h1 {
+    padding-top: 20px;
+    font-size: 6vw;
   }
   #menu a {
-    font-size: 150%;
+    font-size: 3vw;
   }
   #gallery-area {
     clear: both;
@@ -293,14 +287,32 @@ h2 {
     line-height: 0;
     column-count: 3;
     column-gap: 0;
+  }
+  #about-text {
+    position: absolute;
+    top: 35%;
+    left: 19vw;
+    width: 55vw;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 30px;
+  }
+  #about-text h3 {
+    font-size: 4vw;
+  }
+  #about-text p {
+    font-size: 2.5vw;
+    line-height: 3.5vh;
   }
 }
 @media screen and (max-width: 600px) {
-  #logo {
-    font-size: 100%;
+  #logo h1 {
+    padding-top: 20px;
+    font-size: 7vw;
   }
   #menu a {
-    font-size: 130%;
+    font-size: 4vw;
   }
   #gallery-area {
     clear: both;
@@ -308,6 +320,23 @@ h2 {
     line-height: 0;
     column-count: 3;
     column-gap: 0;
+  }
+  #about-text {
+    position: absolute;
+    top: 35%;
+    left: 20vw;
+    width: 50vw;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 30px;
+  }
+  #about-text h3 {
+    font-size: 5vw;
+  }
+  #about-text p {
+    font-size: 2.5vw;
+    line-height: 2.5vh;
   }
   .contact-form {
     flex-direction: column;
@@ -321,17 +350,28 @@ h2 {
   }
 }
 @media screen and (max-width: 370px) {
-  #logo {
-    font-size: 100%;
-  }
-  #menu a {
-    font-size: 130%;
-  }
   #gallery-area {
     clear: both;
     width: 100%;
     line-height: 0;
     column-count: 3;
     column-gap: 0;
+  }
+  #about-text {
+    position: absolute;
+    top: 30%;
+    left: 20vw;
+    width: 42vw;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 30px;
+  }
+  #about-text h3 {
+    font-size: 5vw;
+  }
+  #about-text p {
+    font-size: 3vw;
+    line-height: 2vh;
   }
 }
