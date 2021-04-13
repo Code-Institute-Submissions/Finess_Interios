@@ -74,12 +74,12 @@ h2 {
   font-size: 4.85vw;
   padding-left: 10px;
   animation-name: move-in;
-  animation-direction: forwards;
-  animation-duration: 3s;
+  animation-direction: backwards;
+  animation-duration: 2s;
 }
 @keyframes move-in {
   from {
-    margin-left: -700px;
+    margin-left: -50%;
   }
 
   to {
@@ -153,11 +153,11 @@ h2 {
 /* About page */
 .about-page div {
   width: 100vw;
-  height: 600px;
+  height: max-content;
 }
 #about-img {
   width: 100vw;
-  height: 600px;
+  height: 800px;
   background-image: url(../images/about.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -189,7 +189,6 @@ h2 {
   position: relative;
   left: 60vw;
   border: none;
-  opacity: 0.8;
 }
 
 /* Contact Page  */
@@ -288,179 +287,4 @@ h2 {
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
-}
-/* Media Queries */
-@media screen and (max-width: 900px) {
-  #logo h1 {
-    padding-top: 20px;
-    font-size: 6vw;
-  }
-  #menu a {
-    font-size: 3vw;
-  }
-  #gallery-area {
-    clear: both;
-    width: 100%;
-    line-height: 0;
-    column-count: 3;
-    column-gap: 0;
-  }
-  #about-text {
-    position: absolute;
-    top: 45%;
-    left: 19vw;
-    width: 60vw;
-  }
-  #about-text h3 {
-    font-size: 4vw;
-  }
-  #about-text p {
-    font-size: 2.5vw;
-    line-height: 3.5vh;
-  }
-  .contact-form {
-    position: absolute;
-    left: 30vw;
-    width: 40vw;
-    height: fit-content;
-  }
-  ::-webkit-input-placeholder {
-    font-size: 2.4vw;
-  }
-  .btn button {
-    font-size: 2vw;
-  }
-  #contact-info {
-    position: absolute;
-    top: 80%;
-    left: 8.5vw;
-    width: 30vw;
-    padding: 10px;
-  }
-  #contact-info h2,
-  #contact-info p {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (max-width: 600px) {
-  .home-section h2 {
-    position: relative;
-    top: 20vh;
-    font-size: 8vw;
-    color: #ccc;
-  }
-  #logo h1 {
-    padding-top: 20px;
-    font-size: 7vw;
-  }
-  #menu a {
-    font-size: 4vw;
-  }
-  #gallery-area {
-    clear: both;
-    width: 100%;
-    line-height: 0;
-    column-count: 3;
-    column-gap: 0;
-  }
-  #about-text {
-    position: absolute;
-    top: 45%;
-    left: 20vw;
-    width: 50vw;
-  }
-
-  .contact-form {
-    flex-direction: column;
-    position: absolute;
-    left: -9vw;
-    width: 75vw;
-    height: fit-content;
-  }
-  .msg textarea {
-    height: 70px;
-  }
-  .input-fields,
-  .msg {
-    width: 100%;
-  }
-  ::-webkit-input-placeholder {
-    font-size: 2.5vw;
-  }
-  .btn button {
-    font-size: 2vw;
-  }
-  #contact-info {
-    position: absolute;
-    top: 42%;
-    left: 12vw;
-    width: 70vw;
-    padding: 10px;
-  }
-  #contact-info h2,
-  #contact-info p {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (max-width: 370px) {
-  .home-section h2 {
-    position: relative;
-    top: 20vh;
-    font-size: 8vw;
-    color: #ccc;
-  }
-
-  #gallery-area {
-    clear: both;
-    width: 100%;
-    line-height: 0;
-    column-count: 3;
-    column-gap: 0;
-  }
-  #about-text {
-    position: relative;
-    top: 0%;
-    left: 25.5vw;
-    width: 42vw;
-    margin-bottom: 1%;
-    padding: 12px;
-  }
-  #about-text h3 {
-    font-size: 4.5vw;
-  }
-  #about-text p {
-    font-size: 3vw;
-  }
-  .contact-form {
-    flex-direction: column;
-    position: absolute;
-    left: -10vw;
-    font-size: 3vw;
-    width: 75vw;
-    height: fit-content;
-  }
-  .msg textarea {
-    height: 70px;
-  }
-  .input-fields,
-  .msg {
-    width: 100%;
-  }
-  ::-webkit-input-placeholder {
-    font-size: 5vw;
-  }
-  .btn button {
-    font-size: 4vw;
-  }
-  #contact-info {
-    position: absolute;
-    top: 42%;
-    left: 20vw;
-    width: 55vw;
-    padding: 10px;
-  }
-  #contact-info h2,
-  #contact-info p {
-    font-size: 3.5vw;
-  }
 }
