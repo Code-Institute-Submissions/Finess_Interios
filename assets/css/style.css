@@ -12,6 +12,7 @@ h2 {
   font-family: "roboto", sans-serif;
   text-transform: uppercase;
 }
+/* Header Section */
 .nav-background {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -137,7 +138,7 @@ h2 {
   text-align: center;
   color: #ccc;
 }
-/* Gallery area */
+/* Gallery page */
 #gallery-area {
   clear: both;
   width: 100%;
@@ -183,6 +184,12 @@ h2 {
   text-align: center;
   color: #ccc;
   padding-top: 10px;
+}
+#about-video {
+  position: relative;
+  left: 60vw;
+  border: none;
+  opacity: 0.8;
 }
 
 /* Contact Page  */
