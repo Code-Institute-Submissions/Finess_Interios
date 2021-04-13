@@ -206,10 +206,6 @@ about-page div {
   text-align: center;
   text-transform: uppercase;
 }
-.contact-form small {
-  color: #fff;
-  text-align: center;
-}
 .input-fields,
 .msg {
   width: 50%;
@@ -276,10 +272,7 @@ about-page div {
     text-align: center;
     text-transform: uppercase;
   }
-  .contact-form small {
-    color: #fff;
-    text-align: center;
-  }
+
   .input-fields,
   .msg {
     width: 100%;
@@ -387,10 +380,6 @@ about-page div {
     color: #ccc;
     text-align: center;
     text-transform: uppercase;
-  }
-  .contact-form small {
-    color: #fff;
-    text-align: center;
   }
   .input-fields,
   .msg {
