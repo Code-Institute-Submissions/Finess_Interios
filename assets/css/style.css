@@ -23,7 +23,7 @@ h2 {
 }
 
 #logo h1 {
-  color: #ccc;
+  color: #000;
   font-family: "roboto", sans-serif;
   font-weight: bold;
   font-size: 4vw;
@@ -57,12 +57,12 @@ h2 {
 #menu a {
   font-size: 150%;
   text-decoration: none;
-  color: #ccc;
+  color: #000;
   font-weight: bold;
   text-align: center;
 }
 #menu a:hover {
-  color: #000;
+  color: #999;
 }
 /* Home page */
 .home-section {
@@ -112,28 +112,28 @@ h2 {
   font-size: 220%;
 }
 #facebook i {
-  color: #2c57ac;
+  color: #000;
 }
 #facebook i:hover {
-  color: #ccc;
+  color: #2c57ac;
 }
 #instagram i {
-  color: #db304c;
+  color: #000;
 }
 #instagram i:hover {
-  color: #ccc;
+  color: #db304c;
 }
 #twitter i {
-  color: #00acee;
+  color: #000;
 }
 #twitter i:hover {
-  color: #ccc;
+  color: #00acee;
 }
 #pin i {
-  color: #ff1500;
+  color: #000;
 }
 #pin i:hover {
-  color: #ccc;
+  color: #ff1500;
 }
 #copyright {
   display: inline-flex;
@@ -145,7 +145,7 @@ h2 {
 #copyright h3 {
   font-size: 1.1vw;
   text-align: center;
-  color: #ccc;
+  color: #000;
 }
 /* Gallery page */
 #gallery-area {
