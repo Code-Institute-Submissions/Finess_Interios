@@ -11,28 +11,20 @@
   </head>
   <body>
     <header>
-      <section class="nav-background">
-        <nav id="nav-bar">
-          <a href="./index.html" id="logo">
-            <h1>Finesse Interiors</h1>
+      <div class="topnav">
+          <a href="./index.html" class="active">
+          <h1>finness interior</h1>
           </a>
-          <ul id="menu">
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-            <li>
-              <a href="./gallery.html">Gallery</a>
-            </li>
-            <li>
-              <a href="./about.html">About</a>
-            </li>
-            <li>
-              <a href="./contact.html">Contact us</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-    </header>
+          <div id="mylinks">
+            <a href="./gallery.html">Gallery</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
     <section class="about-page">
       <div id="about-img">
         <div id="about-text">
@@ -84,6 +76,7 @@
         </h3>
       </div>
     </section>
+    <script src="./assets/js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/cc1a788000.js"
       crossorigin="anonymous"
