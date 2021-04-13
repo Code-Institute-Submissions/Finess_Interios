@@ -5,7 +5,8 @@
   border: none;
 }
 body {
-  font-family: "roboto", sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: "lato", sans-serif;
 }
 h1,
 h2 {
@@ -13,9 +14,6 @@ h2 {
   text-transform: uppercase;
 }
 /* Header Section */
-.nav-background {
-  background: rgba(0, 0, 0, 0.8);
-}
 #logo {
   display: flex;
   justify-content: space-evenly;
@@ -26,9 +24,21 @@ h2 {
 
 #logo h1 {
   color: #ccc;
-  font-family: "lato", sans-serif;
+  font-family: "roboto", sans-serif;
   font-weight: bold;
   font-size: 4vw;
+  animation-name: move-in-right;
+  animation-duration: 2s;
+  animation-direction: forwards;
+}
+@keyframes move-in-right {
+  from {
+    margin-right: -50%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
 }
 #logo,
 #menu {
@@ -74,7 +84,7 @@ h2 {
   font-size: 4.85vw;
   padding-left: 10px;
   animation-name: move-in;
-  animation-direction: backwards;
+  animation-direction: forwards;
   animation-duration: 2s;
 }
 @keyframes move-in {
@@ -88,7 +98,6 @@ h2 {
 }
 /* Footer Section */
 #footer {
-  background: rgba(0, 0, 0, 0.8);
   width: 100vw;
   padding-top: 40px;
 }
