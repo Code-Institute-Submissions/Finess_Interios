@@ -30,15 +30,6 @@ h2 {
   animation-duration: 2s;
   animation-direction: forwards;
 }
-@keyframes move-in-right {
-  from {
-    margin-right: -50%;
-  }
-
-  to {
-    margin-right: 0%;
-  }
-}
 #menu {
   line-height: 75px;
 }
@@ -62,7 +53,6 @@ h2 {
 #menu a:hover {
   color: #999;
 }
-
 /* Home page */
 .home-section {
   width: 100%;
@@ -82,20 +72,7 @@ h2 {
   top: 25vh;
   font-size: 4.85vw;
   padding-left: 10px;
-  animation-name: move-in;
-  animation-direction: forwards;
-  animation-duration: 2s;
 }
-@keyframes move-in {
-  from {
-    margin-left: -50%;
-  }
-
-  to {
-    margin-left: 0%;
-  }
-}
-
 /* Footer Section */
 #footer {
   width: 100vw;
@@ -163,11 +140,11 @@ h2 {
 
 /* About page */
 .about-page div {
-  width: 100vw;
-  height: max-content;
+  width: 100%;
+  height: fit-content;
 }
 #about-img {
-  width: 100vw;
+  width: 100%;
   height: 800px;
   background-image: url(../images/about.jpg);
   background-position: center center;
@@ -196,11 +173,6 @@ h2 {
   color: #ccc;
   padding-top: 10px;
 }
-#about-video {
-  position: relative;
-  left: 60vw;
-  border: none;
-}
 
 /* Contact Page  */
 #body-contact {
@@ -213,24 +185,25 @@ h2 {
 }
 #contact-info {
   position: absolute;
-  top: 52%;
-  left: 15%;
+  top: 32%;
+  left: 12.5%;
   transform: translateY(-50%);
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   background: rgba(0, 0, 0, 0.8);
+  width: 67.5%;
 }
 #contact-info h2 {
   padding: 8px;
   text-align: center;
-  font-size: 2.1vw;
+  font-size: 150%;
   color: #ccc;
 }
 #contact-info p {
   padding-top: 4px;
   text-align: center;
-  font-size: 1.1vw;
+  font-size: 100%;
   color: #ccc;
 }
 .contact-form {
@@ -244,8 +217,8 @@ h2 {
 }
 .wrapper {
   position: absolute;
-  top: 52%;
-  left: 15%;
+  top: 65%;
+  left: -3%;
   transform: translateY(-50%);
   width: 100%;
   padding: 0 20px;
@@ -253,11 +226,6 @@ h2 {
 .contact-form small {
   color: #fff;
   text-align: center;
-}
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  margin-right: 4%;
 }
 .input-fields,
 .msg {
@@ -298,11 +266,68 @@ h2 {
   cursor: pointer;
   text-transform: uppercase;
 }
+
 /* mobile portrait */
 @media all and (max-width: 370px) {
+  #contact-info {
+    width: 99%;
+  }
+  #contact-info h2 {
+    padding: 1px;
+    text-align: center;
+    font-size: 150%;
+    color: #ccc;
+  }
+  #contact-info p {
+    padding-top: 1px;
+    text-align: center;
+    font-size: 100%;
+    color: #ccc;
+  }
+  .btn button {
+    font-size: 100%;
+  }
+  .input-fields .input,
+  .msg textarea {
+    width: 80%;
+  }
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+    color: #ccc;
+    font-size: 100%;
+  }
+  .wrapper {
+    position: absolute;
+    top: 85%;
+    left: -5%;
+  }
+  #contact-info {
+    position: absolute;
+    top: 53%;
+    left: -5%;
+    width: 100%;
+  }
+
+  #about-text h3 {
+    font-size: 100%;
+  }
+  #about-text p {
+    font-size: 100%;
+  }
+  #about-text {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+  }
+  #about-video {
+    display: none;
+  }
   #logo h1 {
     font-size: 2.2em;
-    animation-name: move-in-top;
   }
   #menu {
     line-height: 35px;
@@ -313,15 +338,6 @@ h2 {
     flex-direction: column;
     width: 100%;
   }
-  @keyframes move-in-top {
-    from {
-      margin-top: -10%;
-    }
-    to {
-      margin-to: 0%;
-    }
-  }
-
   .home-section {
     position: relative;
     top: -10;
@@ -335,22 +351,24 @@ h2 {
     font-size: 3em;
   }
 }
+
 /* mobile landscape */
 @media all and (max-width: 812px) {
+  #about-text h3 {
+    font-size: 180%;
+  }
+  #about-text p {
+    font-size: 120%;
+  }
+  #about-text {
+    position: absolute;
+    top: 60%;
+  }
   #logo h1 {
     font-size: 3em;
-    animation-name: move-in-top;
   }
-  @keyframes move-in-top {
-    from {
-      margin-top: -10%;
-    }
-
-    to {
-      margin-to: 0%;
-    }
+  .home-section h2 {
+    color: #ccc;
+    font-size: 3em;
   }
-}
-
-@media all and (max-width: 900px) {
 }
