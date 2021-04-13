@@ -13,7 +13,7 @@ h2 {
   text-transform: uppercase;
 }
 .nav-background {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
 }
 #logo {
   display: flex;
@@ -21,19 +21,8 @@ h2 {
   width: 100%;
   text-decoration: none;
   text-align: center;
-  animation-name: move-in;
-  animation-direction: forwards;
-  animation-duration: 3s;
 }
-@keyframes move-in {
-  from {
-    margin-left: -800px;
-  }
 
-  to {
-    margin-left: 0%;
-  }
-}
 #logo h1 {
   color: #ccc;
   font-family: "lato", sans-serif;
@@ -72,12 +61,33 @@ h2 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
 }
-/* main image area */
+.home-section div {
+  display: flex;
+  width: 50vw;
+  height: fit-content;
+}
+.home-section h2 {
+  position: relative;
+  top: 25vh;
+  font-size: 4.85vw;
+  padding-left: 10px;
+  animation-name: move-in;
+  animation-direction: forwards;
+  animation-duration: 3s;
+}
+@keyframes move-in {
+  from {
+    margin-left: -700px;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
 /* Footer Section */
 #footer {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   width: 100vw;
   padding-top: 40px;
 }
@@ -272,7 +282,7 @@ h2 {
   cursor: pointer;
   text-transform: uppercase;
 }
-/* Meadia Queries */
+/* Media Queries */
 @media screen and (max-width: 900px) {
   #logo h1 {
     padding-top: 20px;
@@ -326,6 +336,12 @@ h2 {
   }
 }
 @media screen and (max-width: 600px) {
+  .home-section h2 {
+    position: relative;
+    top: 20vh;
+    font-size: 8vw;
+    color: #ccc;
+  }
   #logo h1 {
     padding-top: 20px;
     font-size: 7vw;
@@ -379,8 +395,14 @@ h2 {
     font-size: 2.5vw;
   }
 }
-
 @media screen and (max-width: 370px) {
+  .home-section h2 {
+    position: relative;
+    top: 20vh;
+    font-size: 8vw;
+    color: #ccc;
+  }
+
   #gallery-area {
     clear: both;
     width: 100%;
@@ -389,17 +411,18 @@ h2 {
     column-gap: 0;
   }
   #about-text {
-    position: absolute;
-    top: 45%;
-    left: 20vw;
+    position: relative;
+    top: 0%;
+    left: 25.5vw;
     width: 42vw;
+    margin-bottom: 1%;
+    padding: 12px;
   }
   #about-text h3 {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
   #about-text p {
     font-size: 3vw;
-    line-height: 2vh;
   }
   .contact-form {
     flex-direction: column;
