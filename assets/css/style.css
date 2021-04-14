@@ -6,6 +6,7 @@
 }
 body {
   font-family: "lato", sans-serif;
+  background-color: #ccc;
 }
 h1 {
   text-transform: uppercase;
@@ -62,19 +63,41 @@ h1 {
   border-radius: 2px;
   color: #ccc;
 }
-#hero-dialog h3 {
+#hero-dialog-2 {
+  position: absolute;
+  top: 60%;
+  left: 59%;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  color: #ccc;
+}
+#hero-dialog-3 {
+  position: absolute;
+  top: 80%;
+  left: 59%;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  color: #ccc;
+}
+#hero-dialog h3,
+#hero-dialog-2 h3,
+#hero-dialog-3 h3 {
   font-size: 120%;
   text-align: center;
   text-transform: uppercase;
   padding: 8px;
 }
-#hero-dialog p {
+#hero-dialog p,
+#hero-dialog-2 p,
+#hero-dialog-3 p {
   font-size: 100%;
-  text-align: l;
+  text-align: center;
   padding: 8px;
 }
 #hero-img {
-  background-image: url(../images/home_portrait.jpg);
+  background-image: url();
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -243,10 +266,16 @@ h1 {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
+  .hero-section h2 {
+    position: relative;
+    top: 1%;
+    left: 1%;
+  }
+
   #hero-dialog {
     position: absolute;
-    top: 70%;
+    top: 45%;
     left: 4%;
   }
   #address {
