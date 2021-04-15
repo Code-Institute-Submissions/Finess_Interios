@@ -6,7 +6,12 @@
 }
 body {
   font-family: "lato", sans-serif;
-  background: linear-gradient(to top, rgb(142, 45, 226), rgb(74, 0, 224));
+  background: linear-gradient(
+    to right,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(44, 83, 100)
+  );
   color: #000;
 }
 h1 {
@@ -17,7 +22,7 @@ h1 {
   padding: 20px;
 }
 .active {
-  background: rgba(95, 36, 212, 0.4);
+  background: rgba(0, 0, 0, 0.3);
   color: #ccc;
 }
 .topnav {
@@ -37,100 +42,22 @@ h1 {
 .topnav a:hover {
   color: #ce181e;
 }
+/* Home page section */
 .hero-section {
+  position: relative;
   width: 100%;
   height: 100vh;
 }
-.hero-section h4 {
-  animation-name: move-in-top;
-  animation-duration: 2s;
-}
-.hero-section > h3,
 .hero-section h2 {
-  animation-name: move-in;
-  animation-duration: 2s;
+  color: #ccc;
+  text-decoration: none;
 }
-.hero-section h2 {
-  position: relative;
-  top: 20%;
-}
-.hero-section h2,
-.hero-section h3,
-.hero-section h4 {
-  font-size: 220%;
-  text-transform: uppercase;
-  width: 50%;
-}
-@keyframes move-in {
-  from {
-    margin-left: -50%;
-  }
-  to {
-    margin-left: 1%;
-  }
-}
-@keyframes move-in-top {
-  from {
-    top: -50%;
-  }
-  to {
-    bottom: 5%;
-  }
-}
-#hero-dialog {
-  position: absolute;
-  top: 20%;
-  left: 59%;
-  width: 40%;
-  background: #ffd615;
-  border-radius: 2px;
-  color: #000;
-}
-#hero-dialog-2 {
-  position: absolute;
-  top: 60%;
-  left: 59%;
-  width: 40%;
-  background: #ffd615;
-  border-radius: 2px;
-  color: #000;
-}
-#hero-dialog-3 {
-  position: absolute;
-  top: 80%;
-  left: 59%;
-  width: 40%;
-  background: #ffd615;
-  border-radius: 2px;
-  color: #000;
-}
-#hero-dialog h3,
-#hero-dialog-2 h3,
-#hero-dialog-3 h3 {
-  font-size: 120%;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 8px;
-}
-#hero-dialog p,
-#hero-dialog-2 p,
-#hero-dialog-3 p {
-  font-size: 100%;
-  text-align: center;
-  padding: 8px;
-}
-#hero-img {
-  background-image: url();
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-clip: content-box;
-}
+§
 /* Footer Section */
 #footer {
   width: 100%;
   padding-top: 40px;
-  background: #007cc0;
+  background: rgba(0, 0, 0, 0.3);
 }
 #socials {
   display: inline-flex;
@@ -192,22 +119,53 @@ h1 {
 }
 
 /* larger screen devices */
-@media screen and (min-width: 721px) and (max-width: 2000px) {
+@media screen and (min-width: 1008px) and (-webkit-min-device-pixel-ratio: 1) {
   /* about us page */
   .about-page {
     width: 100%;
     height: 100vh;
   }
+  #about-text {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
+  }
+  #ceo-img img {
+    position: relative;
+    top: 80%;
+    left: 15%;
+    width: 70%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 2%;
+  }
+  #about-text h3 {
+    font-size: 150%;
+    text-align: center;
+    padding: 10px;
+    color: #ccc;
+  }
+  #about-text p {
+    font-size: 100%;
+    text-align: center;
+    line-height: 25px;
+    color: #ccc;
+  }
+
   /* contact pacge for large screens */
   .main-contact-section {
+    position: absolute;
     width: 100%;
     height: 100vh;
   }
   .wrapper {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     width: 80%;
     max-width: 550px;
     background: rgba(0, 0, 0, 0.8);
@@ -294,8 +252,8 @@ h1 {
     margin-top: 20px;
   }
 }
-/* tablets and ipads */
-@media all and (max-width: 1007px) {
+/* tablets and ipads 641px to 1007px */
+@media only screen and (min-width: 641px) and (max-width: 1007px) and (-webkit-min-device-pixel-ratio: 2) {
   /* about page */
   .about-page {
     width: 100%;
@@ -304,154 +262,237 @@ h1 {
   #about-text {
     position: absolute;
     top: 40%;
-    left: 5%;
-    width: 90%;
-    background: rgba(0, 0, 0, 0.9);
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
-  }
-  #about-text h3 {
-    font-size: 150%;
-    text-align: center;
-    padding-bottom: 3px;
-    color: #ccc;
-  }
-  #about-text p {
-    font-size: 100%;
-    text-align: center;
-    line-height: 25px;
-    color: #ccc;
-  }
-  #ceo-img img {
-    position: absolute;
-    top: 80%;
-    left: 30%;
-    width: 40%;
-    height: auto;
-    border: 2px solid black;
-    border-radius: 20%;
-  }
-}
-/* mobile phone devices */
-@media all and (max-width: 530px) {
-  /* navigation bar max >>> 530px */
-  .topnav a {
-    font-size: 116%;
-  }
-  .active {
-    background: rgba(95, 36, 212, 0.4);
-    color: #ccc;
-  }
-  .topnav {
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.5);
-    position: relative;
-  }
-  .topnav a {
-    padding: 10px 10px;
-    text-decoration: none;
-    line-height: 20px;
-    display: block;
-    color: #ccc;
-    text-align: center;
-  }
-  .topnav a:hover {
-    color: #ff1500;
-  }
-  /* home page max >>> 720px */
-  .hero-section > h3 {
-    position: absolute;
-    top: 95%;
-    left: 1%;
-    width: 50%;
-  }
-  .hero-section > h4 {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    width: 50%;
-  }
-  .hero-section h2 {
-    position: absolute;
-    top: 35%;
-    width: 50%;
-    margin-left: 1%;
-  }
-  #hero-dialog {
-    position: absolute;
-    top: 35%;
-    left: 60%;
-    width: 40%;
-    background: #ffd615;
-    border-radius: 2px;
-    color: #000;
-  }
-  #hero-dialog-2 {
-    position: absolute;
-    top: 65%;
-    left: 0%;
-    width: 40%;
-    background: #ffd615;
-    border-radius: 2px;
-    color: #000;
-  }
-  #hero-dialog-3 {
-    position: absolute;
-    top: 95%;
-    left: 60%;
-    width: 40%;
-    background: #ffd615;
-    border-radius: 2px;
-    color: #000;
-  }
-  #hero-dialog h3,
-  #hero-dialog-2 h3,
-  #hero-dialog-3 h3 {
-    font-size: 120%;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 8px;
-  }
-  #hero-dialog p,
-  #hero-dialog-2 p,
-  #hero-dialog-3 p {
-    font-size: 100%;
-    text-align: left;
-    padding: 8px;
-  }
-  /* about page max >>> 720px */
-  .about-page {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-  #ceo-img img {
-    position: absolute;
-    top: 8%;
-    left: 10%;
-    transform: translateY(-5%);
-    width: 80vw;
-  }
-  #about-text {
-    position: absolute;
-    top: 55%;
     left: 8%;
     width: 80vw;
     transform: translateY(-5%);
     padding: 10px;
     color: #ccc;
     border-radius: 2px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.5);
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
+  }
+  #ceo-img img {
+    position: relative;
+    left: 17%;
+    width: 50vw;
+  }
+
+  #about-text h3 {
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: 3px;
+    color: #ccc;
+    padding: 10px;
+  }
+  #about-text p {
+    font-size: 100%;
+    text-align: center;
+    line-height: 25px;
+    color: #ccc;
+    padding: 10px;
+  }
+
+  /* conctact page */
+  .main-contact-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 550px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .wrapper .title h1 {
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .wrapper .title p {
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .contact-form {
+    display: flex;
+  }
+
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+
+  .input-fields,
+  .msg {
+    width: 48%;
+  }
+
+  .input-fields .input {
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+  }
+
+  .msg textarea {
+    position: relative;
+    left: 10%;
+    height: 80%;
+    width: 100%;
+    margin: 10px 0;
+    color: #ccc;
+    background: transparent;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ccc;
+    text-align: center;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ccc;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ccc;
+  }
+  .btn button {
+    position: relative;
+    left: 20%;
+    width: 80%;
+    background: #054547;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  #address {
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+/* mobile phone devices */
+@media only screen and (min-width: 375px) and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* navigation bar max >>> px */
+  .topnav a {
+    font-size: 116%;
+  }
+  /* home page */
+  #hero1-box,
+  #hero2-box,
+  #hero3-box {
+    position: absolute;
+    width: 40%;
+    height: auto;
+  }
+  #hero1-box {
+    left: 1%;
+    top: 2%;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+  }
+  #hero1-box img {
+    position: relative;
+    width: 80%;
+    left: 5%;
+  }
+  #hero2-box {
+    left: 50%;
+    top: 33%;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+  }
+  #hero2-box img {
+    position: relative;
+    width: 80%;
+    left: 5%;
+  }
+  #hero3-box {
+    left: 1%;
+    top: 80%;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+  }
+  #hero3-box img {
+    position: relative;
+    width: 80%;
+    left: 5%;
+  }
+
+  #lower-heading {
+    top: 45%;
+  }
+  #mid-heading {
+    top: 40%;
+  }
+  #top-heading {
+    top: 35%;
+  }
+  #top-heading,
+  #mid-heading,
+  #lower-heading {
+    position: absolute;
+  }
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* about page max >>> 720px */
+  .about-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  #about-text {
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    width: 80vw;
+    transform: translateY(-5%);
+    padding: 10px;
+    color: #ccc;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
+  }
+  #ceo-img img {
+    position: relative;
+    left: 13%;
+    width: 60vw;
   }
   #about-text h3 {
     font-size: 110%;
     text-align: center;
-    padding-bottom: 3px;
+    padding: 10px;
   }
   #about-text p {
     font-size: 90%;
     text-align: center;
     line-height: 25px;
+    padding: 10px;
   }
   .about-video {
     display: none;
@@ -538,7 +579,7 @@ h1 {
     position: relative;
     left: 20%;
     width: 80%;
-    background: #00acee;
+    background: #054547;
     text-align: center;
     padding: 15px;
     border-radius: 5px;
@@ -551,5 +592,9 @@ h1 {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+  }
+  #gallery-area {
+    width: 100%;
+    height: auto;
   }
 }
