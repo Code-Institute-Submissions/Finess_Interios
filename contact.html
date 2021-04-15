@@ -12,19 +12,25 @@
   <body>
     <header>
       <div class="topnav">
-        <a href="./index.html" class="active">
-          <h1>finness Interiors</h1>
+        <div>
+          <a href="./index.html"><h1>Finess Interiors</h1></a>
+          <div id="myLinks" class="active">
+            <a href="./index.html"><h3>Home</h3></a>
+            <a href="./gallery.html"><h3>Gallery</h3></a>
+            <a href="./about.html"><h3>About</h3></a>
+            <a href="./contact.html"><h3>Contact</h3></a>
+          </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
         </a>
-        <a href="./gallery.html">Gallery</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact Us</a>
       </div>
     </header>
     <section class="main-contact-section">
       <div class="wrapper">
         <form method="POST" action="https://formdump.codeinstitute.net/">
           <div class="title">
-            <h1>contact us form</h1>
+            <h1>Contact Form</h1>
             <p>Please leave your details with us and we'll call you back!</p>
           </div>
           <div class="contact-form">
@@ -107,6 +113,7 @@
         </h3>
       </div>
     </section>
+    <script src="./assets/javaScript/js.js"></script>
     <script
       src="https://kit.fontawesome.com/cc1a788000.js"
       crossorigin="anonymous"
