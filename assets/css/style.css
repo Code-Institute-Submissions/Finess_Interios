@@ -14,6 +14,49 @@ body {
   );
   color: #000;
 }
+.topnav {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+/* Style navigation menu links */
+.topnav a {
+  color: #ccc;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav h1 {
+  text-transform: uppercase;
+  padding: 10px;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 60px;
+}
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ccc;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
 /* Home page section */
 .hero-section {
   position: relative;
@@ -88,177 +131,140 @@ body {
 }
 
 /* larger screen devices */
-@media screen and (min-width: 1008px) and (-webkit-min-device-pixel-ratio: 1) {
-  /* about us page */
-  .about-page {
-    width: 100%;
-    height: 100vh;
-  }
-  #about-text {
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    width: 50%;
-    background: rgba(0, 0, 0, 0.9);
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
-  }
-  #ceo-img img {
-    position: relative;
-    top: 80%;
-    left: 15%;
-    width: 70%;
-    height: auto;
-    border: 2px solid black;
-    border-radius: 2%;
-  }
-  #about-text h3 {
-    font-size: 150%;
-    text-align: center;
-    padding: 10px;
-    color: #ccc;
-  }
-  #about-text p {
-    font-size: 100%;
-    text-align: center;
-    line-height: 25px;
-    color: #ccc;
-  }
 
-  /* contact pacge for large screens */
-  .main-contact-section {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-  }
-  .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 80%;
-    max-width: 550px;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+/* about us page */
+.about-page {
+  width: 100%;
+  height: 100vh;
+}
+#about-text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+#ceo-img img {
+  position: relative;
+  top: 80%;
+  left: 15%;
+  width: 70%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 2%;
+}
+#about-text h3 {
+  font-size: 150%;
+  text-align: center;
+  padding: 10px;
+  color: #ccc;
+}
+#about-text p {
+  font-size: 100%;
+  text-align: center;
+  line-height: 25px;
+  color: #ccc;
+}
 
-  .wrapper .title h1 {
-    color: #ccc;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  .wrapper .title p {
-    color: #ccc;
-    text-align: center;
-    margin-bottom: 25px;
-  }
+/* contact pacge for large screens */
+.main-contact-section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  max-width: 550px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
-  .contact-form {
-    display: flex;
-  }
+.wrapper .title h1 {
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.wrapper .title p {
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 25px;
+}
 
-  .input-fields {
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
-  }
+.contact-form {
+  display: flex;
+}
 
-  .input-fields,
-  .msg {
-    width: 48%;
-  }
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
 
-  .input-fields .input {
-    margin: 10px 0;
-    background: transparent;
-    border: 0px;
-    border-bottom: 2px solid #c5ecfd;
-    padding: 10px;
-    color: #c5ecfd;
-    width: 100%;
-  }
+.input-fields,
+.msg {
+  width: 48%;
+}
 
-  .msg textarea {
-    position: relative;
-    left: 10%;
-    height: 80%;
-    width: 100%;
-    margin: 10px 0;
-    color: #ccc;
-    background: transparent;
-  }
+.input-fields .input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
 
-  ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #ccc;
-    text-align: center;
-  }
-  ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #ccc;
-  }
-  :-ms-input-placeholder {
-    /* IE 10+ */
-    color: #ccc;
-  }
-  .btn button {
-    position: relative;
-    left: 20%;
-    width: 80%;
-    background: #00acee;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  #address {
-    color: #ccc;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-  }
+.msg textarea {
+  position: relative;
+  left: 10%;
+  height: 80%;
+  width: 100%;
+  margin: 10px 0;
+  color: #ccc;
+  background: transparent;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ccc;
+  text-align: center;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ccc;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ccc;
+}
+.btn button {
+  position: relative;
+  left: 20%;
+  width: 80%;
+  background: #00acee;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+#address {
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
 }
 /* tablets and ipads 641px to 1007px */
-@media only screen and (min-width: 641px) and (max-width: 1007px) and (-webkit-min-device-pixel-ratio: 2) {
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #4caf50;
-    color: white;
-  }
+@media only screen and (max-width: 768px) {
   /* about page */
   .about-page {
     width: 100%;
@@ -396,7 +402,7 @@ body {
   }
 }
 /* mobile phone devices */
-@media only screen and (min-width: 375px) and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 370px) and (max-width: 767px) {
   /* navigation bar*/
   .topnav {
     position: relative;
