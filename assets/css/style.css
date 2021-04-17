@@ -1,78 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: none;
 }
 body {
-  font-family: "lato", sans-serif;
   background: linear-gradient(
-    to right,
-    rgb(15, 32, 39),
-    rgb(32, 58, 67),
-    rgb(44, 83, 100)
+    to top,
+    rgb(41, 128, 185),
+    rgb(109, 213, 250),
+    rgb(255, 255, 255)
   );
-  color: #000;
+  font-family: "Barlow Condensed", sans-serif;
 }
-.topnav {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.3);
-}
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-/* Style navigation menu links */
-.topnav a {
-  color: #ccc;
-  padding: 14px 16px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-.topnav h1 {
-  text-transform: uppercase;
-  padding: 10px;
-}
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: rgba(0, 0, 0, 0.5);
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 60px;
-}
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #ccc;
-}
-
-/* Style the active link (or home/logo) */
-.active {
+header {
+  font-family: "Abel", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-/* Home page section */
-.hero-section {
-  position: relative;
   width: 100%;
-  height: 100vh;
+  padding: 30px 10%;
+}
+header a h1 {
+  font-size: 210%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  padding: 0% 20px;
+}
+header a h1:hover {
+  background-color: #0088a9;
+}
+li,
+a,
+button {
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 125%;
+  color: #000;
+  text-decoration: none;
+}
+.logo h1 {
+  cursor: pointer;
+}
+.navigation_links {
+  list-style: none;
+}
+.navigation_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.navigation_links li a {
+  transition: all 0.3s ease 0s;
+}
+.navigation_links li a:hover {
+  color: #0088a9;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+}
+button:hover {
+  background-color: rgba(0, 136, 169, 0.7);
 }
 
-/* Footer Section */
+/* Footer*/
 #footer {
-  position: static;
   width: 100%;
   padding-top: 40px;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 #socials {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   justify-content: space-evenly;
   flex-wrap: nowrap;
@@ -82,25 +88,25 @@ body {
   font-size: 220%;
 }
 #facebook i {
-  color: #ccc;
+  color: #000;
 }
 #facebook i:hover {
   color: #1e5edf;
 }
 #instagram i {
-  color: #ccc;
+  color: #000;
 }
 #instagram i:hover {
   color: #db304c;
 }
 #twitter i {
-  color: #ccc;
+  color: #000;
 }
 #twitter i:hover {
   color: #00acee;
 }
 #pin i {
-  color: #ccc;
+  color: #000;
 }
 #pin i:hover {
   color: #ff1500;
@@ -115,113 +121,59 @@ body {
 #copyright h3 {
   font-size: 100%;
   text-align: center;
-  color: #ccc;
+  color: #000;
 }
-/* Gallery page */
-#gallery-area {
-  clear: both;
-  width: 100%;
-  line-height: 0;
-  column-count: 4;
-  column-gap: 0;
-}
-#gallery-area img {
-  width: 100%;
-  overflow: hidden;
-}
-
-/* larger screen devices */
-
-/* about us page */
-.about-page {
-  width: 100%;
-  height: 100vh;
-}
-#about-text {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  width: 50%;
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
-}
-#ceo-img img {
+/* Contact */
+.contact-section {
+  display: flex;
   position: relative;
-  top: 80%;
-  left: 15%;
-  width: 70%;
-  height: auto;
-  border: 2px solid black;
-  border-radius: 2%;
-}
-#about-text h3 {
-  font-size: 150%;
-  text-align: center;
-  padding: 10px;
-  color: #ccc;
-}
-#about-text p {
-  font-size: 100%;
-  text-align: center;
-  line-height: 25px;
-  color: #ccc;
-}
-
-/* contact pacge for large screens */
-.main-contact-section {
-  position: absolute;
   width: 100%;
   height: 100vh;
 }
 .wrapper {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 55%;
   transform: translate(-50%);
   width: 80%;
   max-width: 550px;
-  background: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 80px rgb(15, 75, 100);
 }
-
 .wrapper .title h1 {
-  color: #ccc;
+  color: #000;
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 25px;
 }
 .wrapper .title p {
-  color: #ccc;
+  color: #000;
   text-align: center;
   margin-bottom: 25px;
 }
-
 .contact-form {
   display: flex;
 }
-
 .input-fields {
   display: flex;
   flex-direction: column;
   margin-right: 4%;
 }
-
 .input-fields,
 .msg {
   width: 48%;
 }
-
 .input-fields .input {
   margin: 10px 0;
   background: transparent;
   border: 0px;
-  border-bottom: 2px solid #c5ecfd;
+  border-bottom: 2px solid #000;
   padding: 10px;
-  color: #c5ecfd;
+  color: #000;
   width: 100%;
 }
-
 .msg textarea {
   position: relative;
   left: 10%;
@@ -234,419 +186,64 @@ body {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #ccc;
+  color: #000;
   text-align: center;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #ccc;
+  color: #000;
 }
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #ccc;
+  color: #000;
 }
 .btn button {
   position: relative;
-  left: 20%;
+  left: 12%;
   width: 80%;
-  background: #00acee;
-  text-align: center;
-  padding: 15px;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
   text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.3);
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+.btn button:hover {
+  background-color: rgba(0, 136, 169, 0.7);
 }
 #address {
-  color: #ccc;
+  color: #000;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
 }
-/* tablets and ipads 641px to 1007px */
-@media only screen and (max-width: 768px) {
-  /* about page */
-  .about-page {
-    width: 100%;
-    height: 100vh;
-  }
-  #about-text {
-    position: absolute;
-    top: 40%;
-    left: 8%;
-    width: 80vw;
-    transform: translateY(-5%);
-    padding: 10px;
-    color: #ccc;
-    border-radius: 2px;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
-  }
-  #ceo-img img {
-    position: relative;
-    left: 17%;
-    width: 50vw;
-    height: 50vh;
-  }
-
-  #about-text h3 {
-    font-size: 150%;
-    text-align: center;
-    padding-bottom: 3px;
-    color: #ccc;
-    padding: 10px;
-  }
-  #about-text p {
-    font-size: 100%;
-    text-align: center;
-    line-height: 25px;
-    color: #ccc;
-    padding: 10px;
-  }
-
-  /* conctact page */
-  .main-contact-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-  .wrapper {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 550px;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .wrapper .title h1 {
-    color: #ccc;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  .wrapper .title p {
-    color: #ccc;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-
-  .contact-form {
-    display: flex;
-  }
-
-  .input-fields {
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
-  }
-
-  .input-fields,
-  .msg {
-    width: 48%;
-  }
-
-  .input-fields .input {
-    margin: 10px 0;
-    background: transparent;
-    border: 0px;
-    border-bottom: 2px solid #c5ecfd;
-    padding: 10px;
-    color: #c5ecfd;
-    width: 100%;
-  }
-
-  .msg textarea {
-    position: relative;
-    left: 10%;
-    height: 80%;
-    width: 100%;
-    margin: 10px 0;
-    color: #ccc;
-    background: transparent;
-  }
-
-  ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #ccc;
-    text-align: center;
-  }
-  ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #ccc;
-  }
-  :-ms-input-placeholder {
-    /* IE 10+ */
-    color: #ccc;
-  }
-  .btn button {
-    position: relative;
-    left: 20%;
-    width: 80%;
-    background: #054547;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  #address {
-    color: #ccc;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-  }
-}
-/* mobile phone devices */
 @media only screen and (min-width: 370px) and (max-width: 767px) {
-  /* navigation bar*/
-  .topnav {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .topnav a {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 110%;
-  }
-  .topnav h1 {
-    text-transform: uppercase;
-    padding: 10px;
-  }
-  .topnav h3 {
-    display: inline;
-    padding: 5px;
-  }
-  .topnav #myLinks {
-    display: none;
-  }
-  /*hamburger menu */
-  .topnav a.icon {
-    color: #ccc;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 77%;
-  }
-  /*logo*/
-  .active {
-    padding: 10px;
-    color: #ccc;
-  }
-
-  /* home page */
-  #hero1-box,
-  #hero2-box,
-  #hero3-box {
-    position: absolute;
-    width: 39%;
-    height: auto;
-    color: #ccc;
-    text-align: center;
-    border-radius: 3px;
-  }
-  #hero1-box {
-    left: 25%;
-    top: 25%;
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.8);
-    padding: 20px;
-  }
-  #hero1-box img {
-    position: relative;
-    width: 80%;
-    left: 5%;
-  }
-  #hero2-box {
-    left: 50%;
-    top: 62%;
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.8);
-    padding: 20px;
-  }
-  #hero2-box img {
-    position: relative;
-    width: 80%;
-    left: 5%;
-  }
-  #hero3-box {
-    left: 1%;
-    top: 62%;
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.8);
-    padding: 20px;
-  }
-  #hero3-box img {
-    position: relative;
-    width: 80%;
-    left: 5%;
-  }
-  #top-heading {
-    top: 10%;
-    left: 15%;
-    font-size: 160%;
-  }
-  #mid-heading {
-    display: none;
-  }
-  #lower-heading {
-    display: none;
-  }
-
-  #top-heading,
-  #mid-heading,
-  #lower-heading {
-    position: absolute;
-  }
-  .hero-section {
-    position: relative;
+  header {
     width: 100%;
-    height: 100vh;
+    padding: 30px 0;
+    flex-direction: column;
   }
-
-  /* about page max >>> 720px */
-  .about-page {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+  li,
+  a,
+  button {
+    font-size: 120%;
+    margin-left: 0;
+    padding-top: 10px;
   }
-  #about-text {
-    position: relative;
-    top: 15%;
-    left: 8%;
-    width: 80vw;
-    transform: translateY(-5%);
-    padding: 10px;
-    color: #ccc;
-    border-radius: 2px;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
-  }
-  #ceo-img img {
-    position: relative;
-    left: 10%;
-    width: 65vw;
-  }
-  #about-text h3 {
-    font-size: 110%;
-    text-align: center;
-    padding: 10px;
-  }
-  #about-text p {
-    font-size: 90%;
-    text-align: center;
-    line-height: 25px;
-    padding: 10px;
-  }
-  .about-video {
-    display: none;
-  }
-  /* contact form 370px >>> 720px */
-  .main-contact-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+  .navigation_links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .wrapper {
-    position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 550px;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .wrapper .title h1 {
-    color: #ccc;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  .wrapper .title p {
-    color: #ccc;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-
-  .contact-form {
-    display: flex;
-  }
-
-  .input-fields {
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
-  }
-
-  .input-fields,
-  .msg {
-    width: 48%;
-  }
-
-  .input-fields .input {
-    margin: 10px 0;
-    background: transparent;
-    border: 0px;
-    border-bottom: 2px solid #c5ecfd;
-    padding: 10px;
-    color: #c5ecfd;
-    width: 100%;
-  }
-
-  .msg textarea {
-    position: relative;
-    left: 10%;
-    height: 80%;
-    width: 100%;
-    margin: 10px 0;
-    color: #ccc;
-    background: transparent;
-  }
-
-  ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #ccc;
-    text-align: center;
-  }
-  ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #ccc;
-  }
-  :-ms-input-placeholder {
-    /* IE 10+ */
-    color: #ccc;
   }
   .btn button {
-    position: relative;
-    left: 20%;
-    width: 80%;
-    background: #054547;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  #address {
-    color: #ccc;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  #gallery-area {
     width: 100%;
-    height: auto;
+    left: 10%;
   }
 }
