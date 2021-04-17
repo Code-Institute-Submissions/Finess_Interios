@@ -69,9 +69,19 @@ button:hover {
   background-image: url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
+  animation-name: zoom-in;
+  animation-duration: 2s;
+}
+@keyframes zoom-in {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 #top-heading h2 {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 25%;
   font-size: 300%;
@@ -134,6 +144,7 @@ button:hover {
   text-align: center;
   color: #000;
 }
+
 /* Contact */
 .contact-section {
   display: flex;
@@ -194,19 +205,11 @@ button:hover {
   color: #ccc;
   background: transparent;
 }
-
 ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
+  font-family: "Barlow Condensed", sans-serif;
   color: #000;
   text-align: center;
-}
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #000;
-}
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #000;
+  font-size: 160%;
 }
 .btn button {
   position: relative;
@@ -225,18 +228,30 @@ button:hover {
 .btn button:hover {
   background-color: rgba(0, 136, 169, 0.7);
 }
-#address {
+.address {
   color: #000;
   text-align: center;
+  font-size: 130%;
   padding: 20px;
   margin-top: 20px;
 }
-#gallery-grid {
+.gallery-grid {
   clear: both;
   width: 100%;
   line-height: 0;
   column-count: 3;
   column-gap: 0;
+}
+/* Services */
+.services-section {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+}
+/* About */
+.about-section {
+  width: 100%;
+  height: 100vh;
 }
 
 @media only screen and (min-width: 370px) and (max-width: 767px) {
