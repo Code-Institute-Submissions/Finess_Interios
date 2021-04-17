@@ -24,14 +24,12 @@ header {
 }
 header a h1 {
   font-size: 210%;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
   transition: all 0.3s ease 0s;
   font-weight: 500;
   padding: 0% 20px;
 }
 header a h1:hover {
-  background-color: #0088a9;
+  color: #0088a9;
 }
 li,
 a,
@@ -60,7 +58,7 @@ button {
 }
 button {
   padding: 9px 25px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 136, 169, 0.7);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -68,7 +66,7 @@ button {
   margin-left: 20px;
 }
 button:hover {
-  background-color: rgba(0, 136, 169, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Footer*/
@@ -137,7 +135,7 @@ button:hover {
   transform: translate(-50%);
   width: 80%;
   max-width: 550px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0 0 80px rgb(15, 75, 100);
@@ -220,6 +218,14 @@ button:hover {
   padding: 20px;
   margin-top: 20px;
 }
+#gallery-grid {
+  clear: both;
+  width: 100%;
+  line-height: 0;
+  column-count: 3;
+  column-gap: 0;
+}
+
 @media only screen and (min-width: 370px) and (max-width: 767px) {
   header {
     width: 100%;
@@ -239,11 +245,15 @@ button:hover {
     justify-content: center;
   }
   .wrapper {
+    clear: both;
     top: 10%;
     left: 50%;
   }
   .btn button {
     width: 100%;
     left: 10%;
+  }
+  #gallery-grid {
+    column-count: 2;
   }
 }
