@@ -106,14 +106,12 @@ button:hover {
   font-size: 200%;
   width: 33%;
 }
-#sidekick-right-box {
-  padding-bottom: 10px;
-  border-bottom: 2px solid #0088a9;
-}
+#sidekick-right-box,
 #sidekick-center-box {
   padding-bottom: 10px;
   border-bottom: 2px solid #0088a9;
 }
+
 /* Footer*/
 #footer {
   width: 100%;
@@ -357,6 +355,11 @@ button:hover {
     font-size: 150%;
     align-items: center;
     padding: 15px;
+  }
+  #sidekick-right-box,
+  #sidekick-center-box {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0088a9;
   }
   #top-heading h2 {
     left: auto;
