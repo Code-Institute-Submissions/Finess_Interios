@@ -133,6 +133,9 @@ button:hover {
   box-shadow: 0 0 80px rgb(0, 0, 0);
   color: #ccc;
 }
+#about-textbox img {
+  width: inherit;
+}
 #about-textbox small {
   font-size: 100%;
   font-weight: 900;
@@ -140,7 +143,7 @@ button:hover {
 }
 #about-textbox h2 {
   padding: 15px;
-  font-size: 250%;
+  font-size: 200%;
 }
 #about-textbox p {
   padding: auto;
@@ -156,6 +159,8 @@ button:hover {
   align-items: flex-start;
 }
 .process-text {
+  position: relative;
+  top: 15%;
   width: 50%;
   height: fit-content;
   padding: 30px;
@@ -167,6 +172,7 @@ button:hover {
 .process-text h2 {
   padding: 15px;
   font-size: 200%;
+  text-transform: uppercase;
 }
 .process-text p {
   padding: auto;
@@ -327,6 +333,18 @@ button:hover {
 
 /* Media query Tablets and Ipads */
 @media screen and (max-width: 900px) {
+  .wrapper {
+    top: 8%;
+  }
+  #about-textbox {
+    top: 8%;
+  }
+  #about-textbox img {
+    width: inherit;
+  }
+  .process-text {
+    top: 7%;
+  }
   #top-heading h2 {
     top: 5%;
     text-align: center;
@@ -360,7 +378,9 @@ button:hover {
     height: 100vh;
   }
   .process-text {
-    top: 5%;
+    position: relative;
+    width: 80%;
+    top: 15%;
   }
   .process-text h2 {
     padding: 10px;
@@ -376,6 +396,9 @@ button:hover {
     width: 80%;
     margin: 5% 0;
     text-align: center;
+  }
+  #about-textbox img {
+    width: inherit;
   }
   .sidekick-section {
     height: auto;
@@ -394,7 +417,7 @@ button:hover {
   }
   #top-heading h3 {
     left: auto;
-    top: 275px;
+    top: 370px;
     text-align: center;
     font-size: 250%;
   }
