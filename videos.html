@@ -7,7 +7,7 @@
     <meta name="description" content="Design your home or workspace with us" />
     <meta name="keywords" content="interior design, ambience, home, office" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Finess Interiors - Home</title>
+    <title>Finess Interiors - Video Gallery</title>
   </head>
   <body>
     <header>
@@ -22,30 +22,38 @@
       </nav>
       <a class="btn-index" href="./contact.html"><button>Contact</button></a>
     </header>
-    <section class="hero-section">
-      <div id="top-heading">
-      <h3 >Welcome to Finess Interiors</h3>
-    </div>
-    </section>
-    <section class="sidekick-section">
-    </div>
-    <div id="sidekick-center-box">
-      <h2>Wondering what we do?</h2><a href="./videos.html"><small>Click here to find out</small></a>
-    </div>
-    <div id="sidekick-right-box">
-      <h3>Design taken seriuosly</h3>
-      <p>
-        We create environments with personality and vision
-      </p>
-    </div>
-    <div id="sidekick-left-box">
-      <h3>Experience</h3>
-      <p>
-        Our team has over 20 years experience in the design and construction branch.
-      </p>
-    </div>
-    <div class="team-img-container"></div>
-    </section>
+   
+    <section class="video_container">
+        <div class="row">
+            <div class="col">
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="./assets/videos/img2.jpg">
+                    <img src="./assets/videos/play.png" class="play-btn" onclick="playVideo('assets/videos/video_2.mp4')">
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eos.
+                </p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="./assets/videos/img3.jpg">
+                    <img src="./assets/videos/play.png" class="play-btn" onclick="playVideo('assets/videos/video_3.mp4')">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ut.</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="./assets/videos/img4.jpg">
+                    <img src="./assets/videos/play.png" class="play-btn" onclick="playVideo('assets/videos/video_4.mp4')">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam?</p>
+            </div>
+        </div>
+    </section>  
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo"></video>
+        <img src="./assets/videos/close.png" class="close-btn" onclick="stopVideo()">
+    </div>  
     <section id="footer">
       <div id="socials">
         <div id="facebook">
@@ -77,9 +85,8 @@
         </h3>
       </div>
     </section>
-    <script
-      src="https://kit.fontawesome.com/cc1a788000.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./assets/javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/cc1a788000.js"
+      crossorigin="anonymous"></script>
   </body>
 </html>

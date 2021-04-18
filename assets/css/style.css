@@ -89,17 +89,17 @@ button:hover {
   height: fit-content;
   font-size: 300%;
 }
-
-#sidekick-center-box small:hover {
-  color: #0088a9;
-  transition: all 0.3s ease 0s;
-}
+/* !!! SIDEKICK !!! */
 .sidekick-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 600px;
+}
+#sidekick-center-box small:hover {
+  color: #0088a9;
+  transition: all 0.3s ease 0s;
 }
 #sidekick-right-box,
 #sidekick-center-box,
@@ -151,7 +151,76 @@ button:hover {
   font-size: 160%;
   text-align: center;
 }
+/* !!!VIDEOS PAGE!!! */
+.video_container {
+  display: flex;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-left: 10%;
+}
+.col {
+  flex-basis: 50%;
+  min-width: 250px;
+}
+.small-img-row {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 85%;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.small-img {
+  position: relative;
+}
+.small-img img {
+  width: auto;
+}
+.small-img-row p {
+  margin-left: 20px;
+  color: #ccc;
+  line-height: 22px;
+  font-size: 150%;
+  text-align: center;
+}
+.play-btn {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.small-img .play-btn {
+  width: 35px;
+}
+.video-player {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+video:focus {
+  outline: none;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
 /* !!! BEFORE WE BEGIN PAGE !!! */
+
 .services-section {
   width: 100%;
   height: 100vh;
@@ -335,6 +404,12 @@ button:hover {
 
 /* Media query Tablets and Ipads */
 @media screen and (max-width: 900px) {
+  .row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
   .wrapper {
     top: 8%;
   }
@@ -376,6 +451,13 @@ button:hover {
 }
 /* Media query mobile phones  */
 @media screen and (min-width: 400px) and (max-width: 760px) {
+  .row {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    flex-direction: column;
+    justify-content: center;
+  }
   .services-section {
     width: 100%;
     height: 100vh;
