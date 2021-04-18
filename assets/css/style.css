@@ -134,7 +134,7 @@ button:hover {
   color: #ccc;
 }
 #about-textbox img {
-  width: inherit;
+  width: 50%;
 }
 #about-textbox small {
   font-size: 100%;
@@ -396,9 +396,6 @@ button:hover {
     width: 80%;
     margin: 5% 0;
     text-align: center;
-  }
-  #about-textbox img {
-    width: inherit;
   }
   .sidekick-section {
     height: auto;
