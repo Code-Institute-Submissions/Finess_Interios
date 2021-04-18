@@ -340,7 +340,7 @@ button:hover {
     top: 8%;
   }
   #about-textbox img {
-    width: inherit;
+    width: 50%;
   }
   .process-text {
     top: 7%;
@@ -396,6 +396,9 @@ button:hover {
     width: 80%;
     margin: 5% 0;
     text-align: center;
+  }
+  #about-textbox img {
+    width: 50%;
   }
   .sidekick-section {
     height: auto;
