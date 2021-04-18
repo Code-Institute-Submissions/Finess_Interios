@@ -4,9 +4,10 @@
   padding: 0;
 }
 body {
-  background-color: #dee1ec;
+  background-color: rgba(0, 0, 0, 0.4);
   font-family: "Barlow Condensed", sans-serif;
 }
+/* !!!!!!!!NAVIGATION BAR!!!!!! */
 header {
   display: flex;
   justify-content: space-evenly;
@@ -61,7 +62,7 @@ button {
 button:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* hero section */
+/* !!! HERO SECTION !!! */
 .hero-section {
   width: 100%;
   height: 600px;
@@ -107,14 +108,179 @@ button:hover {
   text-align: center;
   font-size: 200%;
   width: 33%;
-}
-#sidekick-right-box,
-#sidekick-center-box {
   padding-bottom: 10px;
   border-bottom: 2px solid #0088a9;
 }
 
-/* Footer*/
+/* !!! ABOUT US PAGE !!! */
+.about {
+  width: 100%;
+  height: 100vh;
+}
+#about-textbox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 0 80px rgb(0, 0, 0);
+  color: #ccc;
+}
+#about-textbox small {
+  font-size: 100%;
+  font-weight: 900;
+  padding: 4px;
+}
+#about-textbox h2 {
+  padding: 15px;
+  font-size: 250%;
+}
+#about-textbox p {
+  padding: auto;
+  font-size: 160%;
+  text-align: center;
+}
+#about-textbox img {
+  width: inherit;
+  height: auto;
+  padding: 30px 30px 0 30px;
+}
+/* !!! BEFORE WE BEGIN PAGE !!! */
+.services-section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+}
+.process-text {
+  position: relative;
+  width: 50%;
+  height: fit-content;
+  padding: 30px;
+  top: 25%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 80px rgb(0, 0, 0);
+  color: #ccc;
+}
+.process-text h2 {
+  padding: 15px;
+  font-size: 200%;
+}
+.process-text p {
+  padding: auto;
+  font-size: 160%;
+}
+/*!!! CONTACT PAGE !!! */
+.contact-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  max-width: 550px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 80px rgb(0, 0, 0);
+}
+.wrapper .title h1 {
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 180%;
+  color: #ccc;
+}
+.wrapper .title p {
+  color: #000;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 150%;
+  color: #ccc;
+}
+.contact-form {
+  display: flex;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields,
+.msg {
+  width: 48%;
+}
+.input-fields .input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  color: #ccc;
+  width: 100%;
+}
+.msg textarea {
+  position: relative;
+  left: 7%;
+  height: 80%;
+  width: 100%;
+  margin: 10px 0;
+  color: #ccc;
+  background: transparent;
+}
+::-webkit-input-placeholder {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ccc;
+  text-align: center;
+  font-size: 160%;
+}
+.btn button {
+  position: relative;
+  left: 12%;
+  width: 80%;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ccc;
+  text-align: center;
+  cursor: pointer;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+.btn button:hover {
+  background-color: rgba(0, 136, 169, 0.7);
+}
+.address {
+  color: #ccc;
+  text-align: center;
+  font-size: 130%;
+  padding: 20px;
+  margin-top: 20px;
+}
+.gallery-grid {
+  clear: both;
+  width: 100%;
+  line-height: 0;
+  column-count: 3;
+  column-gap: 0;
+}
+/*!!! FOOTER !!!*/
 #footer {
   width: 100%;
   padding-top: 40px;
@@ -164,149 +330,6 @@ button:hover {
   font-size: 100%;
   text-align: center;
   color: #000;
-}
-
-/* Contact */
-.contact-section {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-.wrapper {
-  position: absolute;
-  top: 20%;
-  left: 55%;
-  transform: translate(-50%);
-  width: 80%;
-  max-width: 550px;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 0 80px rgb(15, 75, 100);
-}
-.wrapper .title h1 {
-  color: #000;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 25px;
-}
-.wrapper .title p {
-  color: #000;
-  text-align: center;
-  margin-bottom: 25px;
-}
-.contact-form {
-  display: flex;
-}
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  margin-right: 4%;
-}
-.input-fields,
-.msg {
-  width: 48%;
-}
-.input-fields .input {
-  margin: 10px 0;
-  background: transparent;
-  border: 0px;
-  border-bottom: 2px solid #000;
-  padding: 10px;
-  color: #000;
-  width: 100%;
-}
-.msg textarea {
-  position: relative;
-  left: 10%;
-  height: 80%;
-  width: 100%;
-  margin: 10px 0;
-  color: #ccc;
-  background: transparent;
-}
-::-webkit-input-placeholder {
-  font-family: "Barlow Condensed", sans-serif;
-  color: #000;
-  text-align: center;
-  font-size: 160%;
-}
-.btn button {
-  position: relative;
-  left: 12%;
-  width: 80%;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.3);
-  color: #000;
-  text-align: center;
-  cursor: pointer;
-  padding: 9px 25px;
-  border: none;
-  border-radius: 50px;
-  transition: all 0.3s ease 0s;
-}
-.btn button:hover {
-  background-color: rgba(0, 136, 169, 0.7);
-}
-.address {
-  color: #000;
-  text-align: center;
-  font-size: 130%;
-  padding: 20px;
-  margin-top: 20px;
-}
-.gallery-grid {
-  clear: both;
-  width: 100%;
-  line-height: 0;
-  column-count: 3;
-  column-gap: 0;
-}
-/* Services */
-.services-section {
-  display: flex;
-  width: 100%;
-  height: 50vh;
-}
-/* About */
-.about {
-  width: 100%;
-  height: 100vh;
-}
-#about-textbox {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%);
-  width: 50%;
-  height: auto;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 5px;
-  box-shadow: 0 0 80px rgb(15, 75, 100);
-}
-
-#about-textbox small {
-  font-size: 100%;
-  font-weight: 900;
-  padding: 4px;
-}
-#about-textbox h2 {
-  padding: 15px;
-  font-size: 250%;
-}
-#about-textbox p {
-  font-size: 140%;
-  padding: 10px;
-  text-align: center;
-}
-#about-textbox img {
-  width: inherit;
-  height: auto;
 }
 
 /* Media query Tablets and Ipads */
