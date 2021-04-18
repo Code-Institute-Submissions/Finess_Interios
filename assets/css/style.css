@@ -166,6 +166,7 @@ button:hover {
   height: fit-content;
   padding: 30px;
   text-align: center;
+  border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 80px rgb(0, 0, 0);
   color: #ccc;
@@ -382,17 +383,26 @@ button:hover {
   .process-text {
     position: relative;
     width: 80%;
-    top: 15%;
+    top: 5%;
   }
   .process-text h2 {
-    padding: 10px;
-    font-size: 160%;
+    padding: 0 10px 0px 10px;
+    font-size: 170%;
   }
   .process-text p {
-    font-size: 115%;
+    padding: 20px;
+    font-size: 130%;
   }
   .about {
     height: auto;
+  }
+  #about-textbox h2 {
+    padding: 0 10px 10px 10px;
+    font-size: 170%;
+  }
+  #about-textbox p {
+    padding: 20px;
+    font-size: 130%;
   }
   #about-textbox {
     width: 80%;
