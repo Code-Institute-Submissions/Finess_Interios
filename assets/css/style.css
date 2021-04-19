@@ -368,6 +368,13 @@ video:focus {
 #pin i:hover {
   color: #ff1500;
 }
+.address {
+  text-align: center;
+  font-size: 150%;
+  padding: 30px 0 10px 0;
+  margin-top: 20px;
+  font-weight: 600;
+}
 #copyright {
   display: inline-flex;
   width: 100%;
