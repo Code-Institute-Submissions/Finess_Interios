@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-color: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to top, rgb(255, 239, 186), rgb(255, 255, 255));
   font-family: "Barlow Condensed", sans-serif;
 }
 /* !!!!!!!!NAVIGATION BAR!!!!!! */
@@ -14,6 +14,7 @@ header {
   align-items: center;
   width: auto;
   padding: 30px 10%;
+  background-color: #d8c3a5;
 }
 header a h1 {
   font-size: 210%;
@@ -22,7 +23,7 @@ header a h1 {
   padding: 0% 20px;
 }
 header a h1:hover {
-  color: #0088a9;
+  color: #db304c;
 }
 li,
 a,
@@ -48,12 +49,12 @@ button {
   transition: all 0.3s ease 0s;
 }
 .navigation_links li a:hover {
-  color: #0088a9;
-  border-bottom: 1px solid #0088a9;
+  color: #db304c;
+  border-bottom: 1px solid #e85a4f;
 }
 button {
   padding: 5px 40px;
-  background-color: rgba(0, 136, 169, 0.7);
+  background-color: #e85a4f;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -73,6 +74,8 @@ button:hover {
   overflow: hidden;
   animation-name: zoom-in;
   animation-duration: 2s;
+  background-color: #d8c3a5;
+  background-blend-mode: darken;
 }
 @keyframes zoom-in {
   from {
@@ -85,11 +88,13 @@ button:hover {
 #top-heading h3 {
   position: relative;
   left: 50%;
-  width: 20%;
+  width: 15%;
+  text-align: center;
   padding: 30px;
   height: fit-content;
   font-size: 300%;
 }
+/* #top-heading h3:hover */
 /* !!! SIDEKICK !!! */
 .sidekick-section {
   display: flex;
@@ -99,7 +104,7 @@ button:hover {
   height: 600px;
 }
 #sidekick-center-box small:hover {
-  color: #0088a9;
+  color: #db304c;
   transition: all 0.3s ease 0s;
 }
 #sidekick-right-box,
@@ -110,7 +115,7 @@ button:hover {
   font-size: 200%;
   width: 33%;
   padding-bottom: 10px;
-  border-bottom: 2px solid #0088a9;
+  border-bottom: 2px solid #e85a4f;
 }
 
 /* !!! ABOUT US PAGE !!! */
@@ -129,10 +134,10 @@ button:hover {
   transform: translate(-50%);
   width: 50%;
   height: auto;
-  background: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
-  box-shadow: 0 0 80px rgb(0, 0, 0);
   color: #ccc;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 10px #000;
 }
 #about-textbox img {
   width: 50%;
@@ -155,10 +160,11 @@ button:hover {
 /* !!!VIDEOS PAGE!!! */
 .video_container {
   display: flex;
+  height: 100vh;
 }
 .small-img-row {
   display: flex;
-  margin: 20px 0;
+  margin: 90px 0;
   align-items: center;
   border-radius: 6px;
   overflow: hidden;
@@ -175,9 +181,7 @@ button:hover {
   padding: 15px 15px;
 }
 .small-img-row h2 {
-  margin-left: 20px;
   color: #000;
-  line-height: 22px;
   font-size: 150%;
   text-align: center;
 }
@@ -226,9 +230,9 @@ video:focus {
   padding: 30px;
   text-align: center;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 80px rgb(0, 0, 0);
   color: #ccc;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 10px #000;
 }
 .process-text h2 {
   padding: 15px;
@@ -253,10 +257,10 @@ video:focus {
   transform: translate(-50%);
   width: 80%;
   max-width: 550px;
-  background-color: rgba(0, 0, 0, 0.7);
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 0 0 80px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 10px #000;
 }
 .wrapper .title h1 {
   color: #000;
@@ -314,7 +318,7 @@ video:focus {
   left: 12%;
   width: 80%;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.3);
+  background: #e85a4f;
   color: #ccc;
   text-align: center;
   cursor: pointer;
@@ -324,7 +328,7 @@ video:focus {
   transition: all 0.3s ease 0s;
 }
 .btn button:hover {
-  background-color: rgba(0, 136, 169, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .address {
   color: #ccc;
@@ -344,6 +348,7 @@ video:focus {
 #footer {
   width: 100%;
   padding-top: 40px;
+  background-color: #d8c3a5;
 }
 #socials {
   display: flex;
@@ -408,7 +413,6 @@ video:focus {
     top: 7%;
   }
   #top-heading h2 {
-    top: 5%;
     text-align: center;
     font-size: 270%;
   }
@@ -488,10 +492,11 @@ video:focus {
     border-bottom: 2px solid #0088a9;
   }
   #top-heading h3 {
-    left: auto;
+    left: 22%;
     top: 370px;
     text-align: center;
     font-size: 250%;
+    width: 50%;
   }
   header {
     width: 100%;
