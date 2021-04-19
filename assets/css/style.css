@@ -247,6 +247,7 @@ video:focus {
   left: 50%;
   transform: translate(-50%);
   width: 80%;
+  height: 425px;
   max-width: 550px;
   padding: 30px;
   border-radius: 5px;
@@ -320,13 +321,6 @@ video:focus {
 }
 .btn button:hover {
   background-color: rgb(0, 0, 0, 0.3);
-}
-.address {
-  color: #ccc;
-  text-align: center;
-  font-size: 130%;
-  padding: 20px;
-  margin-top: 20px;
 }
 .gallery-grid {
   clear: both;
@@ -433,6 +427,31 @@ video:focus {
   }
 }
 @media screen and (min-width: 400px) and (max-width: 760px) {
+  .contact-form {
+    display: block;
+  }
+  .input-fields {
+    width: 100%;
+  }
+  .msg textarea {
+    left: 0;
+    height: 200px;
+    width: 215%;
+  }
+  .wrapper {
+    clear: both;
+    top: 3%;
+    left: 50%;
+    height: fit-content;
+  }
+  .btn button {
+    width: 100%;
+    left: 60%;
+  }
+  .input-fields .input {
+    text-align: center;
+  }
+
   .small-img-row h2 {
     letter-spacing: 0.2em;
     font-size: 130%;
@@ -515,15 +534,7 @@ video:focus {
     align-items: center;
     justify-content: center;
   }
-  .wrapper {
-    clear: both;
-    top: 3%;
-    left: 50%;
-  }
-  .btn button {
-    width: 100%;
-    left: 10%;
-  }
+
   #gallery-grid {
     column-count: 2;
   }
