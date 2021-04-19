@@ -252,7 +252,7 @@ video:focus {
 }
 .wrapper {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%);
   width: 80%;
@@ -399,18 +399,18 @@ video:focus {
 
 /* Media query Tablets and Ipads */
 @media screen and (max-width: 900px) {
-  .wrapper {
-    top: 8%;
-  }
-  #about-textbox {
-    top: 8%;
-  }
   #about-textbox img {
     width: 50%;
     height: auto;
   }
+  #about-textbox {
+    top: 10%;
+  }
   .process-text {
-    top: 7%;
+    top: 10%;
+  }
+  .wrapper {
+    top: 10%;
   }
   #top-heading h2 {
     text-align: center;
@@ -446,7 +446,7 @@ video:focus {
   .process-text {
     position: relative;
     width: 80%;
-    top: 5%;
+    top: 3%;
   }
   .process-text h2 {
     padding: 0 10px 0px 10px;
@@ -517,7 +517,7 @@ video:focus {
   }
   .wrapper {
     clear: both;
-    top: 10%;
+    top: 3%;
     left: 50%;
   }
   .btn button {
