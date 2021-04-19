@@ -4,7 +4,13 @@
   padding: 0;
 }
 body {
-  background: linear-gradient(to right, rgb(255, 239, 186), rgb(235, 235, 235));
+  background: linear-gradient(
+    to top,
+    rgb(173, 169, 150),
+    rgb(242, 242, 242),
+    rgb(219, 219, 219),
+    rgb(234, 234, 234)
+  );
   font-family: "Barlow Condensed", sans-serif;
 }
 header {
@@ -13,7 +19,7 @@ header {
   align-items: center;
   width: auto;
   padding: 30px 10%;
-  background-color: #d8c3a5;
+  background-color: #e2ded3;
 }
 header a h1 {
   font-size: 210%;
@@ -333,8 +339,9 @@ video:focus {
 }
 #footer {
   width: 100%;
+  margin-top: 10px;
   padding-top: 40px;
-  background-color: #d8c3a5;
+  background-color: #c3bfb3;
 }
 #socials {
   display: flex;
