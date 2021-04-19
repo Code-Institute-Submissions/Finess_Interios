@@ -49,6 +49,7 @@ button {
 }
 .navigation_links li a:hover {
   color: #0088a9;
+  border-bottom: 1px solid #0088a9;
 }
 button {
   padding: 5px 40px;
@@ -155,18 +156,6 @@ button:hover {
 .video_container {
   display: flex;
 }
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  margin-left: 10%;
-}
-.col {
-  flex-basis: 50%;
-  min-width: 250px;
-  margin-left: 10%;
-}
 .small-img-row {
   display: flex;
   margin: 20px 0;
@@ -183,10 +172,11 @@ button:hover {
 }
 .small-img img {
   width: auto;
+  padding: 15px 15px;
 }
-.small-img-row p {
+.small-img-row h2 {
   margin-left: 20px;
-  color: #ccc;
+  color: #000;
   line-height: 22px;
   font-size: 150%;
   text-align: center;
@@ -221,7 +211,6 @@ video:focus {
   cursor: pointer;
 }
 /* !!! BEFORE WE BEGIN PAGE !!! */
-
 .services-section {
   width: 100%;
   height: 100vh;
@@ -405,12 +394,6 @@ video:focus {
 
 /* Media query Tablets and Ipads */
 @media screen and (max-width: 900px) {
-  .row {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-  }
   .wrapper {
     top: 8%;
   }
@@ -452,16 +435,6 @@ video:focus {
 }
 /* Media query mobile phones  */
 @media screen and (min-width: 400px) and (max-width: 760px) {
-  .row {
-    display: flex;
-    width: 100%;
-    margin-left: 2%;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .col {
-    margin-left: 10%;
-  }
   .services-section {
     width: 100%;
     height: 100vh;
