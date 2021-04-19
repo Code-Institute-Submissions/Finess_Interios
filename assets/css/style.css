@@ -293,6 +293,7 @@ video:focus {
 .msg textarea {
   position: relative;
   left: 7%;
+  top: 13%;
   height: 80%;
   width: 100%;
   margin: 10px 0;
@@ -307,7 +308,8 @@ video:focus {
 }
 .btn button {
   position: relative;
-  left: 12%;
+  left: 10%;
+  top: 25px;
   width: 80%;
   text-transform: uppercase;
   background: #e85a4f;
@@ -535,6 +537,9 @@ video:focus {
     font-size: 120%;
     margin-left: 0;
     padding-top: 10px;
+  }
+  .btn button {
+    top: 5px;
   }
   .navigation_links li {
     display: flex;
