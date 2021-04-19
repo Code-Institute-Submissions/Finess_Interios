@@ -4,10 +4,9 @@
   padding: 0;
 }
 body {
-  background: linear-gradient(to top, rgb(255, 239, 186), rgb(255, 255, 255));
+  background: linear-gradient(to right, rgb(255, 239, 186), rgb(235, 235, 235));
   font-family: "Barlow Condensed", sans-serif;
 }
-/* !!!!!!!!NAVIGATION BAR!!!!!! */
 header {
   display: flex;
   justify-content: space-evenly;
@@ -18,7 +17,7 @@ header {
 }
 header a h1 {
   font-size: 210%;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s 0s ease;
   font-weight: 500;
   padding: 0% 20px;
 }
@@ -29,7 +28,7 @@ li,
 a,
 button {
   font-family: "Barlow Condensed", sans-serif;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s 0s ease;
   font-weight: 500;
   font-size: 125%;
   color: #000;
@@ -46,7 +45,7 @@ button {
   padding: 0 20px;
 }
 .navigation_links li a {
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s 0s ease;
 }
 .navigation_links li a:hover {
   color: #db304c;
@@ -58,13 +57,12 @@ button {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s 0s ease;
   margin-left: 20px;
 }
 button:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.3);
 }
-/* !!! HERO SECTION !!! */
 .hero-section {
   width: 100%;
   height: 600px;
@@ -94,8 +92,6 @@ button:hover {
   height: fit-content;
   font-size: 300%;
 }
-/* #top-heading h3:hover */
-/* !!! SIDEKICK !!! */
 .sidekick-section {
   display: flex;
   flex-direction: column;
@@ -105,7 +101,7 @@ button:hover {
 }
 #sidekick-center-box small:hover {
   color: #db304c;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s 0s ease;
 }
 #sidekick-right-box,
 #sidekick-center-box,
@@ -117,8 +113,6 @@ button:hover {
   padding-bottom: 10px;
   border-bottom: 2px solid #e85a4f;
 }
-
-/* !!! ABOUT US PAGE !!! */
 .about {
   width: 100%;
   height: 100vh;
@@ -136,12 +130,13 @@ button:hover {
   height: auto;
   border-radius: 5px;
   color: #ccc;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.6);
   box-shadow: 10px 10px 10px #000;
 }
 #about-textbox img {
   width: 50%;
   height: auto;
+  padding-top: 15px;
 }
 #about-textbox small {
   font-size: 100%;
@@ -153,18 +148,16 @@ button:hover {
   font-size: 200%;
 }
 #about-textbox p {
-  padding: auto;
   font-size: 160%;
   text-align: center;
 }
-/* !!!VIDEOS PAGE!!! */
 .video_container {
   display: flex;
   height: 100vh;
 }
 .small-img-row {
   display: flex;
-  margin: 90px 0;
+  margin: 100px 0;
   align-items: center;
   border-radius: 6px;
   overflow: hidden;
@@ -182,6 +175,7 @@ button:hover {
 }
 .small-img-row h2 {
   color: #000;
+  letter-spacing: 1em;
   font-size: 150%;
   text-align: center;
 }
@@ -214,7 +208,6 @@ video:focus {
   width: 30px;
   cursor: pointer;
 }
-/* !!! BEFORE WE BEGIN PAGE !!! */
 .services-section {
   width: 100%;
   height: 100vh;
@@ -231,7 +224,7 @@ video:focus {
   text-align: center;
   border-radius: 5px;
   color: #ccc;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.6);
   box-shadow: 10px 10px 10px #000;
 }
 .process-text h2 {
@@ -240,10 +233,8 @@ video:focus {
   text-transform: uppercase;
 }
 .process-text p {
-  padding: auto;
   font-size: 160%;
 }
-/*!!! CONTACT PAGE !!! */
 .contact-section {
   display: flex;
   position: relative;
@@ -259,7 +250,7 @@ video:focus {
   max-width: 550px;
   padding: 30px;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.6);
   box-shadow: 10px 10px 10px #000;
 }
 .wrapper .title h1 {
@@ -292,7 +283,7 @@ video:focus {
 .input-fields .input {
   margin: 10px 0;
   background: transparent;
-  border: 0px;
+  border: 0;
   border-bottom: 2px solid #ccc;
   padding: 10px;
   color: #ccc;
@@ -325,10 +316,10 @@ video:focus {
   padding: 9px 25px;
   border: none;
   border-radius: 50px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s 0s ease;
 }
 .btn button:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.3);
 }
 .address {
   color: #ccc;
@@ -344,7 +335,6 @@ video:focus {
   column-count: 3;
   column-gap: 0;
 }
-/*!!! FOOTER !!!*/
 #footer {
   width: 100%;
   padding-top: 40px;
@@ -396,9 +386,14 @@ video:focus {
   text-align: center;
   color: #000;
 }
-
-/* Media query Tablets and Ipads */
 @media screen and (max-width: 900px) {
+  .process-text p {
+    font-size: 155%;
+  }
+  .small-img-row h2 {
+    letter-spacing: 0.6em;
+  }
+
   #about-textbox img {
     width: 50%;
     height: auto;
@@ -437,8 +432,12 @@ video:focus {
     left: 22%;
   }
 }
-/* Media query mobile phones  */
 @media screen and (min-width: 400px) and (max-width: 760px) {
+  .small-img-row h2 {
+    letter-spacing: 0.2em;
+    font-size: 130%;
+    text-align: center;
+  }
   .services-section {
     width: 100%;
     height: 100vh;
@@ -449,7 +448,7 @@ video:focus {
     top: 3%;
   }
   .process-text h2 {
-    padding: 0 10px 0px 10px;
+    padding: 0 10px 0 10px;
     font-size: 170%;
   }
   .process-text p {
@@ -475,6 +474,7 @@ video:focus {
   #about-textbox img {
     width: 50%;
     height: auto;
+    padding: 0;
   }
   .sidekick-section {
     height: auto;
