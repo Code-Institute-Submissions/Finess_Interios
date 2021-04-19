@@ -154,15 +154,14 @@ button:hover {
 .video_container {
   display: flex;
   height: 100vh;
+  align-items: center;
 }
 .small-img-row {
   display: flex;
   margin: 100px 0;
-  align-items: center;
   border-radius: 6px;
   overflow: hidden;
   width: 85%;
-  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
