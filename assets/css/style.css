@@ -116,36 +116,41 @@ button:hover {
 .about {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #about-textbox {
-  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 20px;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%);
   width: 50%;
-  height: auto;
+  max-width: 550px;
+  height: fit-content;
   border-radius: 5px;
   color: #ccc;
   background-color: rgb(0, 0, 0, 0.6);
   box-shadow: 10px 10px 10px #000;
 }
 #about-textbox img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
   width: 50%;
   height: auto;
   padding-top: 15px;
 }
 #about-textbox small {
+  position: relative;
   font-size: 100%;
   font-weight: 900;
   padding: 4px;
+  text-align: center;
 }
 #about-textbox h2 {
   padding: 15px;
   font-size: 200%;
+  text-align: center;
 }
 #about-textbox p {
   font-size: 160%;
@@ -212,12 +217,11 @@ video:focus {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .process-text {
-  position: relative;
-  top: 15%;
-  width: 50%;
+  width: 40%;
+  max-width: 550px;
   height: fit-content;
   padding: 30px;
   text-align: center;
@@ -236,15 +240,12 @@ video:focus {
 }
 .contact-section {
   display: flex;
-  position: relative;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
 }
 .wrapper {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%);
   width: 80%;
   height: 425px;
   max-width: 550px;
@@ -457,11 +458,11 @@ video:focus {
   .input-fields .input {
     text-align: center;
   }
-
   .small-img-row h2 {
     letter-spacing: 0.2em;
-    font-size: 130%;
+    font-size: 120%;
     text-align: center;
+    padding-left: 5px;
   }
   .services-section {
     width: 100%;
