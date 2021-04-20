@@ -4,70 +4,69 @@
   padding: 0;
 }
 body {
-  background: linear-gradient(
-    to top,
-    rgb(173, 169, 150),
-    rgb(242, 242, 242),
-    rgb(219, 219, 219),
-    rgb(234, 234, 234)
-  );
   font-family: "Barlow Condensed", sans-serif;
 }
 header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: auto;
-  padding: 30px 10%;
-  background-color: #e2ded3;
+  position: relative;
 }
-header a h1 {
-  font-size: 210%;
-  transition: all 0.3s 0s ease;
-  font-weight: 500;
-  padding: 0% 20px;
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
 }
-header a h1:hover {
-  color: #db304c;
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  float: none;
+  position: absolute;
+  background: rgb(0, 0, 0, 0.4);
+  width: 100%;
 }
-li,
-a,
-button {
-  font-family: "Barlow Condensed", sans-serif;
-  transition: all 0.3s 0s ease;
-  font-weight: 500;
-  font-size: 125%;
-  color: #000;
+
+/* Style navigation menu links */
+.topnav a {
+  color: #ccc;
+  padding: 8px;
   text-decoration: none;
+  display: block;
+  font-size: 210%;
+  text-align: center;
 }
-.logo h1 {
-  cursor: pointer;
+.topnav h1 {
+  font-size: 210%;
+  text-align: center;
+  color: #000;
 }
-.navigation_links {
-  list-style: none;
-}
-.navigation_links li {
-  display: inline-block;
-  padding: 0 20px;
-}
-.navigation_links li a {
-  transition: all 0.3s 0s ease;
-}
-.navigation_links li a:hover {
+.topnav a h1:hover {
   color: #db304c;
-  border-bottom: 1px solid #e85a4f;
+  transition: all 0.3s 0s ease-in-out;
 }
-button {
-  padding: 5px 40px;
-  background-color: #e85a4f;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  color: #000;
+  position: absolute;
+  font-size: 200%;
+  left: 2%;
+  top: 1%;
+}
+.topnav a.icon:hover {
+  color: #db304c;
   transition: all 0.3s 0s ease;
-  margin-left: 20px;
 }
-button:hover {
-  background-color: rgb(0, 0, 0, 0.3);
+
+/* Add a grey background color on mouse-over */
+#myLinks a:hover {
+  background: #e85a4f;
+  color: black;
+  transition: all 0.3s 0s ease;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
 }
 .hero-section {
   display: flex;
@@ -106,6 +105,10 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   height: 600px;
+}
+#sidekick-center-box a {
+  text-decoration: none;
+  color: #000;
 }
 #sidekick-center-box small:hover {
   color: #db304c;
@@ -437,7 +440,15 @@ video:focus {
     justify-content: center;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 760px) {
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  .topnav h1 {
+    font-size: 200%;
+    text-align: left;
+  }
+  #myLinks a {
+    font-size: 150%;
+    text-align: left;
+  }
   .contact-form {
     display: block;
   }
