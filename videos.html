@@ -13,7 +13,7 @@
     <header>
       <div class="topnav">
         <a href="./index.html" class="active"><h1>Finess Interiors</h1></a>
-        <!-- Navigation links (hidden by default) -->
+        <!-- Navigation links (hidden) -->
         <div id="myLinks">
           <a href="./gallery.html">photo gallery</a>
           <a href="./videos.html">video gallery</a>
@@ -21,38 +21,72 @@
           <a href="./contact.html">contact us</a>
           <a href="./about.html">about</a>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <!-- Hamburger menu -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </header>
-    <section class="video_container">
-            <div class="small-img-row">
-                <div class="small-img">
-                    <img src="./assets/videos/img2.jpg">
-                    <img src="./assets/videos/play.png" class="play-btn" onclick="playVideo('assets/videos/video_2.mp4')">
-                </div>
-                <h2>DEDICATION</h2>
+    <div class="container">
+      <h1>Some of our Projects</h1>
+      <div class="row">
+        <div class="col">
+          <div class="feature-img">
+            <img src="./assets/videos/img1.jpg" width="100%" />
+            <img
+              src="./assets/videos/play.png"
+              class="play-btn"
+              onclick="playVideo('assets/videos/video_1.mp4')"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="./assets/videos/img2.jpg" />
+              <img
+                src="./assets/videos/play.png"
+                class="play-btn"
+                onclick="playVideo('assets/videos/video_2.mp4')"
+              />
             </div>
-            <div class="small-img-row">
-                <div class="small-img">
-                    <img src="./assets/videos/img3.jpg">
-                    <img src="./assets/videos/play.png" class="play-btn" onclick="playVideo('assets/videos/video_3.mp4')">
-                </div>
-                <h2>EXPERIENCE</h2>
+          </div>
+          <h2>DEDICATION</h2>
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="./assets/videos/img3.jpg" />
+              <img
+                src="./assets/videos/play.png"
+                class="play-btn"
+                onclick="playVideo('assets/videos/video_3.mp4')"
+              />
             </div>
-            <div class="small-img-row">
-                <div class="small-img">
-                    <img src="./assets/videos/img4.jpg">
-                    <img src="./assets/videos/play.png" class="play-btn" onclick="playVideo('assets/videos/video_4.mp4')">
-                </div>
-                <h2>PRECISION</h2>
-    </section>  
+          </div>
+          <h2>EXPERIENCE</h2>
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="./assets/videos/img4.jpg" />
+              <img
+                src="./assets/videos/play.png"
+                class="play-btn"
+                onclick="playVideo('assets/videos/video_4.mp4')"
+              />
+            </div>
+          </div>
+          <h2>PRECISION</h2>
+        </div>
+      </div>
+    </div>
     <div class="video-player" id="videoPlayer">
-        <video width="100%" controls autoplay id="myVideo"></video>
-        <img src="./assets/videos/close.png" class="close-btn" onclick="stopVideo()">
-    </div>  
+      <video width="100%" controls autoplay id="myVideo">
+        <source src="./assets/videos/video_1.mp4" type="video/mp4" />
+      </video>
+      <img
+        src="./assets/videos/close.png"
+        class="close-btn"
+        onclick="stopVideo()"
+      />
+    </div>
     <section id="footer">
       <div id="socials">
         <div id="facebook">
@@ -90,7 +124,9 @@
       </div>
     </section>
     <script src="./assets/javascript/script.js"></script>
-    <script src="https://kit.fontawesome.com/cc1a788000.js"
-      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/cc1a788000.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
