@@ -58,11 +58,13 @@ header {
   color: #e85a4f;
   transition: all 0.3s 0s ease;
 }
-.active {
-  color: white;
-}
 /* !!! End !!! */
-
+/* !!!all pages!!! */
+.page-title {
+  position: relative;
+  text-align: center;
+  text-transform: lowercase;
+}
 /* !!!! Hero Section !!!! */
 .hero-section {
   display: flex;
@@ -494,6 +496,12 @@ video:focus {
 }
 
 @media screen and (min-width: 320px) and (max-width: 760px) {
+  /* !!! all pages !!! */
+  .page-title {
+    position: relative;
+    text-align: center;
+  }
+
   /* !!! Video Gallery !!!*/
   .container {
     flex-direction: column;
