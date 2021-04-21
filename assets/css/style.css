@@ -23,6 +23,7 @@ header {
   position: absolute;
   background: rgb(0, 0, 0, 0.9);
   width: 100%;
+  z-index: 10;
 }
 .topnav a {
   color: #ccc;
@@ -132,6 +133,9 @@ header {
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 80%;
   margin: 80px auto;
 }
@@ -146,6 +150,7 @@ header {
 }
 .row {
   display: block;
+  text-align: center;
 }
 .col {
   flex-basis: 50%;
@@ -165,7 +170,7 @@ header {
 }
 .small-img {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 .small-img img {
   width: 100%;
@@ -561,12 +566,14 @@ video:focus {
   /* !!!BEFORE WE BEGIN SECTION!!! */
   .services-section {
     width: 100%;
-    height: 100vh;
+    height: auto;
   }
   .process-text {
     position: relative;
     width: 80%;
-    top: 3%;
+    margin-top: 5%;
+    top: 5%;
+    z-index: -1;
   }
   .process-text h2 {
     padding: 0 10px 0 10px;
