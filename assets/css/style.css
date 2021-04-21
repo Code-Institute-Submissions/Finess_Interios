@@ -2,26 +2,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
-  background: rgb(0, 0, 0, 0.3);
   font-family: "Barlow Condensed", sans-serif;
 }
-
 /*!!!! Navigation Bar!!!!*/
 header {
   width: 100%;
   position: relative;
 }
 .topnav {
-  background: rgb(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.8);
   overflow: hidden;
 }
 .topnav #myLinks {
   display: none;
   float: none;
   position: absolute;
-  background: rgb(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   width: 100%;
   z-index: 10;
 }
@@ -31,31 +30,31 @@ header {
   text-decoration: none;
   display: block;
   font-size: 210%;
-  text-align: center;
+  width: fit-content;
 }
 .topnav h1 {
-  font-size: 180%;
-  text-align: left;
-  color: #000;
+  width: 100%;
+  font-size: 130%;
+  color: #ccc;
 }
 .topnav a h1:hover {
-  color: #db304c;
+  color: #ff1500;
   transition: all 0.3s 0s ease-in-out;
 }
 .topnav a.icon {
   display: block;
-  color: #000;
+  color: #ccc;
   position: absolute;
   font-size: 200%;
-  right: 2%;
-  top: 25%;
+  top: 20%;
+  right: 1%;
 }
 .topnav a.icon:hover {
-  color: #db304c;
+  color: #ff1500;
   transition: all 0.3s 0s ease;
 }
 #myLinks a:hover {
-  color: #e85a4f;
+  color: #ff1500;
   transition: all 0.3s 0s ease;
 }
 /* !!! End !!! */
@@ -63,7 +62,9 @@ header {
 .page-title {
   position: relative;
   text-align: center;
-  text-transform: lowercase;
+  text-transform: uppercase;
+  color: #000;
+  background: rgba(0, 0, 0, 0.7);
 }
 /* !!!! Hero Section !!!! */
 .hero-section {
@@ -71,14 +72,13 @@ header {
   align-items: flex-end;
   flex-direction: row;
   width: 100%;
-  height: 600px;
+  height: 50vh;
   background-image: url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
-  animation-name: zoom-in;
-  animation-duration: 2s;
-  background-color: #834f1356;
+  background-color: #00000056;
   background-blend-mode: exclusion;
   justify-content: center;
 }
@@ -91,11 +91,13 @@ header {
   }
 }
 #top-heading h3 {
-  width: 100%;
-  font-size: 4.5em;
-  margin-bottom: 40px;
-  color: #000;
-  background: rgb(0, 0, 0, 0.3);
+  display: flex;
+  font-size: 3.5em;
+  color: #ccc;
+  animation-name: zoom-in;
+  animation-duration: 2s;
+  background: rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
 }
 .sidekick-section {
   display: flex;
@@ -119,15 +121,23 @@ header {
   text-align: center;
   font-size: 200%;
   width: 33%;
+  color: #000;
   padding-bottom: 10px;
   border-bottom: 2px solid #e85a4f;
 }
 /* !!! End !!! */
 
 /* !!!Photo Gallery !!! */
-.gallery-grid {
-  display: block;
-  column-count: 3;
+.img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 80px auto;
+}
+.img-container img {
+  min-width: 200px;
 }
 /* !!! End !!! */
 
@@ -149,6 +159,7 @@ header {
 }
 .text-video-page h1 {
   padding-bottom: 10px;
+  color: #000;
 }
 .row {
   display: block;
@@ -156,6 +167,7 @@ header {
 }
 .col {
   flex-basis: 50%;
+  color: #000;
 }
 .feature-img {
   width: 50%;
@@ -230,9 +242,9 @@ video:focus {
   max-width: 550px;
   height: fit-content;
   border-radius: 5px;
-  color: #ccc;
-  background-color: rgb(0, 0, 0, 0.6);
-  box-shadow: 10px 10px 10px #000;
+  color: #000;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 50px rgba(95, 46, 240, 0.7);
 }
 #about-textbox img {
   position: relative;
@@ -275,9 +287,8 @@ video:focus {
   padding: 30px;
   text-align: center;
   border-radius: 5px;
-  color: #ccc;
-  background-color: rgb(0, 0, 0, 0.6);
-  box-shadow: 10px 10px 10px #000;
+  color: #000;
+  background: rgba(0, 0, 0, 0.7);
 }
 .process-text h2 {
   padding: 15px;
@@ -302,9 +313,7 @@ video:focus {
   height: 425px;
   max-width: 550px;
   padding: 30px;
-  border-radius: 5px;
-  background-color: rgb(0, 0, 0, 0.6);
-  box-shadow: 10px 10px 10px #000;
+  background: rgba(0, 0, 0, 0.7);
 }
 .wrapper .title h1 {
   color: #000;
@@ -312,14 +321,13 @@ video:focus {
   text-align: center;
   margin-bottom: 25px;
   font-size: 180%;
-  color: #ccc;
+  color: #000;
 }
 .wrapper .title p {
   color: #000;
   text-align: center;
   margin-bottom: 25px;
   font-size: 150%;
-  color: #ccc;
 }
 .contact-form {
   display: flex;
@@ -337,9 +345,9 @@ video:focus {
   margin: 10px 0;
   background: transparent;
   border: 0;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #000;
   padding: 10px;
-  color: #ccc;
+  color: #000;
   width: 100%;
 }
 .msg textarea {
@@ -349,12 +357,12 @@ video:focus {
   height: 80%;
   width: 100%;
   margin: 10px 0;
-  color: #ccc;
+  color: #000;
   background: transparent;
 }
 ::-webkit-input-placeholder {
   font-family: "Barlow Condensed", sans-serif;
-  color: #ccc;
+  color: #000;
   text-align: center;
   font-size: 160%;
 }
@@ -365,7 +373,7 @@ video:focus {
   width: 80%;
   text-transform: uppercase;
   background: #e85a4f;
-  color: #ccc;
+  color: #000;
   text-align: center;
   cursor: pointer;
   padding: 9px 25px;
@@ -374,7 +382,8 @@ video:focus {
   transition: all 0.3s 0s ease;
 }
 .btn button:hover {
-  background-color: rgb(0, 0, 0, 0.3);
+  background: #000;
+  color: #ccc;
 }
 /* !!! End !!! */
 
@@ -383,7 +392,7 @@ video:focus {
   width: 100%;
   margin-top: 10px;
   padding-top: 40px;
-  background-color: #c3bfb3;
+  background: rgba(0, 0, 0, 0.7);
 }
 #socials {
   display: flex;
@@ -396,25 +405,25 @@ video:focus {
   font-size: 220%;
 }
 #facebook i {
-  color: #000;
+  color: #ccc;
 }
 #facebook i:hover {
   color: #1e5edf;
 }
 #instagram i {
-  color: #000;
+  color: #ccc;
 }
 #instagram i:hover {
   color: #db304c;
 }
 #twitter i {
-  color: #000;
+  color: #ccc;
 }
 #twitter i:hover {
   color: #00acee;
 }
 #pin i {
-  color: #000;
+  color: #ccc;
 }
 #pin i:hover {
   color: #ff1500;
@@ -425,6 +434,7 @@ video:focus {
   padding: 30px 0 10px 0;
   margin-top: 20px;
   font-weight: 600;
+  color: #ccc;
 }
 #copyright {
   display: inline-flex;
@@ -436,7 +446,7 @@ video:focus {
 #copyright h3 {
   font-size: 100%;
   text-align: center;
-  color: #000;
+  color: #ccc;
 }
 /* !!! End !!! */
 @media screen and (max-width: 900px) {
@@ -537,6 +547,7 @@ video:focus {
   }
   .topnav a.icon {
     top: 20%;
+    right: 0%;
   }
   #myLinks a {
     font-size: 150%;
@@ -639,15 +650,7 @@ video:focus {
     justify-content: flex-end;
     align-items: center;
   }
-  #top-heading h3 {
-    width: 100%;
-    text-align: center;
-  }
   /* !!! END !!! */
 
   /* !!! GALLERY PAGE !!! */
-  .gallery-grid {
-    display: flex;
-    flex-direction: column;
-  }
 }
