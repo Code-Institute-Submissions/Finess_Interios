@@ -10,6 +10,7 @@ body {
 
 /*!!!! Navigation Bar!!!!*/
 header {
+  width: 100%;
   position: relative;
 }
 .topnav {
@@ -20,7 +21,7 @@ header {
   display: none;
   float: none;
   position: absolute;
-  background: rgb(0, 0, 0, 0.6);
+  background: rgb(0, 0, 0, 0.9);
   width: 100%;
 }
 .topnav a {
@@ -133,34 +134,33 @@ header {
 /* !!! Video Gallery !!!*/
 .container {
   display: flex;
+  flex-direction: row;
   width: 80%;
   margin: 80px auto;
 }
-.container h1 {
+.text-video-page {
   padding: 60px 0;
   color: #000;
-  font-size: 250%;
   text-align: center;
+  font-size: 150%;
+}
+.text-video-page h1 {
+  padding-bottom: 10px;
 }
 .row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: block;
 }
 .col {
   flex-basis: 50%;
-  min-width: 250px;
 }
 .feature-img {
-  width: 150px;
+  width: 50%;
   position: relative;
   border-radius: 6px;
   overflow: hidden;
 }
 .small-img-row {
-  display: flex;
   background: inherit;
-  margin: 20px 0;
   align-items: center;
   border-radius: 6px;
   overflow: hidden;
@@ -168,18 +168,17 @@ header {
 }
 .small-img {
   position: relative;
+  z-index: -1;
 }
 .small-img img {
-  width: 150px;
+  width: 100%;
 }
 .small-img-row h2 {
   line-height: 22px;
   font-size: 120%;
-  margin-left: 20px;
   color: #000;
 }
 .play-btn {
-  width: 60px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -187,7 +186,7 @@ header {
   cursor: pointer;
 }
 .small-img .play-btn {
-  width: 35px;
+  width: 50px;
 }
 .video-player {
   width: 80%;
@@ -435,6 +434,28 @@ video:focus {
 }
 /* !!! End !!! */
 @media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .text-video-page {
+    padding: 60px 0;
+    color: #000;
+    text-align: center;
+    font-size: 150%;
+  }
+  .row {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .small-img img {
+    width: 100%;
+  }
+  .feature-img {
+    width: 100%;
+  }
   .process-text p {
     font-size: 155%;
   }
@@ -476,19 +497,33 @@ video:focus {
   .container {
     flex-direction: column;
   }
-  .topnav h1 {
-    font-size: 130%;
-    padding-left: 10px;
+  .text-video-page {
+    padding: 60px 0;
+    color: #000;
+    text-align: center;
+    font-size: 150%;
+  }
+  .text-video-page h1 {
+    padding-bottom: 10px;
   }
   .row {
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 20%;
     text-align: center;
   }
+  .small-img img {
+    width: 100%;
+  }
+  .feature-img {
+    width: 100%;
+  }
 
+  .topnav h1 {
+    font-size: 130%;
+    padding-left: 10px;
+  }
   .topnav a.icon {
     top: 30%;
   }
