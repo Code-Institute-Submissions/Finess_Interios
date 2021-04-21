@@ -33,8 +33,8 @@ header {
   text-align: center;
 }
 .topnav h1 {
-  font-size: 210%;
-  text-align: center;
+  font-size: 180%;
+  text-align: left;
   color: #000;
 }
 .topnav a h1:hover {
@@ -123,11 +123,8 @@ header {
 
 /* !!!Photo Gallery !!! */
 .gallery-grid {
-  clear: both;
-  width: 100%;
-  line-height: 0;
+  display: block;
   column-count: 3;
-  column-gap: 0;
 }
 /* !!! End !!! */
 
@@ -210,15 +207,17 @@ video:focus {
 
 /* !!! About Page !!! */
 .about {
-  width: 100%;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
 #about-textbox {
   display: flex;
   flex-direction: column;
+  margin: 10% 0;
   padding: 20px;
   width: 50%;
   max-width: 550px;
@@ -434,6 +433,7 @@ video:focus {
 }
 /* !!! End !!! */
 @media screen and (max-width: 900px) {
+  /* !!! Video Gallery !!!*/
   .container {
     flex-direction: column;
   }
@@ -456,44 +456,40 @@ video:focus {
   .feature-img {
     width: 100%;
   }
+  /* !!!END!!! */
+
+  /* !!! BEFORE WE BIGIN SECTION !!! */
   .process-text p {
     font-size: 155%;
   }
-  .small-img-row h2 {
-    letter-spacing: 0.6em;
+  .process-text {
+    top: 10%;
   }
+  /* !!!END!!! */
 
+  /* !!! ABOUT SECTION!!! */
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
   #about-textbox img {
     width: 50%;
     height: auto;
   }
   #about-textbox {
-    top: 10%;
+    margin-top: 10%;
   }
-  .process-text {
-    top: 10%;
-  }
+  /* !!!END!!! */
+
+  /* !!!CONTACT PAGE!!! */
   .wrapper {
     top: 10%;
   }
-  header {
-    width: 100%;
-    flex-direction: column;
-  }
-  li,
-  a,
-  button {
-    font-size: 120%;
-    margin-left: 0;
-    padding-top: 10px;
-  }
-  .navigation_links li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  /* !!!END!!! */
 }
+
 @media screen and (min-width: 320px) and (max-width: 760px) {
+  /* !!! Video Gallery !!!*/
   .container {
     flex-direction: column;
   }
@@ -519,18 +515,23 @@ video:focus {
   .feature-img {
     width: 100%;
   }
+  /* !!!END!!! */
 
+  /* !!! NAVIGATION BAR !!! */
   .topnav h1 {
     font-size: 130%;
     padding-left: 10px;
   }
   .topnav a.icon {
-    top: 30%;
+    top: 20%;
   }
   #myLinks a {
     font-size: 150%;
     text-align: center;
   }
+  /* !!!END!!! */
+
+  /* !!!CONTACT PAGE!!! */
   .contact-form {
     display: block;
   }
@@ -555,12 +556,9 @@ video:focus {
   .input-fields .input {
     text-align: center;
   }
-  .small-img-row h2 {
-    letter-spacing: 0.2em;
-    font-size: 120%;
-    text-align: center;
-    padding-left: 5px;
-  }
+  /* !!!END!!! */
+
+  /* !!!BEFORE WE BEGIN SECTION!!! */
   .services-section {
     width: 100%;
     height: 100vh;
@@ -578,8 +576,18 @@ video:focus {
     padding: 20px;
     font-size: 130%;
   }
+  /* !!! END !!! */
+
+  /* !!! ABOUT SECTION!!! */
   .about {
+    display: flex;
+    flex-direction: column;
     height: auto;
+  }
+  #about-textbox {
+    width: 80%;
+    margin: 10% 0;
+    text-align: center;
   }
   #about-textbox h2 {
     padding: 0 10px 10px 10px;
@@ -589,16 +597,14 @@ video:focus {
     padding: 20px;
     font-size: 130%;
   }
-  #about-textbox {
-    width: 80%;
-    margin: 5% 0;
-    text-align: center;
-  }
   #about-textbox img {
     width: 50%;
     height: auto;
     padding: 0;
   }
+  /* !!!END!!! */
+
+  /* !!! INDEX PAGE !!! */
   .sidekick-section {
     height: auto;
   }
@@ -622,27 +628,11 @@ video:focus {
     width: 100%;
     text-align: center;
   }
-  header {
-    width: 100%;
-    flex-direction: column;
-  }
-  li,
-  a,
-  button {
-    font-size: 120%;
-    margin-left: 0;
-    padding-top: 10px;
-  }
-  .btn button {
-    top: 5px;
-  }
-  .navigation_links li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  /* !!! END !!! */
 
-  #gallery-grid {
-    column-count: 2;
+  /* !!! GALLERY PAGE !!! */
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
   }
 }
