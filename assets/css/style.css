@@ -48,18 +48,30 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem 0;
   background: rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.nav-brand {
-  font-size: 3rem;
+.nav-brand a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.nav-brand a:hover {
+  color: #db304c;
+  transition: all 0.3s 0s ease-in-out;
 }
 .menu-icons i {
   font-size: 3.5rem;
   color: #000;
   cursor: pointer;
+}
+.menu-icons i:hover {
+  color: #db304c;
+  transition: all 0.3s 0s ease-in-out;
 }
 .close i {
   color: rgb(223, 42, 135);
@@ -90,9 +102,13 @@ nav {
   margin: 1.5rem 0;
 }
 .nav-link {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.7);
+}
+.nav-link:hover {
+  color: #db304c;
+  transition: all 0.3s 0s ease;
 }
 
 /* Hero section */
@@ -176,7 +192,7 @@ nav {
   flex-direction: row;
 }
 #socials a {
-  font-size: 220%;
+  font-size: 4rem;
 }
 #facebook i {
   color: #ccc;
@@ -203,22 +219,22 @@ nav {
   color: #ff1500;
 }
 .address {
+  padding: 40px 0;
+}
+.address p {
   text-align: center;
-  font-size: 150%;
-  padding: 30px 0 10px 0;
-  margin-top: 20px;
+  font-size: 2rem;
   font-weight: 600;
   color: #ccc;
 }
 #copyright {
   display: inline-flex;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 10px;
   justify-content: center;
+  padding: 10px 0;
 }
 #copyright h3 {
-  font-size: 100%;
+  font-size: 2rem;
   text-align: center;
   color: #ccc;
 }
@@ -240,7 +256,7 @@ nav {
   transition: 0.25s ease-in-out;
 }
 .image:hover {
-  transform: scale(1.1);
+  transform: scale(1.4);
 }
 .image h1 {
   position: absolute;
@@ -261,7 +277,7 @@ nav {
 /* !!! Video Gallery !!!*/
 .video-container {
   position: relative;
-  top: 10rem;
+  top: 5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -348,28 +364,34 @@ video:focus {
   height: 100vh;
   display: inline-flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .about-textbox {
   position: relative;
-  left: 10%;
-  width: 100%;
+  left: 0;
+  width: 80%;
   height: fit-content;
   background: rgba(0, 0, 0, 0.7);
-  padding: 50px;
+  padding: 50px 25px;
 }
 .about-textbox h2,
 .about-textbox p {
-  width: 50%;
+  position: relative;
+  left: 0;
+  width: 40%;
   font-size: 2rem;
   text-align: center;
+  padding: 10px;
 }
 .ceo-img img {
-  width: 35%;
+  position: relative;
+  left: 0;
+  width: 40%;
 }
 .wrapper {
-  position: relative;
-  right: 20%;
+  position: absolute;
+  right: 15%;
+  top: 25%;
   width: 80%;
   height: 50rem;
   max-width: 550px;
@@ -380,26 +402,25 @@ video:focus {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 25px;
-  font-size: 180%;
+  font-size: 3rem;
   color: #000;
 }
 .wrapper .title p {
   color: #000;
   text-align: center;
   margin-bottom: 25px;
-  font-size: 150%;
+  font-size: 2rem;
 }
 .contact-form {
   display: flex;
+  flex-direction: column;
 }
 .input-fields {
-  display: flex;
-  flex-direction: column;
   margin-right: 4%;
 }
 .input-fields,
 .msg {
-  width: 48%;
+  width: 100%;
 }
 .input-fields .input {
   margin: 10px 0;
@@ -412,9 +433,9 @@ video:focus {
 }
 .msg textarea {
   position: relative;
-  left: 7%;
+  left: 0;
   top: 13%;
-  height: 80%;
+  height: 100px;
   width: 100%;
   margin: 10px 0;
   color: #000;
@@ -444,4 +465,30 @@ video:focus {
 .btn button:hover {
   background: #000;
   color: #ccc;
+}
+
+/* before_we_begin */
+
+.process-page {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+.process-textbox {
+  width: 80%;
+  height: auto;
+  max-width: 550px;
+  padding: 30px;
+}
+.process-textbox h2 {
+  font-size: 4rem;
+}
+.process-textbox p {
+  font-size: 2.5rem;
+}
+.process-img {
+  width: 40%;
 }
