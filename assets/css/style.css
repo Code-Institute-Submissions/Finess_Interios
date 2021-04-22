@@ -477,6 +477,7 @@ video:focus {
 @media screen and (max-width: 768px) {
   .photo-container {
     column-count: 3;
+    height: fit-content;
   }
 
   /* !!! Video Gallery !!!*/
@@ -536,6 +537,7 @@ video:focus {
 @media screen and (max-width: 425px) {
   .photo-container {
     column-count: 2;
+    height: fit-content;
   }
   .image h1 {
     font-size: 12px;
@@ -544,6 +546,7 @@ video:focus {
 @media screen and (max-width: 320px) {
   .photo-container {
     column-count: 1;
+    height: fit-content;
   }
   .image h1 {
     font-size: 12px;
