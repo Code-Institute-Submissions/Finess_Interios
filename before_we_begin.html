@@ -6,30 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Design your home or workspace with us" />
     <meta name="keywords" content="interior design, ambience, home, office" />
+    <!--Ion Icons-->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Aldrich&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Finess Interiors - Before we begin</title>
   </head>
   <body>
     <header>
-      <div class="topnav">
-        <a href="./index.html" class="active"><h1>Finess Interiors</h1></a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="./gallery.html">photo gallery</a>
-          <a href="./videos.html">video gallery</a>
-          <a href="./services.html">how we work</a>
-          <a href="./contact.html">contact us</a>
-          <a href="./about.html">about us</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+      <div class="container">
+        <nav>
+          <div class="nav-brand">
+            <h1>Finess Interiors</h1>
+          </div>
+          <div class="menu-icons open">
+            <i class="icon ion-md-menu"></i>
+          </div>
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="icon ion-md-close"></i>
+            </div>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./photo_gallery.html" class="nav-link">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="./video_gallery.html" class="nav-link">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="./before_we_begin.html" class="nav-link"
+                >Before we begin</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./about_&_contact.html" class="nav-link"
+                >About & Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <div class="page-title">
-      <h2>How we Work</h2>
-    </div>
     <section class="services-section">
       <div class="process-text">
         <h2>Process before project</h2>

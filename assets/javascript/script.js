@@ -1,3 +1,16 @@
+// Function expression to select elements.
+const selectElement = (s) => document.querySelector(s);
+
+//Open the menu on click
+selectElement(".open").addEventListener("click", () => {
+  selectElement(".nav-list").classList.add("active");
+});
+
+//Close the menu on click
+selectElement(".close").addEventListener("click", () => {
+  selectElement(".nav-list").classList.remove("active");
+});
+
 var videoPlayer = document.getElementById("videoPlayer");
 var myVideo = document.getElementById("myVideo");
 
@@ -7,13 +20,4 @@ function playVideo(file) {
 }
 function stopVideo() {
   videoPlayer.style.display = "none";
-}
-
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
 }
