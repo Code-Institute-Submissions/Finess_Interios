@@ -62,7 +62,7 @@ nav {
   width: auto;
   text-decoration: none;
   font-size: 2rem;
-  color: #000;
+  color: #ce587b;
   text-transform: uppercase;
 }
 
@@ -167,7 +167,7 @@ nav {
 .mid-message {
   position: relative;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   width: 33%;
   color: #000;
   padding-bottom: 10px;
@@ -361,30 +361,35 @@ video:focus {
 
 /* about */
 .about-section {
+  display: inline-flex;
+  align-items: center;
   width: 100%;
   height: 100vh;
-  display: inline-flex;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+  top: 5rem;
+}
+.about-textbox {
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.about-textbox {
-  position: relative;
-  left: 0;
-  width: 80%;
-  height: fit-content;
-  background: url(../images/our_ceo.jpg) left center no-repeat;
-  background-size: cover;
-  padding: 50px 30px;
-}
 .about-textbox h2,
 .about-textbox p {
-  position: relative;
-  left: 0;
-  width: 40%;
+  padding: 10px;
   font-size: 2rem;
   text-align: center;
-  padding: 10px;
-  color: #ccc;
+}
+.about-textbox img {
+  width: 40%;
+  min-width: 350px;
 }
 
 /* contact */
@@ -407,7 +412,7 @@ video:focus {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 25px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #000;
 }
 .wrapper .title p {
@@ -418,7 +423,6 @@ video:focus {
 }
 .contact-form {
   display: flex;
-  flex-direction: column;
 }
 .input-fields {
   margin-right: 4%;
@@ -440,7 +444,7 @@ video:focus {
   position: relative;
   left: 0;
   top: 13%;
-  height: 100px;
+  height: 200px;
   width: 100%;
   margin: 10px 0;
   color: #000;
@@ -475,31 +479,52 @@ video:focus {
 /* before_we_begin */
 .process-page {
   display: inline-flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
   width: 100%;
   height: 100vh;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+  top: 5rem;
 }
 .process-textbox {
-  width: 80%;
+  width: fit-content;
   height: auto;
   max-width: 550px;
-  padding: 30px;
+  padding: 10px;
 }
 .process-textbox h2 {
   font-size: 4rem;
+  text-align: center;
+  padding: 5px;
 }
 .process-textbox p {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
 }
 .process-img {
   width: 40%;
+  min-width: 350px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< media queries >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 @media screen and (min-width: 320px) {
+  /* contact */
+  .wrapper {
+    position: relative;
+    top: 5rem;
+    width: 90%;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 10rem;
+  }
+  /* hero */
   .main-message {
     text-align: center;
     font-size: 2rem;
@@ -534,13 +559,14 @@ video:focus {
     display: none;
   }
   .nav-items {
-    margin: 0 2.5rem;
+    margin: 0 2rem;
   }
   .nav-link {
     color: #000;
     position: relative;
     font-size: 2.2rem;
     padding: 8px;
+    letter-spacing: -1px;
   }
   .nav-link::before,
   .current::before {
@@ -576,6 +602,9 @@ video:focus {
 @media screen and (min-width: 950px) {
   .photo-container {
     column-count: 3;
+  }
+  .process-page {
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
