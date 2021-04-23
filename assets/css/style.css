@@ -44,18 +44,24 @@ header {
   left: 0;
   z-index: 1;
 }
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1rem 0;
-  background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .nav-brand a {
+  width: auto;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #000;
   text-transform: uppercase;
 }
@@ -79,7 +85,7 @@ nav {
 .nav-list {
   width: 25rem;
   height: 100vh;
-  background-color: rgb(233, 240, 247);
+  background-color: #999;
   position: fixed;
   top: 0;
   right: -26rem;
@@ -87,7 +93,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 9;
+  z-index: 1500;
   transition: all 650ms ease-in-out;
 }
 .nav-list.active {
@@ -104,7 +110,7 @@ nav {
 .nav-link {
   font-size: 2.5rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.7);
+  color: #000;
 }
 .nav-link:hover {
   color: #db304c;
@@ -112,7 +118,7 @@ nav {
 }
 
 /* Hero section */
-.hero {
+.hero-section {
   display: flex;
   align-items: flex-end;
   flex-direction: row;
@@ -128,13 +134,12 @@ nav {
   justify-content: center;
 }
 .main-message {
-  display: flex;
-  font-size: 3.5em;
-  color: #ccc;
-  animation-name: zoom-in;
-  animation-duration: 2s;
-  background: rgba(0, 0, 0, 0.7);
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 50rem;
+  font-size: 3rem;
+  color: #000;
+  text-transform: uppercase;
+  transform: translateY(20%);
 }
 @keyframes zoom-in {
   from {
@@ -144,33 +149,25 @@ nav {
     transform: scale(1);
   }
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4.7rem;
-}
-.sidekick-section {
+.mid-main-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: fit-content;
 }
-.sidekick-message a {
+.mid-message a {
   text-decoration: none;
   color: #000;
 }
-.sidekick-message small:hover {
+.mid-message a:hover {
   color: #db304c;
   transition: all 0.3s 0s ease;
 }
-.sidekick-message {
+.mid-message {
   position: relative;
   text-align: center;
-  font-size: 200%;
+  font-size: 2.5rem;
   width: 33%;
   color: #000;
   padding-bottom: 10px;
@@ -179,6 +176,10 @@ nav {
 
 /* footer */
 #footer {
+  padding: 2.5rem 0;
+  background-color: #d7d4ed;
+  color: #000;
+  text-align: center;
   width: 100%;
   margin-top: 10px;
   padding-top: 40px;
@@ -358,8 +359,8 @@ video:focus {
   cursor: pointer;
 }
 
-/* about&contact */
-.contact-about-container {
+/* about */
+.about-section {
   width: 100%;
   height: 100vh;
   display: inline-flex;
@@ -371,8 +372,9 @@ video:focus {
   left: 0;
   width: 80%;
   height: fit-content;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 50px 25px;
+  background: url(../images/our_ceo.jpg) left center no-repeat;
+  background-size: cover;
+  padding: 50px 30px;
 }
 .about-textbox h2,
 .about-textbox p {
@@ -382,20 +384,23 @@ video:focus {
   font-size: 2rem;
   text-align: center;
   padding: 10px;
+  color: #ccc;
 }
-.ceo-img img {
-  position: relative;
-  left: 0;
-  width: 40%;
+
+/* contact */
+.contact-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .wrapper {
-  position: absolute;
-  right: 15%;
-  top: 25%;
-  width: 80%;
-  height: 50rem;
+  width: 100%;
+  height: fit-content;
   max-width: 550px;
   padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
 }
 .wrapper .title h1 {
   color: #000;
@@ -468,7 +473,6 @@ video:focus {
 }
 
 /* before_we_begin */
-
 .process-page {
   display: inline-flex;
   flex-direction: row;
@@ -491,4 +495,91 @@ video:focus {
 }
 .process-img {
   width: 40%;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< media queries >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (min-width: 320px) {
+  .main-message {
+    text-align: center;
+    font-size: 2rem;
+  }
+  /* >>>>>>>>><<<<<<<<< */
+  .photo-container {
+    column-count: 1;
+  }
+}
+@media screen and (min-width: 470px) {
+  /* check later */
+}
+@media screen and (min-width: 700px) {
+  /* header media query */
+  header {
+    height: 8rem;
+  }
+  .nav-brand {
+    width: 2rem;
+  }
+  .nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-direction: row;
+    transition: initial;
+  }
+  .menu-icons {
+    display: none;
+  }
+  .nav-items {
+    margin: 0 2.5rem;
+  }
+  .nav-link {
+    color: #000;
+    position: relative;
+    font-size: 2.2rem;
+    padding: 8px;
+  }
+  .nav-link::before,
+  .current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    background-color: #ce587b;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+  }
+  .current::before {
+    transform: scaleX(1);
+  }
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* hero media query */
+  .hero-section {
+    height: 60vh;
+  }
+
+  /* photo container media query */
+  .photo-container {
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .photo-container {
+    column-count: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 75vh;
+  }
 }

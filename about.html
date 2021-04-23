@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Design your home or workspace with us" />
-    <meta name="keywords" content="interior design, ambience, home, office" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nature Tours | Home</title>
     <!--Ion Icons-->
     <link
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
-    <!--Google Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Aldrich&display=swap"
-      rel="stylesheet"
-    />
+    <!--Our own stylesheet-->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Finess Interiors - Video Gallery</title>
   </head>
   <body>
     <header>
@@ -38,7 +31,7 @@
               <i class="icon ion-md-close"></i>
             </div>
             <li class="nav-item">
-              <a href="./index.html" class="nav-link">Home</a>
+              <a href="./index.html" class="nav-link current">Home</a>
             </li>
             <li class="nav-item">
               <a href="./photo_gallery.html" class="nav-link">Photo Gallery</a>
@@ -61,66 +54,21 @@
         </nav>
       </div>
     </header>
-    <div class="video-container">
-      <div class="row">
-        <div class="col">
-          <div class="small-img">
-            <img src="./assets/videos/img1.jpg" width="100%" />
-            <img
-              src="./assets/videos/play.png"
-              class="play-btn"
-              onclick="playVideo('assets/videos/video_1.mp4')"
-            />
-            <h2>PASSION</h2>
-          </div>
-        </div>
-        <div class="col">
-          <div class="small-img-row">
-            <div class="small-img">
-              <img src="./assets/videos/img2.jpg" />
-              <img
-                src="./assets/videos/play.png"
-                class="play-btn"
-                onclick="playVideo('assets/videos/video_2.mp4')"
-              />
-              <h2>DEDICATION</h2>
-            </div>
-          </div>
-          <div class="small-img-row">
-            <div class="small-img">
-              <img src="./assets/videos/img3.jpg" />
-              <img
-                src="./assets/videos/play.png"
-                class="play-btn"
-                onclick="playVideo('assets/videos/video_3.mp4')"
-              />
-              <h2>EXPERIENCE</h2>
-            </div>
-          </div>
-          <div class="small-img-row">
-            <div class="small-img">
-              <img src="./assets/videos/img4.jpg" />
-              <img
-                src="./assets/videos/play.png"
-                class="play-btn"
-                onclick="playVideo('assets/videos/video_4.mp4')"
-              />
-              <h2>PRECISION</h2>
-            </div>
-          </div>
-        </div>
+    <section class="about-section">
+      <div class="about-textbox">
+        <h2>OUR COMPANY PHILOSOPHY</h2>
+        <p>
+          "My business philosophy is to create and nurture positive employee and
+          customer relationships where we are all better as a result of having
+          one another in each other’s lives. The pragmatic application of this
+          philosophy is to ensure that there is a constant flow of respect for
+          time, care for each other’s well being and support for our mutual
+          success in the form of providing instructions, knowledge and resources
+          necessary to get the job done to the best of everyone’s ability."<br />
+          John Smith, CEO & Founder, Finess Interiors
+        </p>
       </div>
-    </div>
-    <div class="video-player" id="videoPlayer">
-      <video width="100%" controls autoplay id="myVideo">
-        <source src="./assets/videos/video_1.mp4" type="video/mp4" />
-      </video>
-      <img
-        src="./assets/videos/close.png"
-        class="close-btn"
-        onclick="stopVideo()"
-      />
-    </div>
+    </section>
     <section id="footer">
       <div id="socials">
         <div id="facebook">
@@ -157,7 +105,7 @@
         </h3>
       </div>
     </section>
-    <script src="./assets/javascript/script.js"></script>
+    <script type="text/javascript" src="./assets/javascript/script.js"></script>
     <script
       src="https://kit.fontawesome.com/cc1a788000.js"
       crossorigin="anonymous"
