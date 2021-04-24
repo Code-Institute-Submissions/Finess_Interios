@@ -28,7 +28,9 @@
       <div class="container">
         <nav>
           <div class="nav-brand">
-            <a href="./index.html"><h1>Finess Interiors</h1></a>
+            <a href="./index.html"
+              ><img src="./assets/images/FinessLogo.png"
+            /></a>
           </div>
           <div class="menu-icons open">
             <i class="icon ion-md-menu"></i>
@@ -61,66 +63,68 @@
         </nav>
       </div>
     </header>
-    <div class="video-container">
-      <div class="row">
-        <div class="col">
-          <div class="small-img">
-            <img src="./assets/videos/img1.jpg" width="100%" />
-            <img
-              src="./assets/videos/play.png"
-              class="play-btn"
-              onclick="playVideo('assets/videos/video_1.mp4')"
-            />
-            <h2>PASSION</h2>
+    <main>
+      <section>
+        <div class="video-container">
+          <div class="row">
+            <div class="col">
+              <div class="small-img">
+                <img src="./assets/videos/img1.jpg" width="100%" />
+                <img
+                  src="./assets/videos/play.png"
+                  class="play-btn"
+                  onclick="playVideo('assets/videos/video_1.mp4')"
+                />
+                <h2>PASSION</h2>
+              </div>
+              <div class="small-img-row">
+                <div class="small-img">
+                  <img src="./assets/videos/img2.jpg" />
+                  <img
+                    src="./assets/videos/play.png"
+                    class="play-btn"
+                    onclick="playVideo('assets/videos/video_2.mp4')"
+                  />
+                  <h2>DEDICATION</h2>
+                </div>
+              </div>
+              <div class="small-img-row">
+                <div class="small-img">
+                  <img src="./assets/videos/img3.jpg" />
+                  <img
+                    src="./assets/videos/play.png"
+                    class="play-btn"
+                    onclick="playVideo('assets/videos/video_3.mp4')"
+                  />
+                  <h2>EXPERIENCE</h2>
+                </div>
+              </div>
+              <div class="small-img-row">
+                <div class="small-img">
+                  <img src="./assets/videos/img4.jpg" />
+                  <img
+                    src="./assets/videos/play.png"
+                    class="play-btn"
+                    onclick="playVideo('assets/videos/video_4.mp4')"
+                  />
+                  <h2>PRECISION</h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <div class="small-img-row">
-            <div class="small-img">
-              <img src="./assets/videos/img2.jpg" />
-              <img
-                src="./assets/videos/play.png"
-                class="play-btn"
-                onclick="playVideo('assets/videos/video_2.mp4')"
-              />
-              <h2>DEDICATION</h2>
-            </div>
-          </div>
-          <div class="small-img-row">
-            <div class="small-img">
-              <img src="./assets/videos/img3.jpg" />
-              <img
-                src="./assets/videos/play.png"
-                class="play-btn"
-                onclick="playVideo('assets/videos/video_3.mp4')"
-              />
-              <h2>EXPERIENCE</h2>
-            </div>
-          </div>
-          <div class="small-img-row">
-            <div class="small-img">
-              <img src="./assets/videos/img4.jpg" />
-              <img
-                src="./assets/videos/play.png"
-                class="play-btn"
-                onclick="playVideo('assets/videos/video_4.mp4')"
-              />
-              <h2>PRECISION</h2>
-            </div>
-          </div>
+        <div class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay id="myVideo">
+            <source src="./assets/videos/video_1.mp4" type="video/mp4" />
+          </video>
+          <img
+            src="./assets/videos/close.png"
+            class="close-btn"
+            onclick="stopVideo()"
+          />
         </div>
-      </div>
-    </div>
-    <div class="video-player" id="videoPlayer">
-      <video width="100%" controls autoplay id="myVideo">
-        <source src="./assets/videos/video_1.mp4" type="video/mp4" />
-      </video>
-      <img
-        src="./assets/videos/close.png"
-        class="close-btn"
-        onclick="stopVideo()"
-      />
-    </div>
+      </section>
+    </main>
     <section id="footer">
       <div id="socials">
         <div id="facebook">

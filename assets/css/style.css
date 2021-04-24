@@ -55,7 +55,8 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .nav-brand img {
-  width: 5rem;
+  width: 20rem;
+  height: auto;
   color: #000;
 }
 
@@ -108,24 +109,17 @@ nav {
 
 /* Hero section */
 .hero-section {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: row;
   width: 100%;
-  height: 100vh;
-  animation-name: zoom-in;
-  animation-duration: 2s;
-  overflow: hidden;
+  height: 80vh;
+  background: linear-gradient(
+      360deg,
+      rgb(49, 24, 131, 0.9) 0%,
+      rgb(72, 56, 149, 0.4) 100%
+    ),
+    url(../images/hero.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
 }
-/* .main-message {
-  width: 5%;
-  max-width: 50rem;
-  font-size: 3rem;
-  color: #000;
-  text-transform: uppercase;
-  animation-name: zoom-in;
-  animation-duration: 2s;
-} */
 @keyframes zoom-in {
   from {
     transform: scale(0.9);
@@ -162,13 +156,12 @@ nav {
 /* footer */
 #footer {
   padding: 2.5rem 0;
-  background-color: #d7d4ed;
   color: #000;
   text-align: center;
   width: 100%;
   margin-top: 10px;
   padding-top: 40px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
 }
 #socials {
   display: flex;
@@ -181,25 +174,25 @@ nav {
   font-size: 2.5rem;
 }
 #facebook i {
-  color: #ccc;
+  color: #000;
 }
 #facebook i:hover {
   color: #1e5edf;
 }
 #instagram i {
-  color: #ccc;
+  color: #000;
 }
 #instagram i:hover {
   color: #db304c;
 }
 #twitter i {
-  color: #ccc;
+  color: #000;
 }
 #twitter i:hover {
   color: #00acee;
 }
 #pin i {
-  color: #ccc;
+  color: #000;
 }
 #pin i:hover {
   color: #ff1500;
@@ -226,6 +219,21 @@ nav {
 }
 
 /* Photo gallery */
+.photo-gallery-heading {
+  position: relative;
+  width: 50%;
+  padding: 10rem 0;
+  text-align: center;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.photo-gallery-heading h2 {
+  font-size: 2.5rem;
+}
+.photo-gallery-heading p {
+  font-size: 2rem;
+}
 .photo-container {
   position: relative;
   top: 5rem;
@@ -269,7 +277,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 40rem;
   margin: 80px auto;
 }
 .text-video-page {
@@ -343,38 +351,53 @@ video:focus {
   width: 30px;
   cursor: pointer;
 }
-
 /* about */
-.about-section {
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  align-content: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  position: relative;
-  top: 5rem;
-}
-.about-textbox {
-  width: 100%;
-  height: auto;
-  max-width: 550px;
-  padding: 10px;
+.about-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-.about-textbox h2,
-.about-textbox p {
-  padding: 10px;
-  font-size: 2rem;
+.about-testimonials {
+  width: 100%;
+  height: auto;
+}
+.testimonial-words {
+  width: 50%;
+  color: #000;
+  position: relative;
+  top: 8rem;
+  left: 0;
   text-align: center;
 }
-.about-textbox img {
-  width: 40%;
-  min-width: 350px;
+.testimonial-text-box {
+  padding: 1rem 0;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.testimonial-text-box i {
+  position: absolute;
+  top: -5rem;
+  left: 30%;
+  transform: translateX(-50%);
+  font-size: 8rem;
+  color: #581b98;
+  opacity: 0.5;
+  z-index: -1;
+}
+.customer-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: 3px solid #1e5edf;
+  margin-top: 1rem;
+}
+.ceo-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: 3px solid #1e5edf;
+  margin-top: 1rem;
 }
 
 /* contact */
@@ -395,7 +418,6 @@ video:focus {
 }
 .wrapper .title h1 {
   color: #000;
-  text-transform: uppercase;
   text-align: center;
   margin-bottom: 25px;
   font-size: 2.5rem;
@@ -481,7 +503,7 @@ video:focus {
   padding: 10px;
 }
 .process-textbox h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 5px;
 }
@@ -519,17 +541,23 @@ video:focus {
   .photo-container {
     column-count: 1;
   }
+  .nav-brand img {
+    width: 7rem;
+  }
 }
 @media screen and (min-width: 470px) {
   /* check later */
+  .nav-brand img {
+    width: 9rem;
+  }
 }
 @media screen and (min-width: 700px) {
   /* header media query */
   header {
     height: 8rem;
   }
-  .nav-brand {
-    width: 2rem;
+  .nav-brand img {
+    width: 10rem;
   }
   .nav-list {
     width: initial;
