@@ -227,7 +227,7 @@ nav {
 }
 
 /* Photo gallery */
-.grid-container {
+.photo-container {
   position: relative;
   top: 5rem;
   column-count: 4;
@@ -550,7 +550,6 @@ video:focus {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< media queries >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 @media screen and (min-width: 320px) {
-  /* contact */
   /* hero */
   .main-message {
     text-align: center;
