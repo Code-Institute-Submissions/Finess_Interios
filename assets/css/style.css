@@ -30,6 +30,14 @@ img {
 section {
   padding: 5rem 0;
 }
+/* Global except for home and contact pages */
+.page-lenght {
+  background: linear-gradient(
+    360deg,
+    rgb(49, 24, 131, 0.9) 0%,
+    rgb(72, 56, 149, 0.4) 100%
+  );
+}
 
 /* HEADER */
 header {
@@ -129,6 +137,24 @@ nav {
   letter-spacing: 1rem;
   font-size: 2.5rem;
   background: #571b989a;
+  animation: blink 10s ease-in infinite;
+}
+@keyframes blink {
+  0% {
+    color: black;
+    opacity: 1;
+  }
+  25% {
+    color: #571b98;
+    opacity: 0.75;
+  }
+  50% {
+    color: gold;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .mid-main-page {
   display: flex;
@@ -169,7 +195,7 @@ nav {
   color: #000;
   text-align: center;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(88, 27, 152, 0.5);
 }
 #socials {
   display: flex;
@@ -276,6 +302,7 @@ nav {
 }
 
 /* !!! Video Gallery !!!*/
+
 .video-heading {
   position: relative;
   top: 10rem;
@@ -496,34 +523,37 @@ video:focus {
 
 /* before_we_begin */
 .process-page {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  align-content: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  position: relative;
-  top: 5rem;
+  background: linear-gradient(
+    360deg,
+    rgb(49, 24, 131, 0.9) 0%,
+    rgb(72, 56, 149, 0.4) 100%
+  );
 }
 .process-textbox {
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   height: auto;
-  max-width: 550px;
-  padding: 10px;
+  padding: 5px;
+}
+.process-textbox i {
+  font-size: 20rem;
+  position: relative;
+  top: 10rem;
+  left: 20%;
 }
 .process-textbox h2 {
   font-size: 2.5rem;
-  text-align: center;
   padding: 5px;
 }
 .process-textbox p {
   font-size: 2rem;
-  text-align: center;
-}
-.process-img {
-  width: 40%;
-  min-width: 350px;
+  width: 50%;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< media queries >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
