@@ -249,7 +249,6 @@ nav {
   position: absolute;
   padding: 5px;
   margin: 5px;
-  font-size: 25px;
   background: #5c5c5c;
   color: #ccc;
   border: 5px;
@@ -270,75 +269,55 @@ nav {
   transform: translate(-50%);
 }
 .photo-gallery-heading h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 .photo-gallery-heading p {
   font-size: 2rem;
 }
 
 /* !!! Video Gallery !!!*/
+.video-heading {
+  position: relative;
+  top: 10rem;
+  left: 50%;
+  text-align: center;
+  width: 50%;
+  transform: translate(-50%);
+}
+.video-heading h1 {
+  font-size: 3.5rem;
+}
+.video-heading P {
+  font-size: 2rem;
+}
 .video-container {
   position: relative;
   top: 5rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 40rem;
+  width: 100%;
+  height: auto;
   margin: 80px auto;
-}
-.text-video-page {
-  padding: 60px 0;
-  color: #000;
-  text-align: center;
-  font-size: 150%;
-}
-.text-video-page h1 {
-  padding-bottom: 10px;
-  color: #000;
-}
-.row {
-  display: block;
-  text-align: center;
-}
-.col {
-  flex-basis: 50%;
-  color: #000;
-}
-.feature-img {
-  width: 50%;
-  position: relative;
-  border-radius: 6px;
-  overflow: hidden;
-}
-.small-img-row {
-  background: inherit;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  border-radius: 6px;
-  overflow: hidden;
-  width: 100%;
-}
-.small-img {
-  position: relative;
-  z-index: 0;
-}
-.small-img img {
-  width: 100%;
-}
-.small-img-row h2 {
-  line-height: 22px;
-  font-size: 120%;
-  color: #000;
 }
 .play-btn {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   cursor: pointer;
 }
-.small-img .play-btn {
+.video {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 10px;
+}
+.video h2 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.video .play-btn {
   width: 50px;
 }
 .video-player {
@@ -652,6 +631,16 @@ video:focus {
   }
   .msg textarea {
     height: 20rem;
+  }
+  /* video */
+  .video-container {
+    flex-direction: row;
+    align-items: center;
+    height: 80vh;
+  }
+  .video-heading {
+    position: relative;
+    top: 20rem;
   }
 }
 @media screen and (min-width: 1200px) {
