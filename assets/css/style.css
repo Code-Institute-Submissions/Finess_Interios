@@ -638,8 +638,15 @@ video:focus {
     column-count: 2;
   }
   /* contact */
+  .contact-page {
+    height: 100vh;
+  }
   .wrapper {
     width: 60%;
+  }
+  /* process page */
+  .process-textbox {
+    height: 100vh;
   }
 }
 
