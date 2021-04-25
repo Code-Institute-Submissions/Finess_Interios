@@ -156,9 +156,11 @@ nav {
 }
 .mid-message h3 {
   text-transform: uppercase;
+  text-align: center;
 }
 .mid-message p {
   font-size: 2rem;
+  text-align: center;
 }
 
 /* footer */
