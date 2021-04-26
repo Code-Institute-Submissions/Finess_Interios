@@ -33,9 +33,9 @@ section {
 /* Global except for hero and contact pages */
 .page-lenght {
   background: linear-gradient(
-    360deg,
-    rgba(56, 55, 55, 0.9) 0%,
-    rgba(0, 0, 0, 0.4) 100%
+    90deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 90%
   );
 }
 
@@ -168,6 +168,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: fit-content;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 90%
+  );
 }
 .hero-second-img img {
   opacity: 0.9;
@@ -205,7 +210,7 @@ nav {
   color: #000;
   text-align: center;
   width: 100%;
-  background: rgba(88, 27, 152, 0.5);
+  background: rgba(255, 196, 0, 0.815);
 }
 #socials {
   display: flex;
@@ -410,7 +415,7 @@ video:focus {
   left: 30%;
   transform: translateX(-50%);
   font-size: 8rem;
-  color: #581b98;
+  color: rgba(255, 196, 0, 1);
   opacity: 0.5;
   z-index: -1;
 }
@@ -441,9 +446,9 @@ video:focus {
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-      322deg,
-      rgba(56, 55, 55, 0.9) 0%,
-      rgba(0, 0, 0, 0.4) 100%
+      90deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 90%
     ),
     url(../images/contact.jpg) no-repeat;
   background-size: cover;
