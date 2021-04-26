@@ -30,12 +30,12 @@ img {
 section {
   padding: 5rem 0;
 }
-/* Global except for home and contact pages */
+/* Global except for hero and contact pages */
 .page-lenght {
   background: linear-gradient(
     360deg,
-    rgb(49, 24, 131, 0.9) 0%,
-    rgb(72, 56, 149, 0.4) 100%
+    rgba(56, 55, 55, 0.9) 0%,
+    rgba(0, 0, 0, 0.4) 100%
   );
 }
 
@@ -82,7 +82,7 @@ nav {
 .nav-list {
   width: 25rem;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   right: -26rem;
@@ -110,7 +110,7 @@ nav {
   color: #ccc;
 }
 .nav-link:hover {
-  color: #a3273c;
+  color: gold;
   transition: all 0.3s 0s ease;
 }
 
@@ -121,11 +121,12 @@ nav {
   height: 80vh;
   background: linear-gradient(
       322deg,
-      rgb(49, 24, 131, 0.9) 0%,
-      rgb(72, 56, 149, 0.4) 100%
+      rgba(0, 0, 0, 0.589) 0%,
+      rgba(0, 0, 0, 0.4) 100%
     ),
     url(../images/hero.jpg) center no-repeat;
   background-size: cover;
+  filter: saturate(3);
   position: relative;
   display: flex;
   align-items: center;
@@ -136,23 +137,28 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1rem;
   font-size: 2.5rem;
-  background: #571b989a;
-  animation: blink 10s ease-in infinite;
+  background: #571b98cc;
+  animation: blink 10s ease-in-out infinite;
 }
 @keyframes blink {
   0% {
-    color: black;
+    color: white;
     opacity: 1;
   }
   25% {
-    color: #571b98;
+    color: chartreuse;
     opacity: 0.75;
   }
   50% {
-    color: gold;
+    color: aqua;
+    opacity: 1;
+  }
+  75% {
+    color: red;
     opacity: 1;
   }
   100% {
+    color: aqua;
     opacity: 1;
   }
 }
@@ -162,6 +168,12 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: fit-content;
+}
+.hero-second-img img {
+  opacity: 0.9;
+  filter: saturate(3);
+  width: 100%;
+  height: auto;
 }
 .mid-message a {
   text-decoration: none;
@@ -173,12 +185,10 @@ nav {
 }
 .mid-message {
   position: relative;
-  text-align: center;
   font-size: 3rem;
-  width: 33%;
+  width: 50%;
   color: #000;
-  padding-bottom: 10px;
-  border-bottom: 2px solid rgba(88, 27, 152, 0.5);
+  padding: 2rem 0;
 }
 .mid-message h3 {
   text-transform: uppercase;
@@ -299,6 +309,7 @@ nav {
 }
 .photo-gallery-heading p {
   font-size: 2rem;
+  text-align: justify;
 }
 
 /* !!! Video Gallery !!!*/
@@ -316,6 +327,7 @@ nav {
 }
 .video-heading P {
   font-size: 2rem;
+  text-align: justify;
 }
 .video-container {
   position: relative;
@@ -382,12 +394,15 @@ video:focus {
   position: relative;
   top: 8rem;
   left: 0;
-  text-align: center;
+  text-align: justify;
 }
 .testimonial-text-box {
   padding: 1rem 0;
   margin-bottom: 5rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .testimonial-text-box i {
   position: absolute;
@@ -406,12 +421,16 @@ video:focus {
   border: 3px solid #1e5edf;
   margin-top: 1rem;
 }
-.ceo-img {
+.ceo-img-container {
   width: 10rem;
   height: 10rem;
   border-radius: 100%;
   border: 3px solid #1e5edf;
   margin-top: 1rem;
+  background-image: url(../images/our_ceo.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100%;
 }
 
 /* contact */
@@ -422,9 +441,9 @@ video:focus {
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-      360deg,
-      rgb(49, 24, 131, 0.9) 0%,
-      rgb(72, 56, 149, 0.4) 100%
+      322deg,
+      rgba(56, 55, 55, 0.9) 0%,
+      rgba(0, 0, 0, 0.4) 100%
     ),
     url(../images/contact.jpg) no-repeat;
   background-size: cover;
@@ -441,8 +460,8 @@ video:focus {
   position: relative;
   top: 2.5rem;
   padding: 25px;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 6px 2px 6px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 6px 2px 6px rgba(0, 0, 0, 0.3);
 }
 .nav-brand-contact-box {
   width: 5rem;
@@ -456,13 +475,15 @@ video:focus {
   text-align: center;
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  color: #000;
+  color: #ccc;
 }
 .wrapper .title p {
-  color: #000;
+  color: #ccc;
   text-align: center;
   margin-bottom: 25px;
   font-size: 2rem;
+  border-bottom: 2px solid #666;
+  padding: 1rem;
 }
 .contact-form {
   position: relative;
@@ -480,9 +501,9 @@ video:focus {
   margin: 8px 0;
   background: transparent;
   border: 0;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #666;
   padding: 10px;
-  color: #000;
+  color: #ccc;
   width: 100%;
 }
 .msg textarea {
@@ -492,14 +513,14 @@ video:focus {
   height: 8rem;
   width: 100%;
   margin: 10px 0;
-  color: #000;
+  color: #ccc;
   background: transparent;
 }
 ::-webkit-input-placeholder {
   font-family: "Barlow Condensed", sans-serif;
-  color: #000;
+  color: #ccc;
   text-align: center;
-  font-size: 160%;
+  font-size: 2rem;
 }
 .btn button {
   position: relative;
@@ -528,11 +549,6 @@ video:focus {
   justify-content: center;
   width: 100%;
   height: auto;
-  background: linear-gradient(
-    360deg,
-    rgb(49, 24, 131, 0.9) 0%,
-    rgb(72, 56, 149, 0.4) 100%
-  );
 }
 .process-textbox {
   display: flex;
@@ -540,7 +556,7 @@ video:focus {
   width: 60%;
   height: auto;
   padding: 5px;
-  text-align: center;
+  text-align: justify;
 }
 .process-textbox i {
   font-size: 20rem;
@@ -569,6 +585,17 @@ video:focus {
   }
   .nav-brand img {
     width: 7rem;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contact-page {
+    height: fit-content;
+  }
+  .wrapper {
+    top: 3.5rem;
+  }
+  .nav-item {
+    margin: 1rem 0;
   }
 }
 @media screen and (min-width: 470px) {
