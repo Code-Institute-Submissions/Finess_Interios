@@ -571,7 +571,7 @@ video:focus {
 .process-textbox p {
   font-size: 2rem;
 }
-/* Media Queries 320px Vertical orientation */
+
 @media screen and (min-width: 320px) {
   .main-message {
     text-align: center;
@@ -583,23 +583,64 @@ video:focus {
   .nav-brand img {
     width: 7rem;
   }
-}
-/* Media Queries 550px Landscape orientation */
-@media screen and (max-width: 550px) and (orientation: landscape) {
-  .contact-form {
-    flex-direction: row;
-  }
-}
-/* Media Queries 550px vertical orientation */
-@media screen and (max-width: 550px) {
   .contact-form {
     flex-direction: column;
   }
   .msg textarea {
-    height: 10rem;
+    height: 12rem;
+    padding: 0;
+    margin: 0;
+  }
+  .wrapper {
+    padding: 0 3rem;
+    margin: 0 3rem;
   }
 }
-/* Media Queries 700px vertical orientation */
+@media screen and (min-width: 375px) {
+  .wrapper {
+    padding: 2rem 3rem;
+    margin: 0 3rem;
+    top: 4rem;
+  }
+  .msg textarea {
+    height: 15rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 414px) {
+  .contact-form {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 15rem;
+    padding: 0;
+    margin: 0;
+  }
+  .wrapper {
+    padding: 2rem 3rem;
+    margin: 0 3rem;
+    top: 4rem;
+  }
+  .nav-brand img {
+    width: 8rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact-form {
+    flex-direction: row;
+    padding: 2rem 0;
+    margin: 3rem 0;
+  }
+  .msg textarea {
+    height: 18rem;
+    margin: 3rem 0;
+  }
+  .process-page {
+    height: 100vh;
+  }
+}
 @media screen and (min-width: 700px) {
   header {
     height: 8rem;
@@ -655,6 +696,9 @@ video:focus {
   .photo-container {
     column-count: 2;
   }
+  .msg textarea {
+    height: 15rem;
+  }
 }
 /* Media Queries 950px*/
 @media screen and (min-width: 950px) {
@@ -673,7 +717,11 @@ video:focus {
     position: relative;
     top: 20rem;
   }
+  .msg textarea {
+    height: 20rem;
+  }
 }
+
 /* Media Queries +1200px*/
 @media screen and (min-width: 1200px) {
   .hero {
