@@ -570,6 +570,9 @@ video:focus {
 .process-textbox p {
   font-size: 2rem;
 }
+@media screen and (min-width: 320px) and (orientation: landscape) {
+}
+
 @media screen and (min-width: 320px) {
   .main-message {
     text-align: center;
@@ -582,7 +585,21 @@ video:focus {
     width: 7rem;
   }
   .contact-page {
+    height: 110vh;
+  }
+}
+@media screen and (min-width: 470px) and (orientation: landscape) {
+  .contact-page {
     height: fit-content;
+  }
+  .contact-form {
+    flex-direction: row;
+  }
+  .wrapper {
+    padding: 0 25px;
+  }
+  .msg textarea {
+    height: 15rem;
   }
 }
 @media screen and (min-width: 470px) {
@@ -590,7 +607,7 @@ video:focus {
     width: 9rem;
   }
   .contact-page {
-    height: 100vh;
+    height: 110vh;
   }
 }
 @media screen and (min-width: 700px) {
