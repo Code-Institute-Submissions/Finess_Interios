@@ -71,15 +71,16 @@ No other erros were found in this project.
 
 During the process I have encountered some challenges in the media queries phase. Where with so many devices to cover.
 
-Current version is 2.1
+Current version is 3.2
+
+## Compatibility
+
+The product was tested on Firefox, Edge and Chrome. No problems were detected.
 
 ## Credits
 
 Content
-The inspiration for the website came from a friend that works as an architect. Keeping it quite minimalistic
-and adopting the less is more philosophy.
+The inspiration for the website came from a friend that works as an architect.
+Keeping it quite minimalistic and adopting the less is more philosophy.
 
 The photos used in this site were obtained from Pexels.com and Unsplash.com
-
-Acknowledgements
-YOLO
