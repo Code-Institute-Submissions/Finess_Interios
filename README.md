@@ -1,7 +1,9 @@
 # [Finess Interiors](https://fdasabino.github.io/Finess_Interios/index.html)
 
-<https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/frames/320-home.jpg>
-<https://github.com/fdasabino/Finess_Interios/blob/8725440891c75c2cdb8bc82c41a21eac210310db/assets/images/frames/700-home.jpg>
+![Iphone 5s](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/frames/320-home.jpg "Small Mobile")
+![Tablets and small laptops](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/frames/700-home.jpg "Tablets and small laptops")
+![Larger Screens](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/frames/large-home.jpg "Larger screens")
+
 This website was created for the Code Institute as the main part of my project (MLS 1).
 
 Interior designed dedicated to making your home or working space unique.
