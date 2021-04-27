@@ -1,13 +1,16 @@
 # [Finess Interiors](https://fdasabino.github.io/Finess_Interios/index.html)
 
+[Mobile Small](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/frames/320-home.jpg)
+
 This website was created for the Code Institute as the main part of my project (MLS 1).
+
 Interior designed dedicated to making your home or working space unique.
 
 The main goal with this page is to be able to attract job opprtunities within the Software developing world, as well as potential customers in the freelancing enviroment.
 
 ## UX
 
-I have designed this webpage using HTML and CSS, the UX inspiration came from a minimalistic rule of 7 elements in the header section. Making the User experience more effective.
+I have designed this webpage using HTML and CSS, the UX inspiration came from a minimalistic rule of 7 elements in the header section. Making the user experience more effective.
 
 ## Technologies
 
@@ -52,6 +55,7 @@ A similar process was applied to the body and footer.
 Font Family: "Barlow Condensed".
 
 [Ion Icons:](https://ionicons.com/)
+The icon combination used on the nav bar and on the content pages were downloaded from Ion Icons.
 
 [Colorinspo:](https://colorsinspo.com/)
 The color combination I have decided to use brings high contrast to the eye.
@@ -82,7 +86,7 @@ The product was tested on Firefox, Edge and Chrome. No problems were detected.
 ## Credits
 
 Content
-The inspiration for the website came from a friend that works as an architect.
+The inspiration for the website came from a friend (Henke) that works as an architect.
 Keeping it quite minimalistic and adopting the less is more philosophy.
 
-The photos used in this site were obtained from Pexels.com and Unsplash.com
+The photos used in this site were obtained from [Pexels](https://www.pexels.com/) and [Unsplash](https://www.unsplash.com/).
