@@ -571,6 +571,9 @@ video:focus {
   font-size: 2rem;
 }
 @media screen and (min-width: 320px) and (orientation: landscape) {
+  .contact-page {
+    height: 120vh;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -590,7 +593,7 @@ video:focus {
 }
 @media screen and (min-width: 470px) and (orientation: landscape) {
   .contact-page {
-    height: fit-content;
+    height: 120vh;
   }
   .contact-form {
     flex-direction: row;
