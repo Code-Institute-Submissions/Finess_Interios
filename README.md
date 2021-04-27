@@ -6,11 +6,6 @@ Interior designed dedicated to making your home or working space unique.
 
 ## UX
 
-![mobile 320px](https://github.com/fdasabino/Finess_Interios/blob/39a46fbfb66d44fae49c7333db10eee47d275835/assets/images/frames/320-home.jpg)
-![mobile 470px](https://github.com/fdasabino/Finess_Interios/blob/39a46fbfb66d44fae49c7333db10eee47d275835/assets/images/frames/470-home.jpg)
-![tablets 700px](https://github.com/fdasabino/Finess_Interios/blob/39a46fbfb66d44fae49c7333db10eee47d275835/assets/images/frames/700-home.jpg)
-![desktop viewport](https://github.com/fdasabino/Finess_Interios/blob/39a46fbfb66d44fae49c7333db10eee47d275835/assets/images/frames/large-home.jpg)
-
 ## Technologies
 
 I have designed this webpage using HTML and CSS, the UX inspiration came from a minimalistic perspective.
