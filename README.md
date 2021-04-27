@@ -1,21 +1,17 @@
-# Finess_Interiors
+# [Finess Interiors](https://fdasabino.github.io/Finess_Interios/index.html)
 
 This website was created for the Code Institute as the main part of my project (MLS 1).
-
 Interior designed dedicated to making your home or working space unique.
+
+The main goal with this page is to be able to attract job opprtunities within the Software developing world, as well as potential customers in the freelancing enviroment.
 
 ## UX
 
+I have designed this webpage using HTML and CSS, the UX inspiration came from a minimalistic rule of 7 elements in the header section. Making the User experience more effective.
+
 ## Technologies
 
-I have designed this webpage using HTML and CSS, the UX inspiration came from a minimalistic perspective.
-The navigation bar was implemented using CSS flex to facilitate the responsivness of the element.
-A similar process was applied to the body and footer.
 The main targets of this product are home owners and companies looking to renovate their home or/and Work enviroments.
-
-Font Family: "Barlow Condensed".
-
-The color combination I have decided to use brings high contrast to the eye.
 
 ## User Comments
 
@@ -35,6 +31,9 @@ Feature 1 - Allows users to navigate throught the page with ease.
 Feature 2 - Allows users to hover over clickable elements.
 Feature 3 - Allows users to play video video on various modes, including picture-in-picture.
 Feature 4 - The contact page has an inquiry form allowing users to explain a little about their needs while storing their data.
+
+For this project I have mainly used HTML & CSS. According to the project objective.
+I was inclined to add a small portion of JS in the videoo gallery for playing and stop purposes and for the navigation menu.
 ...
 
 ### Features Left to Implement
@@ -46,8 +45,16 @@ In a near future I would like to implement:
 
 ## Technologies Used
 
-For this project I have mainly used HTML & CSS. According to the project objective.
-I was inclined to add a small portion of JS in the videoo gallery for playing and stop purposes and for the navigation menu.
+The navigation bar was implemented using CSS flex to facilitate the responsivness of the element.
+A similar process was applied to the body and footer.
+
+[Google fonts:](https://fonts.google.com/)
+Font Family: "Barlow Condensed".
+
+[Ion Icons:](https://ionicons.com/)
+
+[Colorinspo:](https://colorsinspo.com/)
+The color combination I have decided to use brings high contrast to the eye.
 
 ## Contact form
 
@@ -66,7 +73,7 @@ No other erros were found in this project.
 
 During the process I have encountered some challenges in the media queries phase. Where with so many devices to cover.
 
-Current version is 3.2
+Current version is 3.5
 
 ## Compatibility
 
