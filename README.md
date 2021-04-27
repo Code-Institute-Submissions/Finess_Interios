@@ -7,17 +7,24 @@ Interior designed dedicated to making your home or working space unique.
 ## UX
 
 ![mobile 320px](https://github.com/fdasabino/Finess_Interios/blob/39a46fbfb66d44fae49c7333db10eee47d275835/assets/images/frames/320-home.jpg)
+![mobile 470px](https://github.com/fdasabino/Finess_Interios/blob/39a46fbfb66d44fae49c7333db10eee47d275835/assets/images/frames/470-home.jpg)
+![tablets 700px](https://github.com/fdasabino/Finess_Interios/blob/39a46fbfb66d44fae49c7333db10eee47d275835/assets/images/frames/700-home.jpg)
+![desktop viewport](https://github.com/fdasabino/Finess_Interios/blob/39a46fbfb66d44fae49c7333db10eee47d275835/assets/images/frames/large-home.jpg)
+
+## Technologies
 
 I have designed this webpage using HTML and CSS, the UX inspiration came from a minimalistic perspective.
 The navigation bar was implemented using CSS flex to facilitate the responsivness of the element.
 A similar process was applied to the body and footer.
 The main targets of this product are home owners and companies looking to renovate their home or/and Work enviroments.
 
-As a user that navigates I would like to find websites that are friendly to the eye, and are easier to navigate and that takes me straight to the point.
-
-Font Style: "Barlow Condensed".
+Font Family: "Barlow Condensed".
 
 The color combination I have decided to use brings high contrast to the eye.
+
+## User Comments
+
+As a user that navigates I would like to find websites that are friendly to the eye, and are easier to navigate and that takes me straight to the point.
 
 ## Features
 
@@ -30,7 +37,7 @@ The color combination I have decided to use brings high contrast to the eye.
 ### Existing Features
 
 Feature 1 - Allows users to navigate throught the page with ease.
-Feature 2 - Allows users to hover over clickable elements which will either light up or turn gray.
+Feature 2 - Allows users to hover over clickable elements.
 Feature 3 - Allows users to play video video on various modes, including picture-in-picture.
 Feature 4 - The contact page has an inquiry form allowing users to explain a little about their needs while storing their data.
 ...
