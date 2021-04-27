@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap");
+/* Global Styles */
 *,
 *::before,
 *::after {
@@ -39,6 +40,8 @@ section {
     rgb(188, 188, 188) 100%
   );
 }
+
+/* navigation */
 header {
   width: 100%;
   height: 5rem;
@@ -112,6 +115,8 @@ nav {
   color: rgb(76, 0, 255);
   transition: all 0.3s 0s ease;
 }
+
+/* Hero */
 .hero-section {
   width: 100%;
   max-width: 100%;
@@ -154,6 +159,8 @@ nav {
     opacity: 1;
   }
 }
+
+/* middle hero page */
 .mid-main-page {
   display: flex;
   flex-direction: column;
@@ -172,7 +179,7 @@ nav {
 }
 .hero-second-img img {
   opacity: 0.9;
-  filter: saturate(3);
+  filter: saturate(2);
   width: 100%;
   height: auto;
 }
@@ -199,12 +206,14 @@ nav {
   font-size: 2rem;
   text-align: center;
 }
+
+/* footer */
 #footer {
   padding: 1.5rem 0;
   color: #000;
   text-align: center;
   width: 100%;
-  background: rgb(0, 0, 0, 0.3);
+  background: #feb062;
 }
 #socials {
   display: flex;
@@ -214,7 +223,7 @@ nav {
   flex-direction: row;
 }
 #socials a {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 #facebook i {
   color: #000;
@@ -245,7 +254,7 @@ nav {
 }
 .address p {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #000;
 }
@@ -260,6 +269,8 @@ nav {
   text-align: center;
   color: #000;
 }
+
+/* photo gallery */
 .photo-container {
   position: relative;
   top: 5rem;
@@ -308,6 +319,8 @@ nav {
   font-size: 2rem;
   text-align: justify;
 }
+
+/* video gallery */
 .video-heading {
   position: relative;
   top: 10rem;
@@ -371,6 +384,8 @@ video:focus {
   width: 30px;
   cursor: pointer;
 }
+
+/* about container */
 .about-container {
   display: flex;
   align-items: center;
@@ -452,7 +467,6 @@ video:focus {
   position: relative;
 }
 .wrapper {
-  width: 80%;
   max-width: 600px;
   height: fit-content;
   display: flex;
@@ -543,6 +557,8 @@ video:focus {
 .btn button:hover {
   background: #a3273c;
 }
+
+/* before we begin */
 .process-page {
   display: flex;
   align-items: center;
@@ -572,17 +588,25 @@ video:focus {
   font-size: 2rem;
 }
 
+/* Media Queries */
 @media screen and (min-width: 320px) {
+  /* hero */
   .main-message {
     text-align: center;
     font-size: 2rem;
   }
+
+  /* photo gallery */
   .photo-container {
     column-count: 1;
   }
+
+  /* navigation */
   .nav-brand img {
     width: 7rem;
   }
+
+  /* contact */
   .contact-form {
     flex-direction: column;
   }
@@ -596,7 +620,9 @@ video:focus {
     margin: 0 3rem;
   }
 }
+
 @media screen and (min-width: 375px) {
+  /* contact */
   .wrapper {
     padding: 2rem 3rem;
     margin: 0 3rem;
@@ -608,7 +634,9 @@ video:focus {
     margin: 0;
   }
 }
+
 @media screen and (min-width: 414px) {
+  /* contact */
   .contact-form {
     flex-direction: column;
   }
@@ -622,12 +650,15 @@ video:focus {
     margin: 0 3rem;
     top: 4rem;
   }
+
+  /* navigation */
   .nav-brand img {
     width: 8rem;
   }
 }
 
 @media screen and (min-width: 600px) {
+  /* contact */
   .contact-form {
     flex-direction: row;
     padding: 2rem 0;
@@ -637,11 +668,15 @@ video:focus {
     height: 18rem;
     margin: 3rem 0;
   }
+
+  /* before we begin */
   .process-page {
     height: 100vh;
   }
 }
+
 @media screen and (min-width: 700px) {
+  /* navigation */
   header {
     height: 8rem;
   }
@@ -690,24 +725,36 @@ video:focus {
   .nav-link:hover::before {
     transform: scaleX(1);
   }
+
+  /* hero */
   .hero-section {
     height: 60vh;
   }
+
+  /* photo gallery */
   .photo-container {
     column-count: 2;
   }
+
+  /* contact */
   .msg textarea {
     height: 15rem;
   }
 }
+
 /* Media Queries 950px*/
 @media screen and (min-width: 950px) {
+  /* photo gallery */
   .photo-container {
     column-count: 3;
   }
+
+  /* before we begin */
   .process-page {
     flex-direction: column;
   }
+
+  /* video gallery */
   .video-container {
     flex-direction: row;
     align-items: center;
@@ -717,6 +764,8 @@ video:focus {
     position: relative;
     top: 20rem;
   }
+
+  /* contact */
   .msg textarea {
     height: 20rem;
   }
@@ -724,6 +773,7 @@ video:focus {
 
 /* Media Queries +1200px*/
 @media screen and (min-width: 1200px) {
+  /* hero */
   .hero {
     height: 75vh;
   }
