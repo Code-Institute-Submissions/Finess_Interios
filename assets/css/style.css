@@ -430,6 +430,7 @@ video:focus {
   background-size: cover;
   border-radius: 100%;
 }
+/* contact */
 .contact-page {
   display: flex;
   align-items: center;
@@ -489,7 +490,7 @@ video:focus {
 .contact-form {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .input-fields {
   margin-right: 1rem;
@@ -511,7 +512,7 @@ video:focus {
   position: relative;
   left: 0;
   top: 0;
-  height: 8rem;
+  height: 20rem;
   width: 100%;
   margin: 10px 0;
   color: #000;
@@ -570,12 +571,7 @@ video:focus {
 .process-textbox p {
   font-size: 2rem;
 }
-@media screen and (min-width: 320px) and (orientation: landscape) {
-  .contact-page {
-    height: 120vh;
-  }
-}
-
+/* Media Queries 320px Vertical orientation */
 @media screen and (min-width: 320px) {
   .main-message {
     text-align: center;
@@ -587,32 +583,23 @@ video:focus {
   .nav-brand img {
     width: 7rem;
   }
-  .contact-page {
-    height: 110vh;
-  }
 }
-@media screen and (min-width: 470px) and (orientation: landscape) {
-  .contact-page {
-    height: 120vh;
-  }
+/* Media Queries 550px Landscape orientation */
+@media screen and (max-width: 550px) and (orientation: landscape) {
   .contact-form {
     flex-direction: row;
   }
-  .wrapper {
-    padding: 0 25px;
+}
+/* Media Queries 550px vertical orientation */
+@media screen and (max-width: 550px) {
+  .contact-form {
+    flex-direction: column;
   }
   .msg textarea {
-    height: 15rem;
+    height: 10rem;
   }
 }
-@media screen and (min-width: 470px) {
-  .nav-brand img {
-    width: 9rem;
-  }
-  .contact-page {
-    height: 110vh;
-  }
-}
+/* Media Queries 700px vertical orientation */
 @media screen and (min-width: 700px) {
   header {
     height: 8rem;
@@ -668,33 +655,14 @@ video:focus {
   .photo-container {
     column-count: 2;
   }
-  .contact-page {
-    height: 100vh;
-  }
-  .wrapper {
-    width: 60%;
-  }
-  .process-textbox {
-    height: 100vh;
-  }
 }
+/* Media Queries 950px*/
 @media screen and (min-width: 950px) {
   .photo-container {
     column-count: 3;
   }
   .process-page {
     flex-direction: column;
-  }
-  .wrapper {
-    height: auto;
-  }
-  .contact-form {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-  }
-  .msg textarea {
-    height: 20rem;
   }
   .video-container {
     flex-direction: row;
@@ -706,6 +674,7 @@ video:focus {
     top: 20rem;
   }
 }
+/* Media Queries +1200px*/
 @media screen and (min-width: 1200px) {
   .hero {
     height: 75vh;
