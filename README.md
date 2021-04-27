@@ -1,19 +1,26 @@
 # Finess_Interiors
 
+This website was created for the Code Institute as the main part of my project (MLS 1).
+
 Interior designed dedicated to making your home or working space unique.
 
 ## UX
 
-Font Style: "Barlow Condensed".
+![+320pixels frame](assets\images\frames\320-home.jpg)
+![+470pixels frame](assets\images\frames\470-home.jpg)
+![+950pixels frame](assets\images\frames\700-home.jpg)
+![desktop frame](assets\images\frames\large-home.jpg)
 
 I have designed this webpage using HTML and CSS, the UX inspiration came from a minimalistic perspective.
 The navigation bar was implemented using CSS flex to facilitate the responsivness of the element.
-A similar process was applied to the footer.
+A similar process was applied to the body and footer.
 The main targets of this product are home owners and companies looking to renovate their home or/and Work enviroments.
 
 As a user that navigates I would like to find websites that are friendly to the eye, and are easier to navigate and that takes me straight to the point.
 
-https://github.com/fdasabino/Finessse_Home/blob/main/assets/images/homewire.png
+Font Style: "Barlow Condensed".
+
+The color combination I have decided to use brings high contrast to the eye.
 
 ## Features
 
@@ -43,7 +50,7 @@ it the impression of less static.
 For this project I have mainly used HTML & CSS. According to the project objective.
 I was inclined to add a small portion of JS in the videoo gallery for playing and stop purposes.
 
-## Contact form:
+## Contact form
 
 Users cannot submit an empty form.
 
