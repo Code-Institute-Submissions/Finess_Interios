@@ -679,9 +679,9 @@ video:focus {
     bottom: -0.5rem;
     background-color: #000;
     width: 100%;
-    height: 2px;
+    height: 1px;
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin: right;
     transition: transform 650ms;
   }
   .current::before {
