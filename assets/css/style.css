@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap");
-/* GLOBAL STYLES */
 *,
 *::before,
 *::after {
@@ -7,7 +6,6 @@
   padding: 0;
   box-sizing: inherit;
 }
-
 html {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 10px;
@@ -30,7 +28,6 @@ img {
 section {
   padding: 5rem 0;
 }
-/* Global except for hero and contact pages */
 .page-lenght {
   background: linear-gradient(
     to top,
@@ -42,8 +39,6 @@ section {
     rgb(188, 188, 188) 100%
   );
 }
-
-/* HEADER */
 header {
   width: 100%;
   height: 5rem;
@@ -64,15 +59,14 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(88, 27, 152, 0.5);
+  border-bottom: 1px solid rgb(88, 27, 152, 0.5);
 }
 .nav-brand img {
-  width: 20rem;
+  width: 15rem;
   height: auto;
 }
-
 .menu-icons i {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #000;
   cursor: pointer;
 }
@@ -86,7 +80,7 @@ nav {
 .nav-list {
   width: 25rem;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   right: -26rem;
@@ -104,12 +98,13 @@ nav {
   position: absolute;
   top: 1.4rem;
   left: 1.5rem;
+  z-index: 10;
 }
 .nav-item {
   margin: 1.5rem 0;
 }
 .nav-link {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #ccc;
 }
@@ -117,8 +112,6 @@ nav {
   color: rgb(76, 0, 255);
   transition: all 0.3s 0s ease;
 }
-
-/* Hero section */
 .hero-section {
   width: 100%;
   max-width: 100%;
@@ -205,14 +198,12 @@ nav {
   font-size: 2rem;
   text-align: center;
 }
-
-/* footer */
 #footer {
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   color: #000;
   text-align: center;
   width: 100%;
-  background: #faef1cb7;
+  background: rgb(0, 0, 0, 0.3);
 }
 #socials {
   display: flex;
@@ -222,7 +213,7 @@ nav {
   flex-direction: row;
 }
 #socials a {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 #facebook i {
   color: #000;
@@ -253,7 +244,7 @@ nav {
 }
 .address p {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #000;
 }
@@ -264,12 +255,10 @@ nav {
   padding: 10px 0;
 }
 #copyright h3 {
-  font-size: 1.6rem;
+  font-size: 1rem;
   text-align: center;
   color: #000;
 }
-
-/* Photo gallery */
 .photo-container {
   position: relative;
   top: 5rem;
@@ -318,9 +307,6 @@ nav {
   font-size: 2rem;
   text-align: justify;
 }
-
-/* !!! Video Gallery !!!*/
-
 .video-heading {
   position: relative;
   top: 10rem;
@@ -384,7 +370,6 @@ video:focus {
   width: 30px;
   cursor: pointer;
 }
-/* about */
 .about-container {
   display: flex;
   align-items: center;
@@ -413,7 +398,8 @@ video:focus {
 }
 .testimonial-text-box h2 {
   font-size: 3rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 3rem;
+  text-align: center;
 }
 .testimonial-text-box i {
   position: absolute;
@@ -421,7 +407,7 @@ video:focus {
   left: 30%;
   transform: translateX(-50%);
   font-size: 8rem;
-  color: rgba(255, 196, 0, 1);
+  color: rgb(255, 196, 0, 1);
   opacity: 0.5;
   z-index: -1;
 }
@@ -429,22 +415,20 @@ video:focus {
   width: 10rem;
   height: 10rem;
   border-radius: 100%;
-  border: 3px solid #1e5edf;
+  border: #1e5edf solid 3px;
   margin-top: 1rem;
 }
 .ceo-img-container {
   width: 10rem;
   height: 10rem;
   border-radius: 100%;
-  border: 3px solid #1e5edf;
+  border: #1e5edf solid 3px;
   margin-top: 1rem;
   background-image: url(../images/our_ceo.jpg);
   background-position: center center;
   background-size: cover;
   border-radius: 100%;
 }
-
-/* contact */
 .contact-page {
   display: flex;
   align-items: center;
@@ -456,16 +440,15 @@ video:focus {
       to top,
       lightgrey 0%,
       lightgrey 1%,
-      rgba(224, 224, 224, 0.5) 26%,
-      rgba(239, 239, 239, 0.5) 48%,
-      rgba(217, 217, 217, 0.5) 75%,
-      rgba(188, 188, 188, 0.5) 100%
+      rgb(224, 224, 224, 0.5) 26%,
+      rgb(239, 239, 239, 0.5) 48%,
+      rgb(217, 217, 217, 0.5) 75%,
+      rgb(188, 188, 188, 0.5) 100%
     ),
     url(../images/contact.jpg) no-repeat;
   background-size: cover;
   position: relative;
 }
-/* contact */
 .wrapper {
   width: 80%;
   max-width: 600px;
@@ -477,15 +460,15 @@ video:focus {
   position: relative;
   top: 2.5rem;
   padding: 25px;
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 6px 2px 6px rgba(0, 0, 0, 0.3);
+  background: rgb(0, 0, 0, 0.3);
+  box-shadow: 2px 6px 2px 6px rgb(0, 0, 0, 0.3);
 }
 .nav-brand-contact-box {
   width: 5rem;
   height: auto;
   position: absolute;
   top: 2rem;
-  left: 0rem;
+  left: 0;
 }
 .wrapper .title h1 {
   color: #000;
@@ -546,7 +529,7 @@ video:focus {
   top: 5px;
   width: 50%;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(0, 0, 0, 0.7);
   color: #ccc;
   text-align: center;
   cursor: pointer;
@@ -558,8 +541,6 @@ video:focus {
 .btn button:hover {
   background: #a3273c;
 }
-
-/* before_we_begin */
 .process-page {
   display: flex;
   align-items: center;
@@ -588,17 +569,11 @@ video:focus {
 .process-textbox p {
   font-size: 2rem;
 }
-
-/*<<<<<<<< media queries >>>>>>>>>>>>>>>>>>>*/
-
 @media screen and (min-width: 320px) {
-  /* hero */
   .main-message {
     text-align: center;
     font-size: 2rem;
   }
-
-  /* Photo gallery */
   .photo-container {
     column-count: 1;
   }
@@ -609,21 +584,15 @@ video:focus {
     height: fit-content;
   }
 }
-
 @media screen and (min-width: 470px) {
-  /* Navigation bar */
   .nav-brand img {
     width: 9rem;
   }
-
-  /* contact */
   .contact-page {
     height: 100vh;
-    flex-basis: calc(470px -100%);
   }
 }
 @media screen and (min-width: 700px) {
-  /* navigation bar*/
   header {
     height: 8rem;
   }
@@ -649,7 +618,7 @@ video:focus {
   .nav-link {
     color: #000;
     position: relative;
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 8px;
     letter-spacing: -1px;
   }
@@ -672,37 +641,26 @@ video:focus {
   .nav-link:hover::before {
     transform: scaleX(1);
   }
-
-  /* hero */
   .hero-section {
     height: 60vh;
   }
-
-  /* photo gallery*/
   .photo-container {
     column-count: 2;
   }
-  /* contact */
   .contact-page {
     height: 100vh;
   }
   .wrapper {
     width: 60%;
   }
-
-  /* process page */
   .process-textbox {
     height: 100vh;
   }
 }
-
 @media screen and (min-width: 950px) {
-  /* photo gallery*/
   .photo-container {
     column-count: 3;
   }
-
-  /* before_we_begin */
   .process-page {
     flex-direction: column;
   }
@@ -717,8 +675,6 @@ video:focus {
   .msg textarea {
     height: 20rem;
   }
-
-  /* video */
   .video-container {
     flex-direction: row;
     align-items: center;
@@ -730,7 +686,6 @@ video:focus {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* hero section */
   .hero {
     height: 75vh;
   }

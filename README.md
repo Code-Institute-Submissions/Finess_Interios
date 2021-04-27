@@ -44,15 +44,15 @@ Feature 4 - The contact page has an inquiry form allowing users to explain a lit
 
 ### Features Left to Implement
 
-### Another feature idea
+In a near future I would like to implement:
 
-Eventually I'd like to implement a picture trasition to the main page in order to give
-it the impression of less static.
+1- Use bootstrap for a more smooth transition between breakpoints;
+2- Add Jquery for real life contact form submission.
 
 ## Technologies Used
 
 For this project I have mainly used HTML & CSS. According to the project objective.
-I was inclined to add a small portion of JS in the videoo gallery for playing and stop purposes.
+I was inclined to add a small portion of JS in the videoo gallery for playing and stop purposes and for the navigation menu.
 
 ## Contact form
 
@@ -63,6 +63,10 @@ Users cannot submit a wrong format on email address field.
 Success message appears in the end.
 
 I have developed a responsive page, using Flex, to make it more responsive.
+
+## Testing
+
+There was an Error that appeared on line 33 of the navgation elements, for my close button for the nav elements where i've accidentally nested a div inside a ul. the error is now fixed;
 
 ## Deployment
 
