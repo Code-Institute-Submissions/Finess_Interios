@@ -30,7 +30,7 @@ As a user that navigates I would like to find websites that are friendly to the 
 
 1. Implementing basic ux.
 2. Gathering content.
-3. Creating a mobile responsive platform (+400px).
+3. Creating a mobile responsive platform.
 4. Creating a desktop responsive platform.
 5. Colours and contrast.
 
@@ -46,8 +46,8 @@ Feature 4 - The contact page has an inquiry form allowing users to explain a lit
 
 In a near future I would like to implement:
 
-1- Use bootstrap for a more smooth transition between breakpoints;
-2- Add Jquery for real life contact form submission.
+1. Use bootstrap for a more smooth transition between breakpoints;
+2. Add Jquery for real life contact form submission.
 
 ## Technologies Used
 
@@ -56,21 +56,18 @@ I was inclined to add a small portion of JS in the videoo gallery for playing an
 
 ## Contact form
 
-Users cannot submit an empty form.
-
-Users cannot submit a wrong format on email address field.
-
-Success message appears in the end.
-
-I have developed a responsive page, using Flex, to make it more responsive.
+1. Users cannot submit an empty form.
+2. Users cannot submit a wrong format on email address field.
+3. Success message appears in the end.
+4. I have developed a responsive page, using Flex, to make it more responsive.
 
 ## Testing
 
-There was an Error that appeared on line 33 of the navgation elements, for my close button for the nav elements where i've accidentally nested a div inside a ul. the error is now fixed;
+There was an Error that appeared on line 33 of the navgation elements, for my close button for the nav elements where I've accidentally nested a div inside a ul. the error is now fixed;
+
+No other erros were found in this project.
 
 ## Deployment
-
-I have done version control deployment, once the nav bar and footer were in place.
 
 During the process I have encountered some challenges in the media queries phase. Where with so many devices to cover.
 

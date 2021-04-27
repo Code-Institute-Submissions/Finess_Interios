@@ -55,60 +55,59 @@
       </div>
     </header>
     <section class="contact-page">
-        <div class="wrapper">
-          <form method="POST" action="https://formdump.codeinstitute.net/">
-            <div class="title">
-              <h1>Contact Form</h1>
-              <p>Please leave your details and we'll call you back!</p>
-              </div>
-              <div class="nav-brand-contact-box">
-                <a href="./index.html"
-                  ><img src="./assets/images/FinessLogo.png"
-                /></a>
+      <div class="wrapper">
+        <form method="POST" action="https://formdump.codeinstitute.net/">
+          <div class="title">
+            <h1>Contact Form</h1>
+            <p>Please leave your details and we'll call you back!</p>
+          </div>
+          <div class="nav-brand-contact-box">
+            <a href="./index.html"
+              ><img src="./assets/images/FinessLogo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="contact-form">
+            <div class="input-fields">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                class="input"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                class="input"
+                placeholder="Last Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="input"
+                pattern="[0-9]{-3}-[0-9]{-2}-[0-9]{-3}"
+                placeholder="Phone Number"
+                required
+              />
             </div>
-            <div class="contact-form">
-              <div class="input-fields">
-                <input
-                  type="text"
-                  name="fname"
-                  id="fname"
-                  class="input"
-                  placeholder="Name"
-                  required
-                />
-                <input
-                  type="text"
-                  name="lname"
-                  id="lname"
-                  class="input"
-                  placeholder="Last Name"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="input"
-                  placeholder="Email Address"
-                  required
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  class="input"
-                  pattern="[0-9]{-3}-[0-9]{-2}-[0-9]{-3}"
-                  placeholder="Phone Number"
-                  required
-                />
-              </div>
-              <div class="msg">
-                <textarea placeholder="Message"></textarea>
-                <div class="btn"><button type="submit">submit</button></div>
-              </div>
+            <div class="msg">
+              <textarea placeholder="Message"></textarea>
+              <div class="btn"><button type="submit">submit</button></div>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </section>
     <section id="footer">
