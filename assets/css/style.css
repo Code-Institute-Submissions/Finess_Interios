@@ -556,24 +556,22 @@ video:focus {
   height: auto;
 }
 .process-textbox {
-  width: 90%;
-  height: auto;
   text-align: center;
-  padding: 5px;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+.process-textbox i {
+  font-size: 7rem;
 }
 .process-textbox h1 {
   font-size: 3.5rem;
 }
 .process-textbox p {
   font-size: 2rem;
+  text-align: justify;
 }
 
 /* Media Queries */
-@media screen and (min-width: 320px) and (max-width: 800px) and (orientation: landscape) {
-  .wrapper {
-    display: none;
-  }
-}
 @media screen and (min-width: 320px) {
   /* hero */
   .main-message {
@@ -596,7 +594,7 @@ video:focus {
     flex-direction: column;
   }
   .msg textarea {
-    height: 12rem;
+    height: 10rem;
     padding: 0;
     margin: 0;
   }
@@ -614,7 +612,7 @@ video:focus {
     top: 4rem;
   }
   .msg textarea {
-    height: 15rem;
+    height: 12rem;
     padding: 0;
     margin: 0;
   }
@@ -656,7 +654,7 @@ video:focus {
 
   /* before we begin */
   .process-page {
-    height: 100vh;
+    height: 80vh;
   }
 }
 
