@@ -594,7 +594,7 @@ video:focus {
     flex-direction: column;
   }
   .msg textarea {
-    height: 10rem;
+    height: 8rem;
     padding: 0;
     margin: 0;
   }
@@ -612,7 +612,7 @@ video:focus {
     top: 4rem;
   }
   .msg textarea {
-    height: 12rem;
+    height: 10rem;
     padding: 0;
     margin: 0;
   }
@@ -624,7 +624,7 @@ video:focus {
     flex-direction: column;
   }
   .msg textarea {
-    height: 15rem;
+    height: 12rem;
     padding: 0;
     margin: 0;
   }
