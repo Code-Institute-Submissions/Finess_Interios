@@ -2,144 +2,152 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Design your home or workspace with us" />
-    <meta name="keywords" content="interior design, ambience, home, office" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Finess Interiors | Photo Gallery</title>
-    <link rel="icon" href="./assets/images/favicon.png" type="icon" />
-    <link
-      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
+
   <body>
-    <!-- Navigation Bar -->
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <nav>
-          <div class="nav-brand">
-            <a href="./index.html"
-              ><img src="./assets/images/FinessLogo.png" alt="logo"
-            /></a>
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./assets/images/FinessLogo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav text-black-50 fw-bolder">
+            <a class="nav-link " aria-current="page" href="./index.html"
+              >Home</a
+            >
+            <a class="nav-link active" href="./photo_gallery.html">Gallery</a>
+            <a class="nav-link" href="./before_we_begin.html"
+              >Before we Begin</a
+            >
+            <a class="nav-link" href="./about.html">About</a>
           </div>
-          <div class="menu-icons open">
-            <i class="icon ion-md-menu"></i>
-          </div>
-          <ul class="nav-list">
-            <li class="menu-icons close">
-              <i class="icon ion-md-close"></i>
-            </li>
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="./photo_gallery.html" class="nav-link current"
-                >Photo Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="./video_gallery.html" class="nav-link">Video Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a href="./before_we_begin.html" class="nav-link"
-                >Before we begin</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="./contact_page.html" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="./about.html" class="nav-link">About</a>
-            </li>
-          </ul>
-        </nav>
+        </div>
       </div>
+    </nav>
+    <header class="page-header gradient">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L34.3,256C68.6,256,137,256,206,250.7C274.3,245,343,235,411,240C480,245,549,267,617,240C685.7,213,754,139,823,128C891.4,117,960,171,1029,176C1097.1,181,1166,139,1234,144C1302.9,149,1371,203,1406,229.3L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
     </header>
-    <main>
-      <section class="page-lenght">
-        <div class="photo-gallery-heading">
-          <h2>Photo Gallery</h2>
-          <p>
-            At Finess we believe in strong connection. Therefore this photo
-            gallery aims to help you understand our taste and give you a better
-            overview of how we do things and what is the company’s reputation.
-          </p>
+    <section>
+      <div class="photo-gallery-heading">
+        <h2>Photo Gallery</h2>
+        <p>
+          At Finess we believe in strong connection. Therefore this photo
+          gallery aims to help you understand our taste and give you a better
+          overview of how we do things and what is the company’s reputation.
+        </p>
+      </div>
+      <div class="photo-container">
+        <div class="image">
+          <img
+            src="./assets/images/gallery/bedroom-view.jpg"
+            alt="bedroom view to the sea"
+          />
         </div>
-        <div class="photo-container">
-          <div class="image">
-            <img
-              src="./assets/images/gallery/bedroom-view.jpg"
-              alt="bedroom view to the sea"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/bedroom.jpg"
-              alt="stylish room interior"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/chairs.jpg"
-              alt="some chairs in a dining room"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/kitchen1.jpg"
-              alt="modern kitchen"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/living-room.jpg"
-              alt="modern living room"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/living-room1.jpg"
-              alt="classic living room"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/living-room2.jpg"
-              alt="cactus plant on a table"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/offce2.jpg"
-              alt="modern office space"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/office1.jpg"
-              alt="classic office space"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/stairway.jpg"
-              alt="beautiful stairs"
-            />
-          </div>
-          <div class="image">
-            <img
-              src="./assets/images/gallery/zen-space.jpg"
-              alt="relaxation room"
-            />
-          </div>
-          <div class="image">
-            <img src="./assets/images/gallery/zen.jpg" alt="tea room" />
-          </div>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/bedroom.jpg"
+            alt="stylish room interior"
+          />
         </div>
-      </section>
-    </main>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/chairs.jpg"
+            alt="some chairs in a dining room"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/kitchen1.jpg"
+            alt="modern kitchen"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/living-room.jpg"
+            alt="modern living room"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/living-room1.jpg"
+            alt="classic living room"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/living-room2.jpg"
+            alt="cactus plant on a table"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/offce2.jpg"
+            alt="modern office space"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/office1.jpg"
+            alt="classic office space"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/stairway.jpg"
+            alt="beautiful stairs"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="./assets/images/gallery/zen-space.jpg"
+            alt="relaxation room"
+          />
+        </div>
+        <div class="image">
+          <img src="./assets/images/gallery/zen.jpg" alt="tea room" />
+        </div>
+      </div>
+    </section>
+    <!-- Stop Here -->
+    
+    <!-- Stop Here -->
+    <section class="feature gradient">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L30,101.3C60,107,120,117,180,133.3C240,149,300,171,360,176C420,181,480,171,540,160C600,149,660,139,720,165.3C780,192,840,256,900,250.7C960,245,1020,171,1080,144C1140,117,1200,139,1260,144C1320,149,1380,139,1410,133.3L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+        ></path>
+      </svg>
+          <!-- Stop Here -->
+          
+
+
+
+
+          
+          <!-- Stop Here -->
+    
+      <!-- Stop Here -->
     <section id="footer">
       <div id="socials">
         <div id="facebook">
@@ -176,10 +184,10 @@
         </h3>
       </div>
     </section>
-    <script src="./assets/javascript/script.js"></script>
     <script
       src="https://kit.fontawesome.com/cc1a788000.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/javascript/bootstrap.min.js"></script>
   </body>
 </html>

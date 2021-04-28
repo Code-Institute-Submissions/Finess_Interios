@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+html,
+body {
+  height: 100%;
+  font-size: 1rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.gradient {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(158, 13, 218, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.navbar-brand img {
+  width: 6rem;
+}
+.nav-link {
+  font-size: 1.5rem;
+}
+.page-header {
+  margin-top: 4rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.feature {
+  color: #fff;
+}
+.feature ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+.btn a {
+  color: #fff;
+}
+.team-img img {
+  width: 50rem;
+  max-width: 100%;
+}
+.icon {
+  color: #fff;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  background-color: whitesmoke;
+}
+
+.gallery img {
+  border-radius: 5%;
+}
+
+footer {
+  padding: 1.5rem 0;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  background: #feb062;
+}
+#socials {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+#socials a {
+  font-size: 1.5rem;
+}
+#facebook i {
+  color: #000;
+}
+#facebook i:hover {
+  color: #1e5edf;
+}
+#instagram i {
+  color: #000;
+}
+#instagram i:hover {
+  color: #db304c;
+}
+#twitter i {
+  color: #000;
+}
+#twitter i:hover {
+  color: #00acee;
+}
+#pin i {
+  color: #000;
+}
+#pin i:hover {
+  color: #ff1500;
+}
+.address {
+  padding: 20px 0;
+}
+.address p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+#copyright {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  padding: 10px 0;
+}
+#copyright h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: #000;
+}
+
+/* photo gallery */
+.photo-container {
+  position: relative;
+  top: 5rem;
+  column-count: 4;
+  padding: 20px;
+}
+.image {
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+  transition: 1s 1s linear;
+}
+.image:hover {
+  transform: scale(1.4);
+}
+.image:hover h1 {
+  opacity: 0.5;
+}
+.photo-gallery-heading {
+  position: relative;
+  width: 90%;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.photo-gallery-heading h2 {
+  font-size: 3.5rem;
+}
+.photo-gallery-heading p {
+  font-size: 2rem;
+  text-align: justify;
+}
