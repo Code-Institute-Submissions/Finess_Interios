@@ -10,101 +10,100 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html"
-          ><img src="./assets/images/FinessLogo.png" alt="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav text-black-50 fw-bolder">
-            <a class="nav-link active" aria-current="page" href="./index.html"
-              >Home</a
-            >
-            <a class="nav-link" href="./photo_gallery.html">Gallery</a>
-            <a class="nav-link" href="./before_we_begin.html"
-              >Before we Begin</a
-            >
-            <a class="nav-link" href="./about.html">About</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./assets/images/FinessLogo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav text-black-50 fw-bolder">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="./photo_gallery.html">Photo Gallery</a>
+              <a class="nav-link active" href="./video_gallery.html"
+                >Video Gallery</a
+              >
+              <a class="nav-link" href="./before_we_begin.html">Read More</a>
+              <a class="nav-link" href="./contact_page.html">Contact</a>
+              <a class="nav-link" href="./about.html">About</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <header class="page-header gradient">
-      <div class="container">
-        <div class="row justify-content-center pt-5 align-items-center">
-          <div class="col-md-4 p-2">
-            <h2>Welcome to Finess Interiors</h2>
-            <h3>Design taken seriously</h3>
-            <p>We create environments with personality and vision</p>
-            <button type="button" class="btn btn-outline-success btn-lg">
-              <a href="#" class="text-decoration-none">Read More</a>
-            </button>
-            <button type="button" class="btn btn-outline-warning btn-lg">
-              <a href="#" class="text-decoration-none">Contact Us</a>
-            </button>
-          </div>
-          <div class="col-md-7 img-fluid">
-            <img src="./assets/images/hero.png" alt="campaingn" />
-          </div>
-        </div>
-      </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
           fill-opacity="1"
-          d="M0,96L26.7,106.7C53.3,117,107,139,160,170.7C213.3,203,267,245,320,272C373.3,299,427,309,480,288C533.3,267,587,213,640,208C693.3,203,747,245,800,229.3C853.3,213,907,139,960,96C1013.3,53,1067,43,1120,64C1173.3,85,1227,139,1280,144C1333.3,149,1387,107,1413,85.3L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+          d="M0,256L34.3,256C68.6,256,137,256,206,250.7C274.3,245,343,235,411,240C480,245,549,267,617,240C685.7,213,754,139,823,128C891.4,117,960,171,1029,176C1097.1,181,1166,139,1234,144C1302.9,149,1371,203,1406,229.3L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
         ></path>
       </svg>
     </header>
-    <section class="companies">
-      <div class="container text-center">
-        <div class="row g-5">
-          <div class="col-md-4">
+    <!-- video container -->
+    <section>
+      <div class="video-heading">
+        <h1>Video Gallery</h1>
+        <p>
+          This video gallery was built to show how we work at our company.
+          Passion, dedication, experience, and precision are the four pillars at
+          Finess Interiors added to personal touch. We hope you enjoy seeing our
+          people in action.
+        </p>
+      </div>
+      <div class="container d-flex p-1 flex-wrap">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 col-md- col-sm-12">
+            <img src="./assets/videos/img1.jpg" alt="img1" />
             <img
-              src="./assets/images/Architect_Two Color.png"
-              alt="Architect"
-              class="img-fluid"
+              src="./assets/videos/play.png"
+              class="play-btn btn1"
+              alt="play button"
+              onclick="playVideo('assets/videos/video_1.mp4')"
             />
-            <h3>Dedication</h3>
-            <p>
-              ”Unless commitment is made, there are only promises and hopes; but
-              no plans."
-            </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-6 col-md-8 col-sm-12">
+            <img src="./assets/videos/img2.jpg" alt="img2" />
             <img
-              src="./assets/images/Architect_Outline.png"
-              alt="Architect planning"
-              class="img-fluid"
+              src="./assets/videos/play.png"
+              class="play-btn btn2"
+              alt="play button"
+              onclick="playVideo('assets/videos/video_2.mp4')"
             />
-            <h3>Experience</h3>
-            <p>”The only source of knowledge is Experience."</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-6 col-md-8 col-sm-12">
+            <img src="./assets/videos/img3.jpg" alt="img3" />
             <img
-              src="./assets/images/Process building_Outline.png"
-              alt="hands"
-              class="img-fluid"
+              src="./assets/videos/play.png"
+              class="play-btn btn3"
+              alt="play button"
+              onclick="playVideo('assets/videos/video_3.mp4')"
             />
-            <h3>Passion</h3>
-            <p>
-              "Excellence is the gradual result of always striving to do
-              better."
-            </p>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-12">
+            <img src="./assets/videos/img4.jpg" alt="img4" />
+            <img
+              src="./assets/videos/play.png"
+              alt="play button"
+              class="play-btn btn4"
+              onclick="playVideo('assets/videos/video_4.mp4')"
+            />
           </div>
         </div>
       </div>
@@ -117,29 +116,6 @@
           d="M0,96L30,101.3C60,107,120,117,180,133.3C240,149,300,171,360,176C420,181,480,171,540,160C600,149,660,139,720,165.3C780,192,840,256,900,250.7C960,245,1020,171,1080,144C1140,117,1200,139,1260,144C1320,149,1380,139,1410,133.3L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
         ></path>
       </svg>
-      <div class="container container-fluid">
-        <div class="row align-items-center justify-content-center">
-          <!-- important for positioning list up -->
-
-          <div class="col-md-6 align-items-center justify-content-center">
-            <h1 class="my-4 text-center">Introducing Finess Interiors</h1>
-            <p class="my-5 text-center">
-              We work continuously to improve our team’s creativity.
-            </p>
-            <div class="team-img">
-              <img src="./assets/images/bottom-img.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#ccc"
-        fill-opacity="1"
-        d="M0,256L40,261.3C80,267,160,277,240,277.3C320,277,400,267,480,250.7C560,235,640,213,720,186.7C800,160,880,128,960,149.3C1040,171,1120,245,1200,282.7C1280,320,1360,320,1400,320L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-      ></path>
-    </svg>
     <section id="footer">
       <div id="socials">
         <div id="facebook">
@@ -181,5 +157,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/javascript/bootstrap.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>

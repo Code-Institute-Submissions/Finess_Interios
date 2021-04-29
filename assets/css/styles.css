@@ -2,7 +2,7 @@
 html,
 body {
   height: 100%;
-  font-size: 1rem;
+  font-size: 10px;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .gradient {
@@ -15,7 +15,7 @@ body {
   );
 }
 .navbar-brand img {
-  width: 6rem;
+  width: 7rem;
 }
 .nav-link {
   font-size: 1.5rem;
@@ -123,39 +123,107 @@ footer {
 /* photo gallery */
 .photo-container {
   position: relative;
-  top: 5rem;
+  top: 1rem;
   column-count: 4;
   padding: 20px;
 }
 .image {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   overflow: hidden;
 }
 .image img {
   width: 100%;
   transition: 1s 1s linear;
 }
-.image:hover {
-  transform: scale(1.4);
-}
-.image:hover h1 {
-  opacity: 0.5;
-}
 .photo-gallery-heading {
   position: relative;
   width: 90%;
   padding: 1rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
-  top: 10rem;
+  top: 2rem;
   left: 50%;
   transform: translate(-50%);
 }
 .photo-gallery-heading h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 .photo-gallery-heading p {
-  font-size: 2rem;
-  text-align: justify;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* video gallery */
+.play-btn {
+  position: relative;
+  cursor: pointer;
+  top: 0rem;
+  right: 0rem;
+}
+.play-btn {
+  width: 50px;
+}
+.video-player {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+video:focus {
+  outline: none;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+.video-heading {
+  width: 100%;
+  padding: 4rem;
+  text-align: center;
+}
+.video-heading h1 {
+  font-size: 3rem;
+}
+.video-heading p {
+  font-size: 1.5rem;
+}
+/* Media Queries */
+@media screen and (min-width: 320px) {
+  /* photo gallery */
+  .photo-container {
+    column-count: 1;
+  }
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 414px) {
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 700px) {
+  /* photo gallery */
+  .photo-container {
+    column-count: 2;
+  }
+}
+
+/* Media Queries 950px*/
+@media screen and (min-width: 950px) {
+  /* photo gallery */
+  .photo-container {
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }
