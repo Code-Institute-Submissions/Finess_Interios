@@ -58,18 +58,9 @@
     </header>
     <!-- video container -->
     <section>
-      <div class="video-heading">
-        <h1>Video Gallery</h1>
-        <p>
-          This video gallery was built to show how we work at our company.
-          Passion, dedication, experience, and precision are the four pillars at
-          Finess Interiors added to personal touch. We hope you enjoy seeing our
-          people in action.
-        </p>
-      </div>
       <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="row flex-lg-row">
+          <div class="col-md-6 col-sm-10 mr-1">
             <img src="./assets/videos/img1.jpg" alt="img1" />
             <img
               src="./assets/videos/play.png"
@@ -78,7 +69,7 @@
               onclick="playVideo('assets/videos/video_1.mp4')"
             />
           </div>
-          <div class="col-lg-6 col-md-8 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <img src="./assets/videos/img2.jpg" alt="img2" />
             <img
               src="./assets/videos/play.png"
@@ -87,7 +78,10 @@
               onclick="playVideo('assets/videos/video_2.mp4')"
             />
           </div>
-          <div class="col-lg-6 col-md-8 col-sm-12">
+        </div>
+      
+        <div class="row flex-lg-row">
+          <div class="col-md-6 col-sm-12 mr-1">
             <img src="./assets/videos/img3.jpg" alt="img3" />
             <img
               src="./assets/videos/play.png"
@@ -96,7 +90,7 @@
               onclick="playVideo('assets/videos/video_3.mp4')"
             />
           </div>
-          <div class="col-lg-6 col-md-8 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <img src="./assets/videos/img4.jpg" alt="img4" />
             <img
               src="./assets/videos/play.png"
@@ -105,17 +99,18 @@
               onclick="playVideo('assets/videos/video_4.mp4')"
             />
           </div>
-          <div class="video-player" id="videoPlayer">
-            <video width="100%" controls autoplay id="myVideo">
-              <source src="./assets/videos/video_1.mp4" type="video/mp4" />
-            </video>
-            <img
-              src="./assets/videos/close.png"
-              class="close-btn"
-              alt="close icon"
-              onclick="stopVideo()"
-            />
-          </div>
+        </div>
+      </div>
+        <div class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay id="myVideo">
+            <source src="./assets/videos/video_1.mp4" type="video/mp4" />
+          </video>
+          <img
+            src="./assets/videos/close.png"
+            class="close-btn"
+            alt="close icon"
+            onclick="stopVideo()"
+          />
         </div>
       </div>
     </section>

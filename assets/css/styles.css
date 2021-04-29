@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap");
 html,
 body {
   height: 100%;
   font-size: 10px;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .gradient {
   background: rgb(2, 0, 36);
@@ -14,24 +14,38 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
 }
+.page-header {
+  margin-top: 8rem;
+}
 .navbar-brand img {
   width: 7rem;
 }
 .nav-link {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
-.page-header {
-  margin-top: 4rem;
-  font-size: 1.25rem;
+.main-h {
+  width: auto;
+}
+.main-h h2 {
+  font-size: 4rem;
   color: #fff;
 }
-
+.main-h p {
+  margin-top: 3rem;
+  font-size: 2.25rem;
+  color: #fff;
+}
+.main-h button {
+  font-size: 2rem;
+}
 .feature {
   color: #fff;
 }
-.feature ul {
-  padding-left: 2rem;
-  list-style-type: none;
+.mid-h h3 {
+  font-size: 2.5rem;
+}
+.mid-h p {
+  font-size: 1.8rem;
 }
 .btn a {
   color: #fff;
@@ -73,7 +87,7 @@ footer {
   flex-direction: row;
 }
 #socials a {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 #facebook i {
   color: #000;
@@ -104,7 +118,7 @@ footer {
 }
 .address p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #000;
 }
@@ -158,8 +172,9 @@ footer {
 .play-btn {
   position: relative;
   cursor: pointer;
-  top: 0rem;
-  right: 0rem;
+  bottom: 25rem;
+  left: 30rem;
+  transform: translate(-50%, -50%);
 }
 .play-btn {
   width: 50px;
