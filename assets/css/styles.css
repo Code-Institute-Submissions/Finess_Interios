@@ -6,13 +6,7 @@ body {
   font-family: "Barlow Condensed", sans-serif;
 }
 .gradient {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(158, 13, 218, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(to right, rgb(0, 90, 167), rgb(0, 0, 0));
 }
 .navbar-brand img {
   width: 7rem;
@@ -247,11 +241,10 @@ video:focus {
   flex-direction: column;
 }
 .about-testimonials {
-  width: 100%;
   height: auto;
 }
 .testimonial-words {
-  width: 100%;
+  width: 70%;
   padding: 0 1rem;
   color: #000;
   position: relative;
