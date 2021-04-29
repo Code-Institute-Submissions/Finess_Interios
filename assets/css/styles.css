@@ -151,33 +151,28 @@ footer {
   transition: 1s 1s linear;
 }
 .photo-gallery-heading {
-  position: relative;
-  width: 90%;
-  padding: 1rem 0;
-  margin-bottom: 1rem;
+  width: 100%;
+  padding: 3rem;
   text-align: center;
-  top: 2rem;
-  left: 50%;
-  transform: translate(-50%);
 }
 .photo-gallery-heading h2 {
-  font-size: 2.5rem;
+  font-size: 5rem;
+  text-align: center;
 }
 .photo-gallery-heading p {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 /* video gallery */
-.play-btn {
-  position: relative;
-  cursor: pointer;
-  bottom: 25rem;
-  left: 30rem;
-  transform: translate(-50%, -50%);
+.row img {
+  align-items: center;
+  width: 75%;
+  margin-left: 6rem;
+  margin-bottom: 5rem;
 }
-.play-btn {
-  width: 50px;
+.click {
+  cursor: pointer;
 }
 .video-player {
   width: 80%;
@@ -199,14 +194,29 @@ video:focus {
 }
 .video-heading {
   width: 100%;
-  padding: 4rem;
+  padding: 3rem;
   text-align: center;
 }
-.video-heading h1 {
-  font-size: 3rem;
+.video-heading h2 {
+  font-size: 5rem;
 }
 .video-heading p {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.process-heading {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+  margin-top: 7rem;
+}
+.process-heading h2 {
+  font-size: 5rem;
+}
+
+.process-heading p {
+  font-size: 2.5rem;
 }
 /* Media Queries */
 @media screen and (min-width: 320px) {
@@ -214,15 +224,6 @@ video:focus {
   .photo-container {
     column-count: 1;
   }
-}
-
-@media screen and (min-width: 375px) {
-}
-
-@media screen and (min-width: 414px) {
-}
-
-@media screen and (min-width: 600px) {
 }
 
 @media screen and (min-width: 700px) {
@@ -233,7 +234,7 @@ video:focus {
 }
 
 /* Media Queries 950px*/
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1000px) {
   /* photo gallery */
   .photo-container {
     column-count: 3;
