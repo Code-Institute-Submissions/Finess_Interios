@@ -1,8 +1,8 @@
 # [Finess Interiors](https://fdasabino.github.io/Finess_Interios/index.html)
 
-<!-- ![Iphone 5s](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/frames/320-home.jpg "Small Mobile")
-![Tablets and small laptops](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/frames/700-home.jpg "Tablets and small laptops")
-![Larger Screens](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/frames/large-home.jpg "Larger screens") -->
+<!-- ![Mobile Phones](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/mobile-phones.jpg "Mobile Phones")
+![Tablets and small laptops](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/tablets.jpg "Tablets and small laptops")
+![Larger Screens](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/Desktop%20Large.jpg "Larger screens") -->
 
 This website was created for the Code Institute as the main part of my project (MLS 1).
 
@@ -45,18 +45,14 @@ I was inclined to add a small portion of JS in the videoo gallery for playing an
 
 In a near future I would like to implement:
 
-1. Use bootstrap for a more smooth transition between breakpoints;
-2. Add Jquery for real life contact form submission.
+1. Add Jquery for real life contact form submission.
 
 ## Technologies Used
 
-The navigation bar was implemented using CSS flex to facilitate the responsivness of the element.
-A similar process was applied to the body and footer.
-
 [Google fonts:](https://fonts.google.com/)
-Font Family: "Barlow Condensed".
+Font Family: "Barlow Condensed" for the entire project.
 
-[Ion Icons:](https://ionicons.com/)
+[Font Awesome:](https://ionicons.com/)
 The icon combination used on the nav bar and on the content pages were downloaded from Ion Icons.
 
 [Colorinspo:](https://colorsinspo.com/)
