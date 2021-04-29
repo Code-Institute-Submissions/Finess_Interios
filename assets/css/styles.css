@@ -252,9 +252,19 @@ video:focus {
   border-radius: 10px;
   width: 10rem;
 }
-/* about */
-.testimonial-words {
+/* about container */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-testimonials {
   width: 100%;
+  height: auto;
+}
+.testimonial-words {
+  width: 50%;
   color: #000;
   position: relative;
   top: 8rem;
@@ -264,15 +274,25 @@ video:focus {
 .testimonial-text-box {
   padding: 1rem 0;
   margin-bottom: 5rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .testimonial-text-box h2 {
   font-size: 3rem;
   padding-bottom: 3rem;
   text-align: center;
+}
+.testimonial-text-box i {
+  position: absolute;
+  top: -5rem;
+  left: 30%;
+  transform: translateX(-50%);
+  font-size: 8rem;
+  color: rgb(255, 196, 0, 1);
+  opacity: 0.5;
+  z-index: -1;
 }
 .customer-img {
   width: 10rem;
