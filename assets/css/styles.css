@@ -209,7 +209,6 @@ video:focus {
   width: 100%;
   text-align: center;
   padding: 3rem;
-  margin-top: 7rem;
 }
 .process-heading h2 {
   font-size: 5rem;
@@ -219,14 +218,10 @@ video:focus {
   font-size: 2.5rem;
 }
 /* contact */
-.contact-form {
-  text-align: center;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
-}
 .contact-box {
   font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem;
 }
 .contact-box input {
   font-size: 1.5rem;
