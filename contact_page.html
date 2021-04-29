@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
-
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
@@ -42,24 +41,6 @@
       </div>
     </nav>
     <header class="page-header gradient">
-      <div class="container">
-        <div class="row justify-content-center pt-5 align-items-center">
-          <div class="col-md-4 p-2">
-            <h2>Welcome to Finess Interiors</h2>
-            <h3>Design taken seriously</h3>
-            <p>We create environments with personality and vision</p>
-            <button type="button" class="btn btn-outline-success btn-lg">
-              <a href="#" class="text-decoration-none">Read More</a>
-            </button>
-            <button type="button" class="btn btn-outline-warning btn-lg">
-              <a href="#" class="text-decoration-none">Contact Us</a>
-            </button>
-          </div>
-          <div class="col-md-7 img-fluid">
-            <img src="./assets/images/hero.png" alt="campaingn" />
-          </div>
-        </div>
-      </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -68,45 +49,34 @@
         ></path>
       </svg>
     </header>
-    <section class="companies">
-      <div class="container text-center">
-        <div class="row g-5">
-          <div class="col-md-4">
-            <img
-              src="./assets/images/Architect_Two Color.png"
-              alt="Architect"
-              class="img-fluid"
-            />
-            <h3>Dedication</h3>
-            <p>
-              ”Unless commitment is made, there are only promises and hopes; but
-              no plans."
-            </p>
+    <div class="container">
+      <div class="contact-box">
+        <form method="POST" action="https://formdump.codeinstitute.net/">
+          <div class="contact-form col-sm-12 col-md-10 align-items-center justify-content-center">
+            <div class="row col-12 mb-3">
+              <img src="./assets/images/contact.png" class="row-cols-6" alt="">
+                        
+            <label for="exampleFormControlInput1" class="form-label">First Name</label>
+            <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required>
+
+            <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+            <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name" required>
+
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            
+            <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+            <input type="phone" name="phone" pattern="[0-9]{-3}-[0-9]{-2}-[0-9]{-3}" class="form-control" id="exampleFormControlInput1" placeholder="000-000-00-00" required>
           </div>
-          <div class="col-md-4">
-            <img
-              src="./assets/images/Architect_Outline.png"
-              alt="Architect planning"
-              class="img-fluid"
-            />
-            <h3>Experience</h3>
-            <p>”The only source of knowledge is Experience."</p>
-          </div>
-          <div class="col-md-4">
-            <img
-              src="./assets/images/Process building_Outline.png"
-              alt="hands"
-              class="img-fluid"
-            />
-            <h3>Passion</h3>
-            <p>
-              "Excellence is the gradual result of always striving to do
-              better."
-            </p>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+            <div class="btn"><button type="submit" class="btn btn-primary">Submit</button></div>
           </div>
         </div>
-      </div>
-    </section>
+      </form>
+    </div>
+    </div>
     <section class="feature gradient">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -118,18 +88,6 @@
       <div class="container container-fluid">
         <div class="row align-items-center justify-content-center">
           <!-- important for positioning list up -->
-
-          <div class="col-md-6 align-items-center justify-content-center">
-            <h1 class="my-4 text-center">Introducing Finess Interiors</h1>
-            <p class="my-5 text-center">
-              We work continuously to improve our team’s creativity.
-            </p>
-            <div class="team-img">
-              <img src="./assets/images/bottom-img.png" />
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
