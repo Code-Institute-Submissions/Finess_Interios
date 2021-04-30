@@ -1,8 +1,8 @@
 # [Finess Interiors](https://fdasabino.github.io/Finess_Interios/index.html)
 
-<!-- ![Mobile Phones](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/mobile-phones.jpg "Mobile Phones")
-![Tablets and small laptops](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/tablets.jpg "Tablets and small laptops")
-![Larger Screens](https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/Desktop%20Large.jpg "Larger screens") -->
+![Mobile Phones] (https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/mobile-phones.jpg "Mobile Phones")
+![Tablets and small laptops] (https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/tablets.jpg "Tablets and small laptops")
+![Larger Screens] (https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/Desktop%20Large.jpg "Larger screens")
 
 This website was created for the Code Institute as the main part of my project (MLS 1).
 

@@ -46,75 +46,7 @@
         </div>
       </nav>
     </header>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#ccc"
-        fill-opacity="1"
-        d="M0,256L40,261.3C80,267,160,277,240,277.3C320,277,400,267,480,250.7C560,235,640,213,720,186.7C800,160,880,128,960,149.3C1040,171,1120,245,1200,282.7C1280,320,1360,320,1400,320L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-      ></path>
-    </svg>
-    <!-- video container -->
-    <section>
-      <div class="container flex-lg-row flex-column">
-        <div class="video-heading">
-          <h2>Video Gallery</h2>
-          <p>
-            This video gallery was built to show how we work at our company.
-            Passion, dedication, experience, and precision are the four pillars
-            at Finess Interiors added to personal touch. We hope you enjoy
-            seeing our people in action.
-          </p>
-        </div>
-        <div class="row flex-lg-row flex-column">
-          <div class="col">
-            <h1 class="text-center">Studio Apartment</h1>
-            <img
-              src="./assets/videos/tvimg2.png"
-              onclick="playVideo('assets/videos/video_1.mp4')"
-              class="click"
-            />
-          </div>
-          <div class="col">
-            <h1 class="text-center">Blueprints of a project</h1>
-            <img
-              src="./assets/videos/tvimg2.png"
-              onclick="playVideo('assets/videos/video_2.mp4')"
-              class="click"
-            />
-          </div>
-        </div>
-        <div class="row flex-lg-row flex-column">
-          <div class="col">
-            <h1 class="text-center">Our lovely team at work</h1>
-            <img
-              src="./assets/videos/tvimg2.png"
-              onclick="playVideo('assets/videos/video_3.mp4')"
-              class="click"
-            />
-          </div>
-          <div class="col">
-            <h1 class="text-center">Drawing on the go</h1>
-            <img
-              src="./assets/videos/tvimg2.png"
-              onclick="playVideo('assets/videos/video_4.mp4')"
-              class="click"
-            />
-          </div>
-        </div>
-        <div class="video-player" id="videoPlayer">
-          <video width="100%" controls autoplay id="myVideo">
-            <source src="./assets/videos/video_1.mp4" type="video/mp4" />
-          </video>
-          <img
-            src="./assets/videos/close.png"
-            class="close-btn"
-            alt="close icon"
-            onclick="stopVideo()"
-          />
-        </div>
-      </div>
-    </section>
-    <section>
+    <main>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ccc"
@@ -122,7 +54,81 @@
           d="M0,256L40,261.3C80,267,160,277,240,277.3C320,277,400,267,480,250.7C560,235,640,213,720,186.7C800,160,880,128,960,149.3C1040,171,1120,245,1200,282.7C1280,320,1360,320,1400,320L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
         ></path>
       </svg>
-    </section>
+      <!-- video container -->
+      <section>
+        <div class="container flex-lg-row flex-column">
+          <div class="video-heading">
+            <h2>Video Gallery</h2>
+            <p>
+              This video gallery was built to show how we work at our company.
+              Passion, dedication, experience, and precision are the four
+              pillars at Finess Interiors added to personal touch. We hope you
+              enjoy seeing our people in action.
+            </p>
+          </div>
+          <div class="row flex-lg-row flex-column">
+            <div class="col">
+              <h1 class="text-center">Studio Apartment</h1>
+              <img
+                src="./assets/videos/tvimg2.png"
+                alt="old tv"
+                onclick="playVideo('assets/videos/video_1.mp4')"
+                class="click"
+              />
+            </div>
+            <div class="col">
+              <h1 class="text-center">Blueprints of a project</h1>
+              <img
+                src="./assets/videos/tvimg2.png"
+                alt="old tv"
+                onclick="playVideo('assets/videos/video_2.mp4')"
+                class="click"
+              />
+            </div>
+          </div>
+          <div class="row flex-lg-row flex-column">
+            <div class="col">
+              <h1 class="text-center">Our lovely team at work</h1>
+              <img
+                src="./assets/videos/tvimg2.png"
+                alt="old tv"
+                onclick="playVideo('assets/videos/video_3.mp4')"
+                class="click"
+              />
+            </div>
+            <div class="col">
+              <h1 class="text-center">Drawing on the go</h1>
+              <img
+                src="./assets/videos/tvimg2.png"
+                alt="old tv"
+                onclick="playVideo('assets/videos/video_4.mp4')"
+                class="click"
+              />
+            </div>
+          </div>
+          <div class="video-player" id="videoPlayer">
+            <video width="100" controls autoplay id="myVideo">
+              <source src="./assets/videos/video_1.mp4" type="video/mp4" />
+            </video>
+            <img
+              src="./assets/videos/close.png"
+              alt="close-btn"
+              class="close-btn"
+              onclick="stopVideo()"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ccc"
+            fill-opacity="1"
+            d="M0,256L40,261.3C80,267,160,277,240,277.3C320,277,400,267,480,250.7C560,235,640,213,720,186.7C800,160,880,128,960,149.3C1040,171,1120,245,1200,282.7C1280,320,1360,320,1400,320L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+          ></path>
+        </svg>
+      </section>
+    </main>
     <section id="footer">
       <div id="socials">
         <div id="facebook">

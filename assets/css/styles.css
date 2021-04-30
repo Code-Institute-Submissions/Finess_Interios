@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap");
+/* Global styles */
 html,
 body {
   height: 100%;
@@ -8,6 +9,8 @@ body {
 .gradient {
   background: linear-gradient(to right, rgb(0, 90, 167), rgb(0, 0, 0));
 }
+
+/* Navigation */
 .navbar-brand img {
   width: 7rem;
 }
@@ -33,6 +36,9 @@ body {
   font-size: 1.5rem;
   margin: 1rem;
 }
+.btn a {
+  color: #fff;
+}
 
 /* hero middle */
 .mid-h h3 {
@@ -41,22 +47,13 @@ body {
 .mid-h p {
   font-size: 1.8rem;
 }
-.btn a {
-  color: #fff;
+.row {
+  --bs-gutter-x: -5.5rem;
 }
 
 /* hero bottom */
 .team-heading {
   color: #fff;
-}
-.customer-img {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 100%;
-  border: #1e5edf solid 3px;
-  margin-top: 1rem;
-  background: url(../images/profile1.jpg) center center no-repeat;
-  background-size: cover;
 }
 .container i {
   color: gold;
@@ -82,6 +79,7 @@ footer {
   background: #feb062;
 }
 #socials {
+  margin: 2rem 0;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -158,11 +156,11 @@ footer {
   text-align: center;
 }
 .photo-gallery-heading h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
 }
 .photo-gallery-heading p {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 
@@ -180,8 +178,8 @@ footer {
   width: 80%;
   position: absolute;
   left: 50%;
-  top: 80%;
-  transform: translate(-50%, -50%);
+  top: 90%;
+  transform: translate(-50%, -35%);
   display: none;
 }
 video:focus {
@@ -200,25 +198,13 @@ video:focus {
   text-align: center;
 }
 .video-heading h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .video-heading p {
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
 }
 
-.process-heading {
-  width: 100%;
-  text-align: center;
-  padding: 3rem;
-}
-.process-heading h2 {
-  font-size: 5rem;
-}
-
-.process-heading p {
-  font-size: 2.5rem;
-}
 /* contact */
 .contact-box {
   font-size: 2.5rem;
@@ -226,8 +212,8 @@ video:focus {
   padding: 2rem;
 }
 .contact-box input {
-  font-size: 1.5rem;
-  background: transparent;
+  font-size: 1.8rem;
+  background: #ccc;
   border: 1px solid #666;
 }
 .contact-box input::placeholder {
@@ -236,7 +222,8 @@ video:focus {
   color: #666;
 }
 .contact-box textarea {
-  background: transparent;
+  font-size: 1.8rem;
+  background: #ccc;
   border: 1px solid #666;
 }
 .contact-box textarea::placeholder {
@@ -249,7 +236,8 @@ video:focus {
   border-radius: 10px;
   width: 10rem;
 }
-/* about container */
+
+/* about top */
 .about-container {
   display: flex;
   align-items: center;
@@ -272,13 +260,10 @@ video:focus {
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
-  border: #1e5edf solid 3px;
-  margin-top: 1rem;
-  background-image: url(../images/our_ceo.jpg);
-  background-position: center center;
+  background: url(../images/our_ceo.jpg) center center no-repeat;
   background-size: cover;
-  border-radius: 100%;
-  margin: 1rem;
+  border: #1e5edf solid 3px;
+  margin: 2rem;
 }
 .testimonial-text-box {
   padding: 1rem 0;
@@ -294,16 +279,16 @@ video:focus {
 .testimonial-text-box p {
   font-size: 2.2rem;
 }
-.ceo-img-container {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 100%;
-  border: #1e5edf solid 3px;
-  margin-top: 1rem;
-  background-image: url(../images/our_ceo.jpg);
-  background-position: center center;
-  background-size: cover;
-  border-radius: 100%;
+.process-heading {
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
+}
+.process-heading h2 {
+  font-size: 4rem;
+}
+.process-heading p {
+  font-size: 2.2rem;
 }
 
 /* Media Queries */
@@ -321,13 +306,9 @@ video:focus {
   }
 }
 
-/* Media Queries 950px*/
 @media screen and (min-width: 1100px) {
   /* photo gallery */
   .photo-container {
     column-count: 3;
   }
-}
-
-@media screen and (min-width: 1200px) {
 }
