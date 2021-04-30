@@ -1,18 +1,17 @@
 # [Finess Interiors](https://fdasabino.github.io/Finess_Interios/index.html)
 
-![Mobile Phones] (https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/mobile-phones.jpg "Mobile Phones")
-![Tablets and small laptops] (https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/tablets.jpg "Tablets and small laptops")
-![Larger Screens] (https://github.com/fdasabino/Finess_Interios/blob/main/assets/images/Frames/Desktop%20Large.jpg "Larger screens")
+### Interior designed dedicated to making your home or working space unique.
+
+![Mobile Phones] (https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/mobile-phones.jpg "Mobile Phones")
+![Tablets and small laptops] (<https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/mobile-phones.jpg> "Tablets and small laptops")
+![Larger Screens] (https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/Desktop%20Large.jpg "Larger screens")
 
 This website was created for the Code Institute as the main part of my project (MLS 1).
-
-Interior designed dedicated to making your home or working space unique.
-
 The main goal with this page is to be able to attract job opprtunities within the Software developing world, as well as potential customers in the freelancing enviroment.
 
 ## UX
 
-I have designed this webpage using HTML and CSS, the UX inspiration came from a minimalistic rule of 7 elements in the header section. Making the user experience more effective.
+I have designed this webpage using HTML and CSS, the UX was kept minimal and clean. Making the user experience more effective, which in a real world scenario is crucial to attract attention of potential buyers for a company product or service.
 
 ## Technologies
 
