@@ -2,9 +2,7 @@
 
 ### Interior designed dedicated to making your home or working space unique.
 
-[Mobile Phones] (https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/mobile-phones.jpg "Mobile Phones")
-[Tablets and small laptops] (<https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/mobile-phones.jpg> "Tablets and small laptops")
-[Larger Screens] (https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/Desktop%20Large.jpg "Larger screens")
+<h2 align="center"><img src="https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/mobile-phones.jpg"></h2>
 
 This website was created for the Code Institute as the main part of my project (MLS 1).
 The main goal with this page is to be able to attract job opprtunities within the Software developing world, as well as potential customers in the freelancing enviroment.
