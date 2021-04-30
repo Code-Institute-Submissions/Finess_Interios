@@ -3,8 +3,10 @@
 ### Interior designed dedicated to making your home or working space unique.
 
 <h2 align="center"><img src="https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/mobile-phones.jpg"></h2>
+<h2 align="center"><img src="https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/tablets.jpg"></h2>
+<h2 align="center"><img src="https://github.com/fdasabino/Finess_Interios/blob/c43db8a072ab81f2a1b448a5dafa16dc623792d2/assets/images/Frames/Desktop%20Large.jpg"></h2>
 
-This website was created for the Code Institute as the main part of my project (MLS 1).
+This website was designed for the Code Institute as the main part of my project (MLS 1).
 The main goal with this page is to be able to attract job opprtunities within the Software developing world, as well as potential customers in the freelancing enviroment.
 
 ## UX
@@ -12,6 +14,17 @@ The main goal with this page is to be able to attract job opprtunities within th
 I have designed this webpage using HTML and CSS, the UX was kept minimal and clean. Making the user experience more effective, which in a real world scenario is crucial to attract attention of potential buyers for a company product or service.
 
 ## Technologies
+
+### Languages
+
+[HTML5] (https://en.wikipedia.org/wiki/HTML5)
+[CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+### Frameworks, Libraries and Programs
+
+[Bootstrap-5] (https://getbootstrap.com/)
+
+- Boostrap was used to help implementing a more resposive layout.
 
 ## User Comments
 

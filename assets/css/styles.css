@@ -47,9 +47,6 @@ body {
 .mid-h p {
   font-size: 1.8rem;
 }
-.row {
-  --bs-gutter-x: -5.5rem;
-}
 
 /* hero bottom */
 .team-heading {
@@ -167,19 +164,20 @@ footer {
 /* video gallery */
 .row img {
   align-items: center;
-  width: 75%;
-  margin-left: 6rem;
-  margin-bottom: 5rem;
+  width: 100%;
+}
+.old-tvs img {
+  padding: 2rem;
 }
 .click {
   cursor: pointer;
 }
 .video-player {
-  width: 80%;
+  width: 100%;
   position: absolute;
-  left: 50%;
-  top: 90%;
-  transform: translate(-50%, -35%);
+  left: 60%;
+  top: 80%;
+  transform: translate(-50%, -50%);
   display: none;
 }
 video:focus {
