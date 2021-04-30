@@ -15,8 +15,6 @@ I have designed this webpage using HTML and CSS, the UX was kept minimal and cle
 
 ## Technologies
 
-The main targets of this product are home owners and companies looking to renovate their home or/and Work enviroments.
-
 ## User Comments
 
 As a user that navigates I would like to find websites that are friendly to the eye, and are easier to navigate and that takes me straight to the point.
