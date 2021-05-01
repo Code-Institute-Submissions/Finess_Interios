@@ -15,12 +15,6 @@ I've included the feature of social media links on the footer section so one can
 
 The website also includes the possibility to navigate between pages, photo and video gallery and contact form sendable to the form dump page of CI.
 
-## Features
-
-- Responsive on all device sizes;
-
-- Interactivity throgh video playing and contact form.
-
 ## Technologies Used
 
 ### Languages
@@ -92,9 +86,10 @@ The product was tested on Firefox, Edge and Chrome. No problems were detected.
 
 ## Credits
 
-Content
+## Content
 
-The photos used in this site were obtained from:
+### The photos used in this site were obtained from:
+
 [Pexels](https://www.pexels.com/)
 
 [Unsplash](https://www.unsplash.com/).
