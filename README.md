@@ -25,9 +25,7 @@ The website also includes the possibility to navigate between pages, photo and v
 
 ### Frameworks, Libraries and Programs
 
-[Bootstrap:](https://getbootstrap.com/)
-
-Boostrap was used to help implementing a more resposive layout and some of the styling features (that being said the JS files in the project were brought in as bootstrap libraries APOLOGIES).
+[Bootstrap:](https://getbootstrap.com/) - Boostrap was used to help implementing a more resposive layout and some of the styling features (that being said the JS files in the project were brought in as bootstrap libraries APOLOGIES).
 
 [Google Fonts:](https://fonts.google.com/) - Google fonts were used to import the 'Barlow Condensed' font into the style.css file which is used on all pages throughout the project.
 
