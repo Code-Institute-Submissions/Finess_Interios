@@ -26,6 +26,7 @@ The website also includes the possibility to navigate between pages, photo and v
 ### Languages
 
 [HTML5] (https://en.wikipedia.org/wiki/HTML5)
+
 [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
 ### Frameworks, Libraries and Programs
@@ -37,6 +38,8 @@ The website also includes the possibility to navigate between pages, photo and v
 [Google Fonts:](https://fonts.google.com/) - Google fonts were used to import the 'Barlow Condensed' font into the style.css file which is used on all pages throughout the project.
 
 [GitHub:](https://github.com/) - GitHub is used to store the projects code after being pushed from Git.
+
+[VScode:](https://code.visualstudio.com/) - Visual Studio Code was used in combination with Git to execute the code editing.
 
 ## User Comments
 
@@ -52,22 +55,11 @@ No other erros were found in this project.
 
 ## Features
 
-1. Implementing basic ux.
-2. Gathering content.
-3. Creating a mobile responsive platform.
-4. Creating a desktop responsive platform.
-5. Colours and contrast.
-
-### Existing Features
-
-.
-Feature 2 - Allows users to hover over clickable elements.
-Feature 3 - Allows users to play video video on various modes, including picture-in-picture.
-Feature 4 - The contact page has an inquiry form allowing users to explain a little about their needs while storing their data.
-
-For this project I have mainly used HTML & CSS. According to the project objective.
-I was inclined to add a small portion of JS in the videoo gallery for playing and stop purposes and for the navigation menu.
-...
+1. Basic and clean UX.
+2. Several sections within pages which facilitates finding content.
+3. Mobile responsive platform.
+4. Fully functional video and photo gallery.
+5. Contact form.
 
 ### Features Left to Implement
 
@@ -90,18 +82,9 @@ The wave effects on my pages were downloaded from getwaves.com.
 [CSS Gradient:](https://cssgradient.io/)
 The color combination I have decided to use brings high contrast to the eye.
 
-## Contact form
-
-1. Users cannot submit an empty form.
-2. Users cannot submit a wrong format on email address field.
-3. Success message appears in the end.
-4. I have developed a responsive page, using boostrap, to make it responsive.
-
 ## Deployment
 
-During the process I have encountered some challenges in the media queries phase. Where with so many devices to cover.
-
-Current version is 3.5
+Current version is 3.6
 
 ## Compatibility
 
@@ -117,3 +100,5 @@ The photos used in this site were obtained from:
 [Unsplash](https://www.unsplash.com/).
 
 [freepngimg](https://freepngimg.com/).
+
+Francisco Sabino, May 1st 2021.
