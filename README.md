@@ -19,13 +19,13 @@ The website also includes the possibility to navigate between pages, photo and v
 
 ### Languages
 
-[HTML5] (<https://en.wikipedia.org/wiki/HTML5>)
+[HTML5](https://en.wikipedia.org/wiki/HTML5)
 
 [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
 ### Frameworks, Libraries and Programs
 
-[Bootstrap:] ( <https://getbootstrap.com/>)
+[Bootstrap:](https://getbootstrap.com/)
 
 Boostrap was used to help implementing a more resposive layout and some of the styling features (that being said the JS files in the project were brought in as bootstrap libraries APOLOGIES).
 
