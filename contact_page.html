@@ -39,49 +39,104 @@
         </div>
       </div>
     </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#ccc"
+        fill-opacity="1"
+        d="M0,256L40,261.3C80,267,160,277,240,277.3C320,277,400,267,480,250.7C560,235,640,213,720,186.7C800,160,880,128,960,149.3C1040,171,1120,245,1200,282.7C1280,320,1360,320,1400,320L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="./assets/images/contact.png" alt="pins hanging" />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="contact-box">
+              <form method="POST" action="https://formdump.codeinstitute.net/">
+                <div class="contact-form">
+                  <div class="row mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      name="fname"
+                      class="form-control"
+                      id="fname"
+                      placeholder="First Name"
+                      required
+                    />
+
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      name="lname"
+                      class="form-control"
+                      id="lname"
+                      placeholder="Last Name"
+                      required
+                    />
+
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="name@example.com"
+                      required
+                    />
+
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      name="tel"
+                      pattern="[0-9]{-3}-[0-9]{-2}-[0-9]{-3}"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="000-000-00-00"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      placeholder="Message"
+                    ></textarea>
+                    <div class="btn">
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ccc"
           fill-opacity="1"
-          d="M0,256L40,261.3C80,267,160,277,240,277.3C320,277,400,267,480,250.7C560,235,640,213,720,186.7C800,160,880,128,960,149.3C1040,171,1120,245,1200,282.7C1280,320,1360,320,1400,320L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+          d="M0,64L48,106.7C96,149,192,235,288,266.7C384,299,480,277,576,234.7C672,192,768,128,864,117.3C960,107,1056,149,1152,170.7C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <img src="./assets/images/contact.png">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="contact-box">
-            <form method="POST" action="https://formdump.codeinstitute.net/">
-              <div class="contact-form">
-                <div class="row mb-3">
-                            
-                <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required>
-    
-                <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name" required>
-    
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-                
-                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                <input type="tel" name="tel" pattern="[0-9]{-3}-[0-9]{-2}-[0-9]{-3}" class="form-control" id="exampleFormControlInput1" placeholder="000-000-00-00" required>
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-                <div class="btn"><button type="submit" class="btn btn-primary">Submit</button></div>
-              </div>
-            </div>
-          </form>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="#ccc"
         fill-opacity="1"

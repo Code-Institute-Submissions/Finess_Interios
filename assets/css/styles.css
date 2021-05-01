@@ -173,9 +173,9 @@ footer {
   cursor: pointer;
 }
 .video-player {
-  width: 100%;
+  width: 80%;
   position: absolute;
-  left: 60%;
+  left: 50%;
   top: 80%;
   transform: translate(-50%, -50%);
   display: none;
@@ -246,6 +246,7 @@ video:focus {
   height: auto;
 }
 .testimonial-words {
+  display: contents;
   width: 100%;
   padding: 0 1rem;
   color: #000;
@@ -254,11 +255,11 @@ video:focus {
   left: 0;
   text-align: center;
 }
-.testimonial-words img {
+.img-container {
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
-  background: url(../images/our_ceo.jpg) center center no-repeat;
+  background: url(../images/our_ceo.jpg) center no-repeat;
   background-size: cover;
   border: #1e5edf solid 3px;
   margin: 2rem;
